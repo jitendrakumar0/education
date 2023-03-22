@@ -73,6 +73,121 @@
                 }
             }
         }
+        & .counterSection {
+            margin-top: -92px;
+            margin-bottom: 90px;
+            z-index: 10;
+            position: relative;
+            & .counterSectionInner {
+                background: $white;
+                border-left: 3px solid $theme1;
+                box-shadow: 0px 10px 40px rgba($black, 0.15);
+                & .counterSectionItems {
+                    & .counterSectionItem {
+                        transition: .3s all;
+                        & .counterSectionItemInner {
+                            padding: 32px 0px;
+                            & .counterSectionImg {
+                                text-align: center;
+                                & img {
+                                    width: 60px;
+                                    height: 60px;
+                                    object-fit: contain;
+                                    object-position: center;
+                                }
+                                margin-bottom: 7px;
+                            }
+                            & .counterSectionTitle {
+                                font-family: 'Gilroy-Bold';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 22px;
+                                text-align: center;
+                                
+                                color: $theme3;
+                                margin-bottom: 3px;
+                            }
+                            & .counterSectionValue {
+                                font-family: 'Gilroy-Regular';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 17px;
+                                line-height: 25px;
+                                /* identical to box height, or 147% */
+                                
+                                text-align: center;
+                                
+                                color: $theme2;
+                            }
+                        }
+                        &:hover {
+                            background-color: $gray-100;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        & .whyChooseUs {
+            padding-bottom: 40px;
+            & .whyChooseUsInner {
+                & .whyChooseUsTitle {
+                    font-family: 'Gilroy-SemiBold';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 42px;
+                    line-height: 51px;
+                    
+                    color: #1C1C1C;
+                    margin-bottom: 32px;
+                }
+                & .whyChooseUsImg {
+                    & img {
+                        max-height: 201px;
+                    }
+                    margin-bottom: 51px;
+                }
+                & .whyChooseUsLearnMore {
+                    & a {
+                        & span {
+                            font-family: 'Gilroy-Bold';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 22px;
+                            text-align: right;
+                            margin-right: 11px;
+
+                            color: #E91515;
+                            transition: .3s all;
+                            & img {
+                                width: 16px;
+                            }
+                        }
+                        &:hover {
+                            & span {
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+                }
+                & .whyChooseUsContent {
+                    gap: 26px;
+                    & .whyChooseUsContentParagraph {
+                        font-family: 'Gilroy-Regular';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 25px;
+                        /* or 147% */
+                        
+                        
+                        color: #3C3C3C;
+                    }
+                }
+            }
+        }
         & .secondSection {
             margin-top: -92px;
             margin-bottom: 90px;
@@ -128,7 +243,159 @@
                 }
             }
         }
-        
+        & .counter2Section {
+            padding: 40px 0px;
+            & .counter2SectionInner {
+                & .counter2SectionItems {
+                    & .counter2SectionItem {
+                        transition: .3s all;
+                        & .counter2SectionItemInner {
+                            & .counter2SectionImg {
+                                text-align: center;
+                                & img {
+                                    width: 80px;
+                                    height: 80px;
+                                    object-fit: contain;
+                                    object-position: center;
+                                }
+                                margin-bottom: 15px;
+                            }
+                            & .counter2SectionTitle {
+                                font-family: 'Gilroy-SemiBold';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 35px;
+                                line-height: 43px;
+                                /* identical to box height */
+                                
+                                text-align: center;
+                                letter-spacing: 0.02em;
+                                
+                                color: #D40F2B;
+                                margin-bottom: 7px;
+                            }
+                            & .counter2SectionValue {
+                                font-family: 'Gilroy-SemiBold';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 22px;
+                                line-height: 27px;
+                                /* identical to box height */
+                                
+                                text-align: center;
+                                letter-spacing: 0.02em;
+                                
+                                color: #1C1C1C;
+                            }
+                        }
+                        &:hover {
+                            transform: scale(.9);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        & .videoSection {
+            padding-top: 30px;
+            padding-bottom: 40px;
+            & .videoSectionInner {
+                & .plyr {
+                    & .plyr__controls {
+                        & .plyr__progress__container {
+                            & .plyr__progress {
+                                & input[type="range" i]::-webkit-slider-runnable-track {
+                                    color: $theme1;
+                                }
+                            }
+                        }
+                        & .plyr__volume {
+                            & button {
+                                &:hover {
+                                    background-color: $theme1;
+                                }
+                            }
+                            & input[type="range" i]::-webkit-slider-runnable-track {
+                                color: $theme1;
+                            }
+                        }
+                        & button.plyr__controls__item {
+                            &:hover {
+                                background-color: $theme1;
+                            }
+                        }
+                        & .plyr__menu {
+                            & button {
+                                &.plyr__control[aria-expanded=true] {
+                                    background-color: $theme1;
+                                }
+                                &:hover {
+                                    background-color: $theme1;
+                                }
+                            }
+                        }
+                    }
+                    & .plyr__control--overlaid {
+                        background-color: $theme1;
+                    }
+                }
+            }
+        }
+        & .countriesSection {
+            & .countriesSectionInner {
+                align-items: center;
+                & .countriesSectionHeading {
+                    font-family: 'Gilroy-Bold';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 35px;
+                    /* identical to box height */
+                    
+                    
+                    color: #1C1C1C;
+                    padding-bottom: 20px;
+                }
+                & .countriesSectionAllBtn {
+                    & a {
+                        font-family: 'Gilroy-Bold';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        text-align: right;
+                        
+                        color: #E91515;
+                    }
+                    padding-bottom: 20px;
+                }
+                & .countriesSectionItems {
+                    & .countriesSectionItem {
+                        & .countriesSectionItemInner {
+                            align-items: center;
+                            & .countriesSectionItemImg {
+                                padding-right: 0px;
+                                & img {
+                                    width: 97px;
+                                    height: 48px;
+                                    border: 1px solid #C1C1C1;
+                                }
+                            }
+                            & .countriesSectionItemTitle {
+                                padding-left: 15px;
+                                font-family: 'Gilroy-Bold';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 22px;
+                                line-height: 27px;
+                                
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
