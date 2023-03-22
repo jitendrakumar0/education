@@ -1,7 +1,204 @@
-// ? @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
-[data-page-name=signin] {
+// ? @@@@@@@@@@@@@@@@@@@@@@[  navbar  ]@@@@@@@@@@@@@@@@@@@@@@
     @include media-breakpoint(basic) {
-        
+        .topNavbar {
+            height: 89px;
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                        width: 207px;
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        padding: 0 13px;
+                        & .linkAnchor {
+                            font-family: 'Roboto';
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #3C3C3C;
+                            transition: 0.3s ease;
+                            &:hover,
+                            &.active {
+                                color: #E32333;
+                            }
+                        }
+                        &.dropdown {
+                            & .dropdown-toggle {
+                                &::after {
+                                    border: 0 !important;
+                                    background-image: url(../img/svg/headerDropdown.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    height: 6px;
+                                    width: 12px;
+                                    top: 2px;
+                                    left: 3px;
+                                    position: relative;
+                                }
+                            }
+                            & .dropdown-menu {
+                                background-color: #ffffff;
+                                border: 0;
+                                & .dropdown-item {
+                                    font-family: "Roboto";
+                                    font-weight: 700;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    color: #3c3c3c;
+                                    padding: 8px 16px;
+                                    &:hover {
+                                        background-color: white;
+                                        color: #E32333;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .partnerBtn {
+                    width: 105px;
+                    height: 33px;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #E32333;
+                    border: 1px solid #E32333;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s ease;
+                    &:hover {
+                        background-color: #E32333;
+                        color: #ffffff;
+                    }
+                }
+                & .loginBtn {
+                    width: 105px;
+                    height: 33px;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                    background-color: #E32333;
+                    border: 1px solid #E32333;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s ease;
+                    margin: 0 23px 0 17px;
+                    &:hover {
+                        background-color: white;
+                        color: #E32333;
+                    }
+                }
+                & .contactBox {
+                    & .socialIcons {
+                        & .socialIcon {
+                            height: 16px;
+                            width: 16px;
+                            display: flex;
+                            & img {
+                                height: 16px;
+                                width: 16px;
+                            }
+                            &:nth-child(2) {
+                                margin: 0 21px;
+                            }
+                        }
+                    }
+                    & .callBtn {
+                        width: 132.46px;
+                        height: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Roboto';
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #2C2C2C;
+                        margin-top: 13px;
+                        & img {
+                            height: 16px;
+                            width: 15px;
+                            margin-right: 9px;
+                        }
+                    }
+                }
+                & .consultationBtn {
+                    margin-left: 28px;
+                    width: 170px;
+                    height: 89px;
+                    background: #E32333;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    padding: 0 17px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        height: 34px;
+                        width: 34px;
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+        .findProgramBox {
+            height: 164px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+            border-left: 3px solid #E32333;
+            & .form-label {
+                font-family: 'Gilroy-SemiBold';
+                font-size: 17px;
+                line-height: 25px;
+                color: #3C3C3C;
+            }
+            & .form-control {
+                font-family: 'Gilroy-Medium';
+                font-size: 16px;
+                line-height: 19px;
+                color: #7C7C7C;
+                border: 1px solid #3C3C3C;
+                border-radius: 5px;
+                height: 40px;
+                &::placeholder {
+                    color: #7C7C7C;
+                }
+            }
+            & .submitBtn {}
+        }
+        .studyAbroadSection {
+            margin-bottom: 80px;
+            & .studyAbroadheading {
+                font-family: 'Gilroy-SemiBold';
+                font-size: 42px;
+                line-height: 49px;
+                text-transform: capitalize;
+                text-align: center;
+                color: #1C1C1C;
+                margin-bottom: 20px;
+            }
+            & .studyAbroadtext {
+                font-family: 'Gilroy-Regular';
+                font-size: 17px;
+                line-height: 25px;
+                text-align: center;
+                color: #3C3C3C;
+                margin-bottom: 20px;
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -16,7 +213,110 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+        .topNavbar {
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                        width: 181px;
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        padding: 0 10px;
+                        & .linkAnchor {
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .partnerBtn {
+                    &:hover {
+                    }
+                }
+                & .loginBtn {
+                    margin: 0 15px 0 15px;
+                    &:hover {
+                    }
+                }
+                & .contactBox {
+                    & .socialIcons {
+                        & .socialIcon {
+                            & img {
+                            }
+                            &:nth-child(2) {
+                            }
+                        }
+                    }
+                    & .callBtn {
+                        & img {
+                        }
+                    }
+                }
+                & .consultationBtn {
+                    margin-left: 18px;
+                    width: 165px;
+                    & img {
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1299.98px) {
+        .topNavbar {
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                    }
+                }
+            }
+            & .linkBox {
+                flex: 1 1 auto;
+                justify-content: end;
+                display: flex;
+                & .linkItems {
+                    & .linkItem {
+                        & .linkAnchor {
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .partnerBtn {
+                    margin-left: 5px;
+                    &:hover {
+                    }
+                }
+                & .loginBtn {
+                    &:hover {
+                    }
+                }
+                & .contactBox {
+                    display: none;
+                    & .socialIcons {
+                        & .socialIcon {
+                            & img {
+                            }
+                            &:nth-child(2) {
+                            }
+                        }
+                    }
+                    & .callBtn {
+                        & img {
+                        }
+                    }
+                }
+                & .consultationBtn {
+                    display: none;
+                    & img {
+                    }
+                }
+            }
+        }
+    }
 
     @include media-breakpoint-down(xl) {}
 
@@ -25,7 +325,7 @@
     @include media-breakpoint-down(md) {}
 
     @include media-breakpoint-down(sm) {}
-}
+
 
 [data-bs-theme=dark] {
     & [data-page-name=signin] {
@@ -59,5 +359,5 @@
     }
 }
 
-// ! @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
+// ! @@@@@@@@@@@@@@@@@@@@@@[  navbar end  ]@@@@@@@@@@@@@@@@@@@@@@
 

@@ -96,7 +96,6 @@
 
         <!-- style -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/libs/node_modules/plyr/dist/plyr.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
 
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
@@ -105,7 +104,54 @@
         <main class="container-fluid">
             <div class="row mainInner">
                 <div class="col-12 px-0 flex-fill" data-page-name="landing">
-                    <navbar class="col-12 px-0 navbar" style="height:89px;">Header</navbar>
+                    <navbar class="col-12 px-0 topNavbar d-flex align-items-center justify-content-between">
+                        <div class="logoBox">
+                            <a href="index.html" class="logoAnchor">
+                                <img src="assets/img/logo/logo.png" class="logoImg" alt="">
+                            </a>
+                        </div>
+                        <div class="linkBox">
+                            <ul class="m-0 p-0 list-unstyled d-flex align-items-center linkItems">
+                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">About Us</a></li>
+                                <li class="linkItem dropdown">
+                                    <a class="linkAnchor dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:;">Education Abroad</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Education Abroad</a></li>
+                                        <li><a class="dropdown-item" href="#">Education Abroad</a></li>
+                                        <li><a class="dropdown-item" href="#">Education Abroad</a></li>
+                                    </ul>
+                                </li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">Immigration</a></li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">Countries</a></li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">News</a></li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">Reviews</a></li>
+                            </ul>
+                        </div>
+                        <div class="btnBox d-flex align-items-center">
+                            <a href="javascript:;" class="partnerBtn">For Partners</a>
+                            <a href="javascript:;" class="loginBtn">Login / Register</a>
+                            <div class="contactBox">
+                                <div class="socialIcons d-flex align-items-center justify-content-end">
+                                    <a href="javascript:;" class="socialIcon">
+                                        <img src="assets/img/facebookIcon.svg" alt="">
+                                    </a>
+                                    <a href="javascript:;" class="socialIcon">
+                                        <img src="assets/img/instaIcon.svg" alt="">
+                                    </a>
+                                    <a href="javascript:;" class="socialIcon">
+                                        <img src="assets/img/youtubeIcon.svg" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="tel:(044) 484 09 58" class="callBtn"><img src="assets/img/svg/phoneDark.svg" alt=""> (044) 484 09 58</a>
+                                </div>
+                            </div>
+                            <a href="javascript:;" class="consultationBtn">
+                                <img src="assets/img/svg/consultWhite.svg" alt="">
+                                <span>Free Consultation</span>
+                            </a>
+                        </div>
+                    </navbar>
                     <div class="container-fluid heroSection">
                         <div class="row">
                             <div class="col-12 px-0">
@@ -117,8 +163,21 @@
                                                     <div class="col-12 mt-n5">
                                                         <div class="row mt-n5 mx-5">
                                                             <div class="col-12 carousel-item-content-heading">CIP StudyAbroad is 20 years of trust and thousands of satisfied students around the world</div>
-                                                            <div class="col-12 chooseProgramBtn">
-                                                                <a href="javascript:;">Choose a program</a>
+                                                            <div class="col-12 findProgramBox">
+                                                                <div class="row mx-0 align-items-center h-100">
+                                                                    <div class="col-4">
+                                                                        <label for="" class="form-label">Location</label>
+                                                                        <input type="text" class="form-control" placeholder="Enter a country, city or university">
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                        <label for="" class="form-label">Subject</label>
+                                                                        <input type="text" class="form-control" placeholder="Enter a subject">
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                        <label for="" class="form-label invisible d-block">Subject</label>
+                                                                        <button class="btn submitBtn">Find your program matches <img src="assets/img/svg/arrowRightTheme1.svg" alt=""></button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -159,7 +218,7 @@
                                             <div class="col-12">
                                                 <div class="row">
                                                     <div class="col-12 carouselBtn">
-                                                        <img src="./assets/img/svg/sliderArrowLeftLight.svg" alt="sliderArrowLeftLight">
+                                                        <img src="./assets/img/svg/sliderArrowLeftLight.svg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -170,7 +229,7 @@
                                             <div class="col-12">
                                                 <div class="row">
                                                     <div class="col-12 carouselBtn">
-                                                        <img src="./assets/img/svg/sliderArrowRightLight.svg" alt="sliderArrowRightLight">
+                                                        <img src="./assets/img/svg/sliderArrowRightLight.svg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -180,53 +239,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid counterSection counter-show">
-                        <div class="container counterSectionInner">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row counterSectionItems">
-                                        <div class="col-md-3 counterSectionItem">
-                                            <div class="row counterSectionItemInner mx-0">
-                                                <div class="col-12 counterSectionImg">
-                                                    <img src="./assets/img/svg/higherEducationTheme1.svg" alt="higherEducationTheme1">
-                                                </div>
-                                                <div class="col-12 counterSectionTitle">Higher Education</div>
-                                                <div class="col-12 counterSectionValue"><span class="count-number">243</span> Programs</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 counterSectionItem">
-                                            <div class="row counterSectionItemInner mx-0">
-                                                <div class="col-12 counterSectionImg">
-                                                    <img src="./assets/img/svg/secondaryEducationTheme1.svg" alt="secondaryEducationTheme1">
-                                                </div>
-                                                <div class="col-12 counterSectionTitle">Secondary Education</div>
-                                                <div class="col-12 counterSectionValue"><span class="count-number">21</span> Programs</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 counterSectionItem">
-                                            <div class="row counterSectionItemInner mx-0">
-                                                <div class="col-12 counterSectionImg">
-                                                    <img src="./assets/img/svg/languageCoursesTheme1.svg" alt="languageCoursesTheme1">
-                                                </div>
-                                                <div class="col-12 counterSectionTitle">Language Courses</div>
-                                                <div class="col-12 counterSectionValue"><span class="count-number">243</span> Programs</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 counterSectionItem">
-                                            <div class="row counterSectionItemInner mx-0">
-                                                <div class="col-12 counterSectionImg">
-                                                    <img src="./assets/img/svg/childrenVacationTheme1.svg" alt="childrenVacationTheme1">
-                                                </div>
-                                                <div class="col-12 counterSectionTitle">Children's Vacation</div>
-                                                <div class="col-12 counterSectionValue"><span class="count-number">21</span> Programs</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid whyChooseUs">
+                    <div class="container-fluid whyChooseUs mt-5 pt-4">
                         <div class="container whyChooseUsInner">
                             <div class="row">
                                 <div class="col-12">
@@ -262,128 +275,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid counter2Section counter-show">
-                        <div class="container counter2SectionInner">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row counter2SectionItems">
-                                        <div class="col-md-2 counter2SectionItem">
-                                            <div class="row counter2SectionItemInner mx-0">
-                                                <div class="col-12 counter2SectionImg">
-                                                    <img src="./assets/img/svg/placementTheme2.svg" alt="placementTheme2">
-                                                </div>
-                                                <div class="col-12 counter2SectionTitle count-number">5000</div>
-                                                <div class="col-12 counter2SectionValue">Placement</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2 counter2SectionItem">
-                                            <div class="row counter2SectionItemInner mx-0">
-                                                <div class="col-12 counter2SectionImg">
-                                                    <img src="./assets/img/svg/classesTheme2.svg" alt="classesTheme2">
-                                                </div>
-                                                <div class="col-12 counter2SectionTitle count-number">300</div>
-                                                <div class="col-12 counter2SectionValue">Classes</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2 counter2SectionItem">
-                                            <div class="row counter2SectionItemInner mx-0">
-                                                <div class="col-12 counter2SectionImg">
-                                                    <img src="./assets/img/svg/locationTheme2.svg" alt="locationTheme2">
-                                                </div>
-                                                <div class="col-12 counter2SectionTitle"><span class="count-number">100</span>+</div>
-                                                <div class="col-12 counter2SectionValue">Location</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2 counter2SectionItem">
-                                            <div class="row counter2SectionItemInner mx-0">
-                                                <div class="col-12 counter2SectionImg">
-                                                    <img src="./assets/img/svg/cityTheme2.svg" alt="cityTheme2">
-                                                </div>
-                                                <div class="col-12 counter2SectionTitle count-number">5</div>
-                                                <div class="col-12 counter2SectionValue">City</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2 counter2SectionItem">
-                                            <div class="row counter2SectionItemInner mx-0">
-                                                <div class="col-12 counter2SectionImg">
-                                                    <img src="./assets/img/svg/jobsTheme2.svg" alt="jobsTheme2">
-                                                </div>
-                                                <div class="col-12 counter2SectionTitle count-number">5</div>
-                                                <div class="col-12 counter2SectionValue">Jobs</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2 counter2SectionItem">
-                                            <div class="row counter2SectionItemInner mx-0">
-                                                <div class="col-12 counter2SectionImg">
-                                                    <img src="./assets/img/svg/helpTheme2.svg" alt="helpTheme2">
-                                                </div>
-                                                <div class="col-12 counter2SectionTitle count-number">20</div>
-                                                <div class="col-12 counter2SectionValue">Help</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="container-fluid studyAbroadSection">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 studyAbroadheading">Study abroad at Abertay University</div>
+                                <div class="col-xl-11 studyAbroadtext">
+                                    Previously known as the University of Abertay, Abertay University is a public institution located in the heart of Dundee, Scotland. The University boasts a close-knit campus, with all buildings and local amenities within 15 minutes of each other.
+                                </div>
+                                <div class="col-xl-11 studyAbroadtext">
+                                    The University offers a wide range of programs at undergraduate, postgraduate taught, and postgraduate research levels. Abertay is particularly known for its computer games degrees, and was the first university to offer such programs.
+                                </div>
+                                <div class="col-xl-11 studyAbroadtext">
+                                    The campus is made up of four buildings, with another four residence halls offering double and single rooms, bedsits, and rooms with en-suites. There are also a number of leisure facilities available to students on campus, including a gym and more than 20 sports clubs you can join.
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid videoSection">
-                        <div class="container videoSectionInner">
-                            <div class="row">
-                                <div class="col-12">
-                                    <!-- <video crossorigin="" playsinline="" data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" class="player">
-                                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
-                                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
-                                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
-                                        <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default="">
-                                        <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
-                                        <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download="">Download</a>
-                                    </video> -->
-                                    <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="MLpWrANjFbI"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid countriesSection">
-                        <div class="container countriesSectionInner">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col countriesSectionHeading">Countries</div>
-                                        <div class="col-auto countriesSectionAllBtn">
-                                            <a href="javascript:;">All countries 15</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="row countriesSectionItems">
-                                        <div class="col-auto countriesSectionItem">
-                                            <div class="row countriesSectionItemInner">
-                                                <div class="col-auto countriesSectionItemImg">
-                                                    <img src="./assets/img/svg/flagCanada.svg" alt="flagCanada">
-                                                </div>
-                                                <div class="col-auto countriesSectionItemTitle">Canada</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <footer class="col-12 px-0 footer">Footer</footer>
                 </div>
             </div>
         </main>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/node_modules/plyr/dist/plyr.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
-        <script>
-            const players = document.querySelectorAll('.player');
-
-            players.forEach(function(player) {
-            const plyr = new Plyr(player);
-            });
-
-        </script>
+        
     </body>
 </html>
