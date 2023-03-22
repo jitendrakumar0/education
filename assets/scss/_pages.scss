@@ -1,6 +1,134 @@
-// ? @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
-[data-page-name=signin] {
+// ? @@@@@@@@@@@@@@@@@@@@@@[  landing start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=landing] {
     @include media-breakpoint(basic) {
+        & .heroSection {
+            & .carousel {
+                & .carousel-inner {
+                    & .carousel-item {
+                        aspect-ratio: 1440/ calc(720 - 89);
+                        background-image: var(--bg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        & .carousel-item-content {
+                            height: 100%;
+                            & .carousel-item-content-inner {
+                                height: 100%;
+                                align-items: center;
+                                & .carousel-item-content-heading {
+                                    font-family: 'Gilroy-Bold';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 68px;
+                                    line-height: 73px;
+
+                                    color: $white;
+                                }
+                                & .chooseProgramBtn {
+                                    margin-top: 65px;
+                                    & a {
+                                        font-family: 'Gilroy-Bold';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 18px;
+                                        line-height: 22px;
+
+                                        color: $white;
+                                        background: $theme1;
+                                        border-radius: 5px;
+                                        width: 216px;
+                                        height: 56px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        transition: .3s all;
+                                        border: 2px solid $theme1;
+                                        &:hover {
+                                            color: $theme1;
+                                            background: $white;
+                                            border: 2px solid $theme1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
+
+                        }
+                    }
+                }
+                & [class*=carousel-control-] {
+                    & .carouselBtn {
+                        & img {
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                    &.carousel-control-prev {
+    
+                    }
+                    &.carousel-control-next {
+                        
+                    }
+                }
+            }
+        }
+        & .secondSection {
+            margin-top: -92px;
+            margin-bottom: 90px;
+            z-index: 10;
+            position: relative;
+            & .secondSectionInner {
+                background: $white;
+                border-left: 3px solid $theme1;
+                box-shadow: 0px 10px 40px rgba($black, 0.15);
+                & .secondSectionItems {
+                    & .secondSectionItem {
+                        transition: .3s all;
+                        & .secondSectionItemInner {
+                            padding: 32px 0px;
+                            & .secondSectionImg {
+                                text-align: center;
+                                & img {
+                                    width: 60px;
+                                    height: 60px;
+                                    object-fit: contain;
+                                    object-position: center;
+                                }
+                                margin-bottom: 7px;
+                            }
+                            & .secondSectionTitle {
+                                font-family: 'Gilroy-Bold';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 22px;
+                                text-align: center;
+                                
+                                color: $theme3;
+                                margin-bottom: 3px;
+                            }
+                            & .secondSectionValue {
+                                font-family: 'Gilroy-Regular';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 17px;
+                                line-height: 25px;
+                                /* identical to box height, or 147% */
+                                
+                                text-align: center;
+                                
+                                color: $theme2;
+                            }
+                        }
+                        &:hover {
+                            background-color: $gray-100;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -27,7 +155,7 @@
 }
 
 [data-bs-theme=dark] {
-    & [data-page-name=signin] {
+    & [data-page-name=landing] {
         @include dark-media-breakpoint(basic) {
             
         }
@@ -58,5 +186,67 @@
     }
 }
 
-// ! @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
+// ! @@@@@@@@@@@@@@@@@@@@@@[  landing start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=example] {
+    @include media-breakpoint(basic) {
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=example] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 
