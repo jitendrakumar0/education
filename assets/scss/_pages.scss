@@ -369,11 +369,14 @@
                     }
                     padding-bottom: 20px;
                 }
-                & .countriesSectionItems {
+                & .countriesSectionItems {    
+                    justify-content: space-between;
                     & .countriesSectionItem {
+                        transition: .3s all;
                         & .countriesSectionItemInner {
                             align-items: center;
                             & .countriesSectionItemImg {
+                                padding-left: 0px;
                                 padding-right: 0px;
                                 & img {
                                     width: 97px;
@@ -383,6 +386,7 @@
                             }
                             & .countriesSectionItemTitle {
                                 padding-left: 15px;
+                                padding-right: 0px;
                                 font-family: 'Gilroy-Bold';
                                 font-style: normal;
                                 font-weight: 400;
@@ -391,6 +395,9 @@
                                 
                                 color: #000000;
                             }
+                        }
+                        &:hover {
+                            transform: scale(.9);
                         }
                     }
                 }
