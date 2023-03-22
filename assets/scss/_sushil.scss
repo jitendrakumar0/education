@@ -1,0 +1,377 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  Studya Board Page-1 start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=studyaBoardPageOne] {
+    @include media-breakpoint(basic) {
+        & .heroSection {
+            background-image: url('../img/studya-board-banner.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            & .heroInner {
+                padding: 157px 0px;
+                & .leftPart {
+                    & .heroHeading {
+                        font-family: 'Gilroy-Bold';
+                        font-size: 50px;
+                        line-height: 107.8%;
+                        color: #FFFFFF;
+                        padding-bottom: 26px;
+                        max-width: 613px;
+                    }
+                    & .heroText {
+                        font-family: 'Gilroy-Regular';
+                        font-size: 25px;
+                        line-height: 34px;
+                        color: #FFFFFF;
+                        padding-bottom: 36px;
+                        max-width: 582px;
+                    }
+                    & .startApplicationBtn {
+                        text-decoration: none;
+                        font-family: 'Gilroy-Bold';
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #FFFFFF;
+                        background: #E91515;
+                        border-radius: 5px;
+                        display: block;
+                        margin-right: 20px;
+                        border: 2px solid #E91515;
+                        width: 216px;
+                        height: 56px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            background-color: #FFFFFF;
+                            color: #E91515;
+                        }
+                    }
+                    & .admissionReqBtn {
+                        font-family: 'Gilroy-Bold';
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #E91515;
+                        background: #FFFFFF;
+                        border-radius: 5px;
+                        border: 2px solid #FFFFFF;
+                        height: 56px;
+                        width: 265px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            background-color: #E91515;
+                            color: #FFFFFF;
+                            border-color: #E91515;
+                        }
+                    }
+                }
+                & .rightPart {
+                    max-width: 480px;
+                    background: #FFFFFF;
+                    border-left: 3px solid #E91515;
+                    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+                    & .rightPartInner {
+                        padding: 30px 45px;
+                        & .rightHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 35px;
+                            line-height: 41px;
+                            color: #1C1C1C;
+                            margin-bottom: 8px;
+                        }
+                        & .rightSubHeading {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 22px;
+                            line-height: 34px;
+                            color: #000000;
+                            margin-bottom: 8px;
+                            max-width: 298px;
+                            & span {
+                                color: #E91515;
+                            }
+                        }
+                        & .programFacts {
+                            & .programFactsInner {
+                                align-items: start;
+                                gap: 5px;
+                                & .imgOuter {
+                                    width: 24px;
+                                    height: 24px;
+                                    margin-top: 5px;
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                        font-family: 'Gilroy-Regular';
+                                        font-size: 18px;
+                                        line-height: 34px;
+                                        color: #7A7A7A;
+                                    }
+                                    & .boldHeading {
+                                        font-family: 'Gilroy-SemiBold';
+                                        font-size: 20px;
+                                        line-height: 34px;
+                                        color: #1C1C1C;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            background: #F5F5F5;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            & .sectionSecondInner {
+                gap: 80px;
+                & .programSection {
+                    & .textSide {
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 42px;
+                            line-height: 49px;
+                            color: #1C1C1C;
+                            margin-bottom: 20px;
+                        }
+                        & .proSubHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 15px;
+                        }
+                        & .proPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            max-width: 674px;
+                        }
+                    }
+                    & .imgSide {
+                        width: 458px;
+                        height: auto;
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                        width: 458px;
+                    }
+                    & .textSide {
+                        padding-left: 68px !important;
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 42px;
+                            line-height: 49px;
+                            color: #1C1C1C;
+                            margin-bottom: 12px;
+                        }
+                        & .proSubHeading {
+                            font-family: 'Gilroy-Medium';
+                            font-size: 25px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 16px;
+                        }
+                        & .graduatesBox {
+                            margin-bottom: 40px;
+                            & .graduatesBoxInner {
+                                margin-right: 43px;
+                                & .graduatesBoxHeading {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-size: 17px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                    margin-bottom: 5px;
+                                }
+                                & .graduatesBoxSubHeading {
+                                    font-family: 'Gilroy-Regular';
+                                    font-size: 17px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 22px;
+                            line-height: 25px;
+                            color: #1C1C1C;
+                            margin-bottom: 14px;
+                        }
+                        & .proPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 5px;
+                            max-width: 660px;
+                            &.marginClass {
+                                margin-bottom: 20px;
+                            }
+                        }
+                        & .customPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 40px;
+                        }
+                        & .lastPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 42px;
+                            line-height: 49px;
+                            color: #1C1C1C;
+                            margin-bottom: 12px;
+                        }
+                        & .proPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 12px;
+                            max-width: 660px;
+                        }
+                        & .proSubHeading {
+                            font-family: 'Gilroy-Medium';
+                            font-size: 25px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 14px;
+                        }
+                        & .customPra {
+                            font-family: 'Gilroy-Medium';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #2C2C2C;
+                            margin-bottom: 5px;
+                            & span {
+                                font-family: 'Gilroy-Regular';
+                            }
+                            &.lastPra {
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            & .sectionInner {
+                & .imgOuter {
+                    width: 78px;
+                    height: 78px;
+                }
+                & .sectionHeading {
+                    font-family: 'Gilroy-SemiBold';
+                    font-size: 42px;
+                    line-height: 49px;
+                    text-align: center;
+                    color: #000000;
+                    margin-bottom: 15px;
+                    max-width: 576px;
+                }
+                & .sectionPra {
+                    font-family: 'Gilroy-Regular';
+                    font-size: 17px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: #3C3C3C;
+                    margin-bottom: 15px;
+                    max-width: 894px;
+                }
+                & .visaRequirmentBtn {
+                    font-family: 'Gilroy-Bold';
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #FFFFFF;
+                    width: 305px;
+                    height: 56px;
+                    background: #E91515;
+                    border-radius: 5px;
+                    border: 2px solid #E91515;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover {
+                        background-color: #FFFFFF;
+                        color: #E91515;
+                    }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=signin] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  Studya Board Page-1 start  ]@@@@@@@@@@@@@@@@@@@@@@
+
