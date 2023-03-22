@@ -1,0 +1,249 @@
+@include media-breakpoint(basic) {
+  .centerTopPart {
+    height: var(--topbar-height);
+    min-height: var(--topbar-height);
+    max-height: var(--topbar-height);
+    & .navbar {
+      & .navbar-collapse {
+        & .navbar-nav {
+          & .nav-item {
+            & .startBarToggleBtn {
+              & .startBarToggleImg {
+                width: 20px;
+              }
+            }
+            & .nav-link {
+              &.active {
+
+              }
+            }
+            &.dropdown {
+              & .dropdown-toggle {
+
+              }
+              & .dropdown-menu {
+                & li {
+                  & .dropdown-item {
+
+                  }
+                  & .dropdown-divider {
+
+                  }
+                }
+              }
+            }
+          }
+        }
+        & .searchBox {
+          & input.form-control {
+            color: $theme1;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 10px 10px 8px 28px;
+            background-color: $gray-100;
+            border-color: #f9f9f9;
+            width: 300px;
+            &::placeholder {
+              color: $gray-500;
+            }
+            & ~ label {
+              & .searchbarImg {
+                width: 14px;
+              }
+            }
+          }
+        }
+        & .quickBtns {
+          & .nav-item {
+            &.themeIcon {
+              & .dropdown-toggle {
+                &::after {
+                  display: none;
+                }
+                & svg {
+                  fill: var(--bs-secondary-color);
+                }
+              }
+              & .dropdown-menu {
+                padding: 0.6rem;
+                top: unset;
+                & .dropdown-item {
+                  font-size: 13px;
+                  border-radius: 4px;
+                  padding: 0.32rem 0.5rem;
+                  &:hover {
+                    color: $theme2;
+                    background-color: inherit;
+                    & svg {
+                      fill: $theme2;
+                    }
+                  }
+                  &.active {
+                    background-color: $gray-100;
+                    color: $theme2;
+                    & svg {
+                      fill: $theme2;
+                    }
+                  }
+                }
+              }
+              &:hover {
+                & .dropdown-menu {
+                  display: block;
+                  right: 0;
+                  left: auto;
+                }
+              }
+              &:not(:hover){
+                & .dropdown-menu {
+                  &.show {
+                    display: none !important;
+                  }
+                }
+              }
+            }
+            &.userDropdown {
+              & .nav-link {
+                height: 35px;
+                width: 35px;
+                &::after {
+                  display: none;
+                }
+                & img {}
+              }
+              & .dropdown-menu {
+                &.userDropdownItems {
+                  top: unset;
+                }
+                & .dropdownHeader {
+                  border-bottom: 1px solid $gray-200;
+                  padding-bottom: 0.75rem;
+                  & .userImg {
+                    height: 45px;
+                    width: 45px;
+                    margin-right: 0.75rem;
+                    & img {}
+                  }
+                  & .userDetail {
+                    & .userName {
+                      font-size: 15px;
+                      color: $gray-900;
+                      font-weight: 700;
+                    }
+                    & .userId {
+                      font-size: 13px;
+                      color: $gray-600;
+                    }
+                  }
+                }
+                & .dropdownBody {
+                  & .dropdownLinks {
+                    & .dropdownLink {
+                      & .dropdownAnchor {
+                        font-size: 13px;
+                        padding: 0.6rem 0.75rem;
+                        line-height: normal;
+                        & .valueBox {
+                          height: 16px;
+                          width: 16px;
+                          font-size: 10px;
+                          font-weight: 600;
+                        }
+                        & .dropdownArrow {
+                          height: 10px;
+                          color: $gray-600;
+                        }
+                        &:hover {
+                          background-color: $gray-100;
+                        }
+                      }
+                    }
+                  }
+                }
+                & .innerUserDropdown {
+                  &:hover {
+                    & .innerUserDropdownMenu {
+                      display: block;
+                      top: 0;
+                      right: 100%;
+                      left: auto;
+                      margin-right: var(--bs-dropdown-spacer);
+                    }
+                  }
+                  &:not(:hover) {
+                    & .innerUserDropdownMenu {
+                      &.show {
+                        display: none !important;
+                      }
+                    }
+                  }
+                }
+              }
+              &:hover {
+                & .userDropdownItems {
+                  display: block;
+                  right: 0;
+                  left: auto;
+                }
+              }
+              &:not(:hover) {
+                & .userDropdownItems {
+                  &.show {
+                    display: none !important;
+                  }
+                }
+              }
+            }
+            & .nav-link {
+              & .quickBtnsImg {
+                width: 16px;
+                height: 16px;
+              }
+              &:hover {
+                background-color: rgba($theme1, .1);
+              }
+              &.dropdown-toggle {
+
+              }
+              & ~ .dropdown-menu {
+                & li {
+                  & .dropdown-item {
+                    & .theme-icon {
+                      width: 16px;
+                      height: 16px;
+                    }
+                    &.active {
+                      & .bi {
+                        width: 16px;
+                        height: 16px;
+                        display: block !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {
+  
+}
+@include media-breakpoint-up(md) {
+  
+}
+@include media-breakpoint-up(lg) {
+  
+}
+@include media-breakpoint-up(xl) {
+  
+}
+@include media-breakpoint-up(xxl) {
+  
+}
