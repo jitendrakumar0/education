@@ -298,7 +298,7 @@
         }
         & .videoSection {
             padding-top: 30px;
-            padding-bottom: 40px;
+            padding-bottom: 45px;
             & .videoSectionInner {
                 & .plyr {
                     & .plyr__controls {
@@ -342,6 +342,8 @@
             }
         }
         & .countriesSection {
+            padding-top: 45px;
+            padding-bottom: 45px;
             & .countriesSectionInner {
                 align-items: center;
                 & .countriesSectionHeading {
@@ -369,11 +371,15 @@
                     }
                     padding-bottom: 20px;
                 }
-                & .countriesSectionItems {
+                & .countriesSectionItems {    
+                    justify-content: space-between;
+                    align-items: center;
                     & .countriesSectionItem {
+                        transition: .3s all;
                         & .countriesSectionItemInner {
                             align-items: center;
                             & .countriesSectionItemImg {
+                                padding-left: 0px;
                                 padding-right: 0px;
                                 & img {
                                     width: 97px;
@@ -383,6 +389,7 @@
                             }
                             & .countriesSectionItemTitle {
                                 padding-left: 15px;
+                                padding-right: 0px;
                                 font-family: 'Gilroy-Bold';
                                 font-style: normal;
                                 font-weight: 400;
@@ -391,6 +398,105 @@
                                 
                                 color: #000000;
                             }
+                        }
+                        &:hover {
+                            transform: scale(.9);
+                        }
+                    }
+                }
+            }
+        }
+        & .popularProgramsSection {
+            padding-top: 45px;
+            padding-bottom: 45px;
+            & .popularProgramsSectionInner {
+                align-items: center;
+                & .popularProgramsSectionHeading {
+                    font-family: 'Gilroy-Bold';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 35px;
+                    /* identical to box height */
+                    
+                    
+                    color: #1C1C1C;
+                    padding-bottom: 20px;
+                }
+                & .popularProgramsSectionAllBtn {
+                    & a {
+                        font-family: 'Gilroy-Bold';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        text-align: right;
+                        
+                        color: #E91515;
+                    }
+                    padding-bottom: 20px;
+                }
+                & .popularProgramsSectionItems {    
+                    justify-content: space-between;
+                    align-items: center;
+                    & .popularProgramsSectionItem {
+                        transition: .3s all;
+                        & .popularProgramsSectionItemInner {
+                            background: #FFFFFF;
+                            box-shadow: 0px 10px 20px rgba(145, 145, 145, 0.25);
+                            border-radius: 5px 5px 5px 5px;
+                            & .popularProgramsSectionItemImg {
+                                & img {
+                                    aspect-ratio: 277/271;
+                                    object-fit: cover;
+                                    object-position: center;
+                                    border-radius: 5px 5px 0px 0px;
+                                    width: 100%;
+                                }
+                                padding-bottom: 15px;
+                            }
+                            & .popularProgramsSectionItemTitle {
+                                font-family: 'Gilroy-Medium';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 19px;
+                                
+                                color: #7C7C7C;
+                                padding-bottom: 10px;
+                            }
+                            & .popularProgramsSectionItemLocation {
+                                font-family: 'Gilroy-Bold';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 22px;
+                                
+                                color: #1C1C1C;
+                                padding-bottom: 15px;
+                            }
+                            & .popularProgramsSectionItemLocate {
+                                padding-bottom: 19px;
+                                & span {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    /* identical to box height */
+
+
+                                    color: #7C7C7C;
+                                    & img {
+                                        width: 18px;
+                                        height: 18px;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            transform: translateY(5px);
+                            filter: grayscale(1);
                         }
                     }
                 }

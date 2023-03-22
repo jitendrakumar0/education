@@ -105,7 +105,54 @@
         <main class="container-fluid">
             <div class="row mainInner">
                 <div class="col-12 px-0 flex-fill" data-page-name="landing">
-                    <navbar class="col-12 px-0 navbar" style="height:89px;">Header</navbar>
+                    <navbar class="col-12 px-0 topNavbar d-flex align-items-center justify-content-between">
+                        <div class="logoBox">
+                            <a href="index.html" class="logoAnchor">
+                                <img src="assets/img/logo/logo.png" class="logoImg" alt="">
+                            </a>
+                        </div>
+                        <div class="linkBox">
+                            <ul class="m-0 p-0 list-unstyled d-flex align-items-center linkItems">
+                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">About Us</a></li>
+                                <li class="linkItem dropdown">
+                                    <a class="linkAnchor dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:;">Education Abroad</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Education Abroad</a></li>
+                                        <li><a class="dropdown-item" href="#">Education Abroad</a></li>
+                                        <li><a class="dropdown-item" href="#">Education Abroad</a></li>
+                                    </ul>
+                                </li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">Immigration</a></li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">Countries</a></li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">News</a></li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript:;">Reviews</a></li>
+                            </ul>
+                        </div>
+                        <div class="btnBox d-flex align-items-center">
+                            <a href="javascript:;" class="partnerBtn">For Partners</a>
+                            <a href="javascript:;" class="loginBtn">Login / Register</a>
+                            <div class="contactBox">
+                                <div class="socialIcons d-flex align-items-center justify-content-end">
+                                    <a href="javascript:;" class="socialIcon">
+                                        <img src="assets/img/facebookIcon.svg" alt="">
+                                    </a>
+                                    <a href="javascript:;" class="socialIcon">
+                                        <img src="assets/img/instaIcon.svg" alt="">
+                                    </a>
+                                    <a href="javascript:;" class="socialIcon">
+                                        <img src="assets/img/youtubeIcon.svg" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="tel:(044) 484 09 58" class="callBtn"><img src="assets/img/svg/phoneDark.svg" alt=""> (044) 484 09 58</a>
+                                </div>
+                            </div>
+                            <a href="javascript:;" class="consultationBtn">
+                                <img src="assets/img/svg/consultWhite.svg" alt="">
+                                <span>Free Consultation</span>
+                            </a>
+                        </div>
+                    </navbar>
                     <div class="container-fluid heroSection">
                         <div class="row">
                             <div class="col-12 px-0">
@@ -347,7 +394,7 @@
                         <div class="container countriesSectionInner">
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="row">
+                                    <div class="row align-items-center">
                                         <div class="col countriesSectionHeading">Countries</div>
                                         <div class="col-auto countriesSectionAllBtn">
                                             <a href="javascript:;">All countries 15</a>
@@ -355,15 +402,125 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="row countriesSectionItems">
-                                        <div class="col-auto countriesSectionItem">
+                                    <div class="row countriesSectionItems mx-0">
+                                        <a href="javascript:;" class="col-auto countriesSectionItem">
                                             <div class="row countriesSectionItemInner">
                                                 <div class="col-auto countriesSectionItemImg">
                                                     <img src="./assets/img/svg/flagCanada.svg" alt="flagCanada">
                                                 </div>
                                                 <div class="col-auto countriesSectionItemTitle">Canada</div>
                                             </div>
+                                        </a>
+                                        <a href="javascript:;" class="col-auto countriesSectionItem">
+                                            <div class="row countriesSectionItemInner">
+                                                <div class="col-auto countriesSectionItemImg">
+                                                    <img src="./assets/img/svg/flagBritain.svg" alt="flagBritain">
+                                                </div>
+                                                <div class="col-auto countriesSectionItemTitle">Britain</div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="col-auto countriesSectionItem">
+                                            <div class="row countriesSectionItemInner">
+                                                <div class="col-auto countriesSectionItemImg">
+                                                    <img src="./assets/img/svg/flagPoland.svg" alt="flagPoland">
+                                                </div>
+                                                <div class="col-auto countriesSectionItemTitle">Poland</div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="col-auto countriesSectionItem">
+                                            <div class="row countriesSectionItemInner">
+                                                <div class="col-auto countriesSectionItemImg">
+                                                    <img src="./assets/img/svg/flagCzechRepublic.svg" alt="flagCzechRepublic">
+                                                </div>
+                                                <div class="col-auto countriesSectionItemTitle">Czech Republic</div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="col-auto countriesSectionItem">
+                                            <div class="row countriesSectionItemInner">
+                                                <div class="col-auto countriesSectionItemImg">
+                                                    <img src="./assets/img/svg/flagGermany.svg" alt="flagGermany">
+                                                </div>
+                                                <div class="col-auto countriesSectionItemTitle">Germany</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid popularProgramsSection">
+                        <div class="container popularProgramsSectionInner">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col popularProgramsSectionHeading">Popular Programs</div>
+                                        <div class="col-auto popularProgramsSectionAllBtn">
+                                            <a href="javascript:;">All Program 530</a>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row popularProgramsSectionItems mx-n3">
+                                        <a href="javascript:;" class="col-md-3 popularProgramsSectionItem">
+                                            <div class="row popularProgramsSectionItemInner mx-2">
+                                                <div class="col-12 popularProgramsSectionItemImg px-0">
+                                                    <img src="./assets/img/popularPrograms1.png" alt="popularPrograms1">
+                                                </div>
+                                                <div class="col-12 popularProgramsSectionItemTitle">CANADA</div>
+                                                <div class="col-12 popularProgramsSectionItemLocation">York University</div>
+                                                <div class="col-12 popularProgramsSectionItemLocate">
+                                                    <span>
+                                                        <img src="./assets/img/svg/locatorTheme1.svg" alt="locatorTheme1">
+                                                    </span>
+                                                    <span>Ontario Toronto</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="col-md-3 popularProgramsSectionItem">
+                                            <div class="row popularProgramsSectionItemInner mx-2">
+                                                <div class="col-12 popularProgramsSectionItemImg px-0">
+                                                    <img src="./assets/img/popularPrograms2.png" alt="popularPrograms2">
+                                                </div>
+                                                <div class="col-12 popularProgramsSectionItemTitle">CANADA</div>
+                                                <div class="col-12 popularProgramsSectionItemLocation">Centennial College</div>
+                                                <div class="col-12 popularProgramsSectionItemLocate">
+                                                    <span>
+                                                        <img src="./assets/img/svg/locatorTheme1.svg" alt="locatorTheme1">
+                                                    </span>
+                                                    <span>Ontario Toronto</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="col-md-3 popularProgramsSectionItem">
+                                            <div class="row popularProgramsSectionItemInner mx-2">
+                                                <div class="col-12 popularProgramsSectionItemImg px-0">
+                                                    <img src="./assets/img/popularPrograms3.png" alt="popularPrograms3">
+                                                </div>
+                                                <div class="col-12 popularProgramsSectionItemTitle">CANADA</div>
+                                                <div class="col-12 popularProgramsSectionItemLocation">York University</div>
+                                                <div class="col-12 popularProgramsSectionItemLocate">
+                                                    <span>
+                                                        <img src="./assets/img/svg/locatorTheme1.svg" alt="locatorTheme1">
+                                                    </span>
+                                                    <span>Kitchener , Ontario</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="col-md-3 popularProgramsSectionItem">
+                                            <div class="row popularProgramsSectionItemInner mx-2">
+                                                <div class="col-12 popularProgramsSectionItemImg px-0">
+                                                    <img src="./assets/img/popularPrograms4.png" alt="popularPrograms4">
+                                                </div>
+                                                <div class="col-12 popularProgramsSectionItemTitle">CANADA</div>
+                                                <div class="col-12 popularProgramsSectionItemLocation">Algonquin College</div>
+                                                <div class="col-12 popularProgramsSectionItemLocate">
+                                                    <span>
+                                                        <img src="./assets/img/svg/locatorTheme1.svg" alt="locatorTheme1">
+                                                    </span>
+                                                    <span>Ontario Toronto</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
