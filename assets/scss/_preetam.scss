@@ -153,6 +153,160 @@
                     }
                 }
             }
+            & .mobMenuIcon {
+                margin-right: 28px;
+                & img {
+                    width: 16px;
+                    height: 10px;
+                }
+            }
+        }
+        .menuOffcanvas {
+            width: 280px !important;
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & img {
+                        width: 180px;
+                    }
+                }
+                & .btn-close {
+                    background-size: 0.8em;
+                }
+            }
+            & .offcanvas-body {
+                padding-top: 0;
+                & .linkItems {
+                    & .linkItem {
+                        padding: 7px 0px;
+                        & .linkAnchor {
+                            font-family: 'Roboto';
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #3C3C3C;
+                            transition: 0.3s ease;
+                            &:hover,
+                            &.active {
+                                color: #E32333;
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-footer {
+                & .contactBox {
+                    & .socialIcons {
+                        & .socialIcon {
+                            height: 16px;
+                            width: 16px;
+                            display: flex;
+                            & img {
+                                height: 16px;
+                                width: 16px;
+                            }
+                            &:nth-child(2) {
+                                margin: 0 12px;
+                            }
+                        }
+                    }
+                    & .callBtn {
+                        height: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: 'Roboto';
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #2C2C2C;
+                        & img {
+                            height: 16px;
+                            width: 15px;
+                            margin-right: 9px;
+                        }
+                    }
+                }
+                & .partnerBtn {
+                    height: 33px;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #E32333;
+                    border: 1px solid #E32333;
+                }
+                & .loginBtn {
+                    height: 33px;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                    background-color: #E32333;
+                    border: 1px solid #E32333;
+                }
+                & .consultationBtn {
+                    height: 58px;
+                    background: #E32333;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    padding: 0 17px;
+                    & img {
+                        height: 27px;
+                        width: 27px;
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+        .navbarStickyIcons {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            z-index: 9;
+            & .stickyIcon {
+                height: 35px;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                // width: 20px;
+                background-color: white;
+                transition: 0.3s ease;
+                padding: 3px 5px 3px 0;
+                transform: translateX(calc(100% - 35px));
+                & .stickyImg {
+                    height: 35px;
+                    width: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & img {
+                    height: 16px;
+                    width: 16px;
+                }
+                & .hiddenText {
+                    margin-left: 5px;
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #3C3C3C;
+                    opacity: 0;
+                    transition: 0.3s ease;
+                }
+                &:hover {
+                    transform: translateX(0);
+                    & .hiddenText {
+                        opacity: 1;
+                    }
+                }
+            }
         }
         .findProgramBox {
             height: 164px;
@@ -197,6 +351,84 @@
                 text-align: center;
                 color: #3C3C3C;
                 margin-bottom: 20px;
+            }
+        }
+        .footer {
+            background: #3A3A3A;
+            padding: 83px 0 33px 0;
+            & .topRow {
+                & .footerText {
+                    font-family: 'Gilroy-Medium';
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                    max-width: 221px;
+                }
+                & .linkItems {
+                    padding-left: 102px !important;
+                    & .linkItem {
+                        padding: 0 13px;
+                        & .linkAnchor {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                & .socialIcons {
+                    & .socialIcon {
+                        height: 16px;
+                        width: 16px;
+                        display: flex;
+                        & img {
+                            height: 16px;
+                            width: 16px;
+                        }
+                        &:nth-child(2) {
+                            margin: 0 21px;
+                        }
+                    }
+                }
+                & .footerDivider {
+                    margin-top: 20px;
+                    border-bottom: 1px solid #787878;
+                }
+            }
+            & .middleRow {
+                padding: 26px 0 98px 0;
+                & .footerLinkHeader {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    margin-bottom: 22px;
+                }
+                & .footerLinks {
+                    & .footerLink {
+                        & .footerAnchor {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #C1C1C1;
+                        }
+                        &:first-child {
+                            margin-bottom: 14px;
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .bottomText {
+                    font-family: 'Gilroy-Regular';
+                    font-size: 17px;
+                    line-height: 25px;
+                    color: #C5C5C5;
+                }
             }
         }
     }
@@ -316,15 +548,465 @@
                 }
             }
         }
+        .navbarStickyIcons {
+            display: block !important;
+        }
     }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        .topNavbar {
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        & .linkAnchor {
+                            &:hover,
+                            &.active {
+                            }
+                        }
+                        &.dropdown {
+                            & .dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                            & .dropdown-menu {
+                                & .dropdown-item {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .partnerBtn {
+                    &:hover {
+                    }
+                }
+                & .loginBtn {
+                    &:hover {
+                    }
+                }
+                & .contactBox {
+                    & .socialIcons {
+                        & .socialIcon {
+                            & img {
+                            }
+                            &:nth-child(2) {
+                            }
+                        }
+                    }
+                    & .callBtn {
+                        & img {
+                        }
+                    }
+                }
+                & .consultationBtn {
+                    & img {
+                    }
+                }
+            }
+            & .mobMenuIcon {
+                & img {
+                }
+            }
+        }
+        .footer {
+            & .topRow {
+                & .footerText {
+                    font-size: 20px;
+                }
+                & .linkItems {
+                    padding: 0 !important;
+                    & .linkItem {
+                        & .linkAnchor {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                & .socialIcons {
+                    & .socialIcon {
+                        & img {
+                        }
+                        &:nth-child(2) {
+                        }
+                    }
+                }
+                & .footerDivider {
+                }
+            }
+            & .middleRow {
+                & .footerLinkHeader {
+                    font-size: 14px;
+                }
+                & .footerLinks {
+                    & .footerLink {
+                        & .footerAnchor {
+                            font-size: 14px;
+                        }
+                        &:first-child {
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .bottomText {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        .topNavbar {
+            height: 86px;
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                        width: 207px;
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        & .linkAnchor {
+                            &:hover,
+                            &.active {
+                            }
+                        }
+                        &.dropdown {
+                            & .dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                            & .dropdown-menu {
+                                & .dropdown-item {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .partnerBtn {
+                    &:hover {
+                    }
+                }
+                & .loginBtn {
+                    &:hover {
+                    }
+                }
+                & .contactBox {
+                    & .socialIcons {
+                        & .socialIcon {
+                            & img {
+                            }
+                            &:nth-child(2) {
+                            }
+                        }
+                    }
+                    & .callBtn {
+                        & img {
+                        }
+                    }
+                }
+                & .consultationBtn {
+                    & img {
+                    }
+                }
+            }
+            & .mobMenuIcon {
+                & img {
+                }
+            }
+        }
+        .navbarStickyIcons {
+            display: none !important;
+        }
+        .footer {
+            padding: 29px 0 29px 0;
+            & .topRow {
+                & .footerText {
+                    margin-bottom: 25px;
+                }
+                & .linkItems {
+                    padding-left: 0 !important;
+                    margin-bottom: 25px !important;
+                    & .linkItem {
+                        padding: 8px 0;
+                        & .linkAnchor {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                & .socialIcons {
+                    & .socialIcon {
+                        & img {
+                        }
+                        &:nth-child(2) {
+                        }
+                    }
+                }
+                & .footerDivider {
+                    margin-top: 43px;
+                }
+            }
+            & .middleRow {
+                padding: 3px 0 23px 0;
+                & .footerLinkHeader {
+                    margin: 18px 0 12px 0;
+                    &.mobSpace {
+                        margin: 31px 0 12px 0;
+                    }
+                }
+                & .footerLinks {
+                    & .footerLink {
+                        & .footerAnchor {
+                            font-size: 14px;
+                        }
+                        &:first-child {
+                            margin-bottom: 18px;
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .bottomText {
+                    font-size: 14px;
+                    &.copyrighText {
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        .topNavbar {
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        & .linkAnchor {
+                            &:hover,
+                            &.active {
+                            }
+                        }
+                        &.dropdown {
+                            & .dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                            & .dropdown-menu {
+                                & .dropdown-item {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .partnerBtn {
+                    &:hover {
+                    }
+                }
+                & .loginBtn {
+                    &:hover {
+                    }
+                }
+                & .contactBox {
+                    & .socialIcons {
+                        & .socialIcon {
+                            & img {
+                            }
+                            &:nth-child(2) {
+                            }
+                        }
+                    }
+                    & .callBtn {
+                        & img {
+                        }
+                    }
+                }
+                & .consultationBtn {
+                    & img {
+                    }
+                }
+            }
+            & .mobMenuIcon {
+                & img {
+                }
+            }
+        }
+        .footer {
+            & .topRow {
+                & .footerText {
+                }
+                & .linkItems {
+                    & .linkItem {
+                        & .linkAnchor {
+                        }
+                    }
+                }
+                & .socialIcons {
+                    & .socialIcon {
+                        & img {
+                        }
+                        &:nth-child(2) {
+                        }
+                    }
+                }
+                & .footerDivider {
+                }
+            }
+            & .middleRow {
+                & .footerLinkHeader {
+                }
+                & .footerLinks {
+                    & .footerLink {
+                        & .footerAnchor {
+                        }
+                        &:first-child {
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .bottomText {
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        .topNavbar {
+            & .logoBox {
+                & .logoAnchor {
+                    & .logoImg {
+                    }
+                }
+            }
+            & .linkBox {
+                & .linkItems {
+                    & .linkItem {
+                        & .linkAnchor {
+                            &:hover,
+                            &.active {
+                            }
+                        }
+                        &.dropdown {
+                            & .dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                            & .dropdown-menu {
+                                & .dropdown-item {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnBox {
+                & .partnerBtn {
+                    &:hover {
+                    }
+                }
+                & .loginBtn {
+                    &:hover {
+                    }
+                }
+                & .contactBox {
+                    & .socialIcons {
+                        & .socialIcon {
+                            & img {
+                            }
+                            &:nth-child(2) {
+                            }
+                        }
+                    }
+                    & .callBtn {
+                        & img {
+                        }
+                    }
+                }
+                & .consultationBtn {
+                    & img {
+                    }
+                }
+            }
+            & .mobMenuIcon {
+                & img {
+                }
+            }
+        }
+        .footer {
+            & .topRow {
+                & .footerText {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                & .linkItems {
+                    & .linkItem {
+                        padding: 5px 0;
+                        & .linkAnchor {
+                            font-size: 12px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+                & .socialIcons {
+                    & .socialIcon {
+                        & img {
+                        }
+                        &:nth-child(2) {
+                        }
+                    }
+                }
+                & .footerDivider {
+                }
+            }
+            & .middleRow {
+                & .footerLinkHeader {
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+                & .footerLinks {
+                    & .footerLink {
+                        & .footerAnchor {
+                            font-size: 12px;
+                            line-height: 19px;
+                        }
+                        &:first-child {
+                        }
+                    }
+                }
+            }
+            & .bottomRow {
+                & .bottomText {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 
 
 [data-bs-theme=dark] {
