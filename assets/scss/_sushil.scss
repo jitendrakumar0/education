@@ -9,6 +9,8 @@
             & .heroInner {
                 padding: 157px 0px;
                 & .leftPart {
+                    display: flex;
+                    align-items: center;
                     & .heroHeading {
                         font-family: 'Gilroy-Bold';
                         font-size: 50px;
@@ -267,6 +269,9 @@
                             }
                         }
                     }
+                    & .imgSide {
+                        width: 458px;
+                    }
                 }
             }
         }
@@ -330,19 +335,867 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+        & .heroSection {
+            & .heroInner {
+                & .leftPart {
+                    & .heroHeading {
+                    }
+                    & .heroText {
+                    }
+                    & .startApplicationBtn {
+                        &:hover {
+                        }
+                    }
+                    & .admissionReqBtn {
+                        &:hover {
+                        }
+                    }
+                }
+                & .rightPart {
+                    & .rightPartInner {
+                        & .rightHeading {
+                        }
+                        & .rightSubHeading {
+                            & span {
+                            }
+                        }
+                        & .programFacts {
+                            & .programFactsInner {
+                                & .imgOuter {
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                    }
+                                    & .boldHeading {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            & .sectionSecondInner {
+                & .programSection {
+                    & .textSide {
+                        padding-right: 68px !important;
+                        & .proHeading {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .proPra {
+                        }
+                    }
+                    & .imgSide {
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                    }
+                    & .textSide {
+                        & .proHeading {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .graduatesBox {
+                            & .graduatesBoxInner {
+                                & .graduatesBoxHeading {
+                                }
+                                & .graduatesBoxSubHeading {
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {
+                        }
+                        & .proPra {
+                            &.marginClass {
+                            }
+                        }
+                        & .customPra {
+                        }
+                        & .lastPra {
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        padding-right: 82px !important;
+                        & .proHeading {
+                        }
+                        & .proPra {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .customPra {
+                            & span {
+                            }
+                            &.lastPra {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            & .sectionInner {
+                & .imgOuter {
+                }
+                & .sectionHeading {
+                }
+                & .sectionPra {
+                }
+                & .visaRequirmentBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(xl) {
+        & .heroSection {
+            & .heroInner {
+                & .leftPart {
+                    & .heroHeading {
+                        font-size: 38px;
+                    }
+                    & .heroText {
+                        font-size: 19px;
+                        line-height: 26px;
+                    }
+                    & .startApplicationBtn {                     
+                        width: 170px;
+                        height: 50px;
+                        font-size: 16px;
+                        &:hover {
+                        }
+                    }
+                    & .admissionReqBtn {
+                        height: 50px;
+                        width: 230px;
+                        font-size: 16px;
+                        &:hover {
+                        }
+                    }
+                }
+                & .rightPart {
+                    max-width: 425px;
+                    & .rightPartInner {
+                        padding: 25px 35px;
+                        & .rightHeading {
+                            font-size: 30px;
+                            line-height: 36px;
+                        }
+                        & .rightSubHeading {
+                            font-size: 19px;
+                            line-height: 26px;
+                            & span {
+                            }
+                        }
+                        & .programFacts {
+                            & .programFactsInner {
+                                & .imgOuter {
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
+                                    & .boldHeading {
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            & .sectionSecondInner {
+                & .programSection {
+                    & .textSide {
+                        & .proHeading {
+                            font-size: 36px;
+                        }
+                        & .proSubHeading {
+                            font-size: 16px;
+                        }
+                        & .proPra {
+                            font-size: 16px;
+                            max-width: 490px;
+                        }
+                    }
+                    & .imgSide {
+                        width: 400px;
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                        & img {
+                            object-fit: contain;
+                            object-position: top center;
+                        }
+                    }
+                    & .textSide {
+                        & .proHeading {
+                            font-size: 36px;
+                            line-height: 34px;
+                            margin-bottom: 12px;
+                        }
+                        & .proSubHeading {
+                            font-size: 23px;
+                            margin-bottom: 12px;
+                        }
+                        & .graduatesBox {
+                            margin-bottom: 20px;
+                            & .graduatesBoxInner {
+                                & .graduatesBoxHeading {
+                                    font-size: 16px;
+                                }
+                                & .graduatesBoxSubHeading {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {
+                            font-size: 21px;
+                        }
+                        & .proPra {
+                            font-size: 16px;
+                            line-height: 22px;
+                            &.marginClass {
+                                margin-bottom: 15px;
+                            }
+                        }
+                        & .customPra {
+                            font-size: 16px;
+                            margin-bottom: 25px;
+                            line-height: 22px;
+                        }
+                        & .lastPra {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        & .proHeading {
+                            font-size: 34px;
+                            line-height: 36px;
+                        }
+                        & .proPra {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                        & .proSubHeading {
+                            font-size: 23px;
+                        }
+                        & .customPra {
+                            font-size: 16px;
+                            line-height: 22px;
+                            & span {
+                            }
+                            &.lastPra {
+                            }
+                        }
+                    }
+                    & .imgSide {
+                        & img {
+                            object-fit: contain;
+                            object-position: top center;
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            & .sectionInner {
+                & .imgOuter {
+                }
+                & .sectionHeading {
+                }
+                & .sectionPra {
+                }
+                & .visaRequirmentBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        & .heroSection {
+            & .heroInner {
+                max-width: 600px;
+                margin: auto;
+                position: relative;
+                & .leftPart {
+                    & .heroHeading {
+                    }
+                    & .heroText {
+                        max-width: 555px;
+                    }
+                    & .startApplicationBtn {
+                        &:hover {
+                        }
+                    }
+                    & .admissionReqBtn {
+                        &:hover {
+                        }
+                    }
+                }
+                & .rightPart {
+                    max-width: 100%;
+                    position: absolute;
+                    bottom: -45%;
+                    & .rightPartInner {
+                        & .rightHeading {
+                        }
+                        & .rightSubHeading {
+                            & span {
+                            }
+                        }
+                        & .programFacts {
+                            & .programFactsInner {
+                                & .imgOuter {
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                    }
+                                    & .boldHeading {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            padding-top: 350px;
+            padding-bottom: 50px;
+            & .sectionSecondInner {
+                & .programSection {
+                    & .textSide {
+                        padding-right: 40px !important;
+                        & .proHeading {
+                            font-size: 26px;
+                            line-height: 30px;
+                            margin-bottom: 15px;
+                        }
+                        & .proSubHeading {
+                            font-size: 15px;
+                            line-height: 20px;
+                            margin-bottom: 20px;
+                        }
+                        & .proPra {
+                            line-height: 20px;
+                            font-size: 15px;
+                        }
+                    }
+                    & .imgSide {
+                        width: 350px;
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                        width: 350px;
+                    }
+                    & .textSide {
+                        padding-left: 40px !important;
+                        & .proHeading {
+                            font-size: 26px;
+                            line-height: 30px;
+                            margin-bottom: 12px;
+                        }
+                        & .proSubHeading {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                            line-height: 25px;
+                        }
+                        & .graduatesBox {
+                            & .graduatesBoxInner {
+                                & .graduatesBoxHeading {
+                                }
+                                & .graduatesBoxSubHeading {
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {
+                            font-size: 18px;
+                            line-height: 22px;
+                            margin-bottom: 12px;
+                        }
+                        & .proPra {
+                            font-size: 15px;
+                            line-height: 20px;
+                            margin-bottom: 5px;
+                            &.marginClass {
+                            }
+                        }
+                        & .customPra {
+                            font-size: 16px;
+                            margin-bottom: 20px;
+                            line-height: 22px;
+                        }
+                        & .lastPra {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        padding-right: 40px !important;
+                        & .proHeading {
+                            font-size: 26px;
+                            line-height: 30px;
+                        }
+                        & .proPra {
+                        }
+                        & .proSubHeading {
+                            font-size: 20px;
+                            line-height: 23px;
+                            margin-bottom: 12px;
+                        }
+                        & .customPra {
+                            & span {
+                            }
+                            &.lastPra {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    & .imgSide {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            & .sectionInner {
+                & .imgOuter {
+                }
+                & .sectionHeading {
+                }
+                & .sectionPra {
+                }
+                & .visaRequirmentBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        & .heroSection {
+            padding: 0px 28px !important;
+            & .heroInner {
+                padding-top: 57px;
+                padding-bottom: 88px;
+                & .leftPart {
+                    & .heroHeading {
+                    }
+                    & .heroText {
+                    }
+                    & .startApplicationBtn {
+                        &:hover {
+                        }
+                    }
+                    & .admissionReqBtn {
+                        &:hover {
+                        }
+                    }
+                    & .chooseAProgramBtn {
+                        font-family: "Gilroy-Bold";
+                        font-size: 14px;
+                        line-height: 14px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        border: 2px solid #e91515;
+                        width: 160px;
+                        height: 45px;
+                        background: #e91515;
+                        border-radius: 5px;
+                        &:hover {
+                            background-color: #FFFFFF;
+                            color: #E91515;
+                        }
+                    }
+                }
+                & .rightPart {
+                    bottom: -67%;
+                    & .rightPartInner {
+                        & .rightHeading {
+                        }
+                        & .rightSubHeading {
+                            & span {
+                            }
+                        }
+                        & .programFacts {
+                            & .programFactsInner {
+                                & .imgOuter {
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                    }
+                                    & .boldHeading {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            padding-left: 28px;
+            padding-right: 28px;
+            & .sectionSecondInner {
+                gap: 60px;
+                & .programSection {
+                    & .textSide {
+                        padding-top: 30px !important;
+                        padding-right: 0 !important;
+                        & .proHeading {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .proPra {
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                    & .imgSide {
+                        width: 100%;
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                        width: 100%;
+                    }
+                    & .textSide {
+                        padding-left: 0px !important;
+                        padding-top: 30px;
+                        & .proHeading {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .graduatesBox {
+                            & .graduatesBoxInner {
+                                & .graduatesBoxHeading {
+                                }
+                                & .graduatesBoxSubHeading {
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {
+                        }
+                        & .proPra {
+                            &.marginClass {
+                            }
+                        }
+                        & .customPra {
+                        }
+                        & .lastPra {
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        padding-right: 0px !important;
+                        padding-top: 30px;
+                        & .proHeading {
+                        }
+                        & .proPra {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .customPra {
+                            & span {
+                            }
+                            &.lastPra {
+                            }
+                        }
+                    }
+                    & .imgSide  {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            & .sectionInner {
+                & .imgOuter {
+                    width: 68px;
+                    height: 68px;
+                }
+                & .sectionHeading {
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+                & .sectionPra {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+                & .visaRequirmentBtn {
+                    height: 50px;
+                    font-size: 16px;
+                    width: 280px;
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        & .heroSection {
+            & .heroInner {
+                padding-top: 47px;
+                padding-bottom: 78px;
+                & .leftPart {
+                    max-width: 365px;
+                    width: 100%;
+                    padding: 0px 19px !important;
+                    & .heroHeading {
+                        font-size: 20px;
+                    }
+                    & .heroText {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                    & .startApplicationBtn {
+                        &:hover {
+                        }
+                    }
+                    & .admissionReqBtn {
+                        &:hover {
+                        }
+                    }
+                    & .chooseAProgramBtn {
+                        font-size: 12px;
+                        line-height: 14px;
+                        width: 128px;
+                        height: 30px;
+                        &:hover {
+                        }
+                    }
+                }
+                & .rightPart {
+                    bottom: -200px;
+                    & .rightPartInner {
+                        padding: 24px 16px 20px 25px;
+                        & .rightHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 22px;
+                            line-height: 26px;
+                        }
+                        & .rightSubHeading {
+                            font-size: 14px;
+                            line-height: 19px;
+                            max-width: 190px;
+                            & span {
+                            }
+                        }
+                        & .programFacts {
+                            row-gap: 10px;
+                            & .programFactsInner {
+                                & .imgOuter {
+                                    width: 16px;
+                                    height: 16px;
+                                    margin-top: 0px;
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                    }
+                                    & .boldHeading {
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            padding-top: 250px;
+            & .sectionSecondInner {
+                gap: 30px;
+                & .programSection {
+                    & .textSide {
+                        padding-top: 15px !important;
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #1C1C1C;
+                            margin-bottom: 12px;
+                        }
+                        & .proSubHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #3C3C3C;
+                            margin-bottom: 12px;
+                        }
+                        & .proPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 11px;
+                            line-height: 19px;
+                            /* or 173% */
+
+
+                            color: #3C3C3C
+                        }
+                    }
+                    & .imgSide {
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                    }
+                    & .textSide {
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #1C1C1C;
+                        }
+                        & .proSubHeading {font-family: 'Gilroy-Medium';
+                            font-size: 16px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                        }
+                        & .graduatesBox {
+                            & .graduatesBoxInner {
+                                & .graduatesBoxHeading {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                }
+                                & .graduatesBoxSubHeading {
+                                    font-family: 'Gilroy-Regular';
+                                    font-size: 12px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {font-family: 'Gilroy-SemiBold';
+                            font-size: 14px;
+                            line-height: 25px;
+                            color: #1C1C1C;
+                        }
+                        & .proPra {font-family: 'Gilroy-Regular';
+                            font-size: 12px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 6px;
+                            &.marginClass {
+                                margin-bottom: 15px;
+                            }
+                        }
+                        & .customPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 12px;
+                            line-height: 19px;
+                            color: #3C3C3C;
+                        }
+                        & .lastPra {font-family: 'Gilroy-Regular';
+                            font-size: 12px;
+                            line-height: 19px;
+                            color: #3C3C3C;
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        padding-top: 40px;
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #1C1C1C;
+                        }
+                        & .proPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 12px;
+                            line-height: 19px;
+                            color: #3C3C3C;
+                        }
+                        & .proSubHeading {font-family: 'Gilroy-Medium';
+                            font-size: 14px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                        }
+                        & .customPra {font-family: 'Gilroy-Medium';
+                            font-size: 12px;
+                            line-height: 25px;
+                            color: #2C2C2C;
+                            & span {
+                            }
+                            &.lastPra {
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            padding: 65px 27px;
+            padding-top: 65px;
+            padding-bottom: 65px;
+            & .sectionInner {
+                & .imgOuter {
+                    width: 54px;
+                    height: 54px;
+                }
+                & .sectionHeading {
+                    font-family: 'Gilroy-SemiBold';
+                    font-size: 22px;
+                    line-height: 26px;
+                    text-align: center;
+                    color: #000000;
+                }
+                & .sectionPra {
+                    font-family: 'Gilroy-Regular';
+                    font-size: 12px;
+                    line-height: 19px;
+                    text-align: center;
+                    color: #3C3C3C;
+                }
+                & .visaRequirmentBtn {
+                    width: 241px;
+                    height: 30px;
+                    font-family: 'Gilroy-Bold';
+                    font-size: 14px;
+                    line-height: 16px;
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
 }
 
 [data-bs-theme=dark] {
-    & [data-page-name=signin] {
+    & [data-page-name=studyaBoardPageOne] {
         @include dark-media-breakpoint(basic) {
             
         }
@@ -374,4 +1227,1647 @@
 }
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  Studya Board Page-1 start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  Studya Board Page-2 start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=studyaBoardPageTwo] {
+    @include media-breakpoint(basic) {
+        & .heroSection {
+            background-image: url('../img/studya-broad-banner2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            & .heroInner {
+                padding: 145px 0px 245px 0px;
+                & .leftPart {
+                    display: flex;
+                    align-items: center;
+                    & .heroHeading {
+                        font-family: 'Gilroy-Bold';
+                        font-size: 50px;
+                        line-height: 107.8%;
+                        color: #FFFFFF;
+                        margin-bottom: 20px;
+                        max-width: 586px;
+                        & span {
+                            font-family: 'Gilroy-Regular';
+                        }
+                    }
+                    & .heroText {
+                        font-family: 'Gilroy-Regular';
+                        font-size: 25px;
+                        line-height: 34px;
+                        color: #FFFFFF;
+                        margin-bottom: 20px;
+                        max-width: 632px;
+                    }
+                    & .startApplicationBtn {
+                        text-decoration: none;
+                        font-family: 'Gilroy-Bold';
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #FFFFFF;
+                        background: #E91515;
+                        border-radius: 5px;
+                        display: block;
+                        margin-right: 20px;
+                        border: 2px solid #E91515;
+                        width: 216px;
+                        height: 56px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            background-color: #FFFFFF;
+                            color: #E91515;
+                        }
+                    }
+                    & .admissionReqBtn {
+                        font-family: 'Gilroy-Bold';
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #E91515;
+                        background: #FFFFFF;
+                        border-radius: 5px;
+                        border: 2px solid #FFFFFF;
+                        height: 56px;
+                        width: 288px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            background-color: #E91515;
+                            color: #FFFFFF;
+                            border-color: #E91515;
+                        }
+                    }
+                }
+                & .rightPart {
+                    max-width: 480px;
+                    background: #FFFFFF;
+                    border-left: 3px solid #E91515;
+                    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+                    & .rightPartInner {
+                        padding: 30px 25px 30px 45px;
+                        & .rightHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 35px;
+                            line-height: 41px;
+                            color: #1C1C1C;
+                            margin-bottom: 8px;
+                        }
+                        & .rightSubHeading {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 22px;
+                            line-height: 34px;
+                            color: #000000;
+                            margin-bottom: 42px;
+                            max-width: 298px;
+                            & span {
+                                color: #E91515;
+                            }
+                        }
+                        & .programFacts {
+                            & .programFactsInner {
+                                align-items: start;
+                                gap: 5px;
+                                & .imgOuter {
+                                    width: 24px;
+                                    height: 24px;
+                                    margin-top: 5px;
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                        font-family: 'Gilroy-Regular';
+                                        font-size: 18px;
+                                        line-height: 34px;
+                                        color: #7A7A7A;
+                                    }
+                                    & .boldHeading {
+                                        font-family: 'Gilroy-SemiBold';
+                                        font-size: 20px;
+                                        line-height: 34px;
+                                        color: #1C1C1C;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .upperSection {
+                position: absolute;
+                bottom: 0;
+                transform: translateY(50%);
+                width: 100%;
+                & .upperSectionInner {
+                    padding: 30px 50px;
+                    background: #FFFFFF;
+                    border-left: 3px solid #E91515;
+                    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+                    & .upperSecHeading {
+                        font-family: 'Gilroy-SemiBold';
+                        font-size: 28px;
+                        line-height: 33px;
+                        color: #1C1C1C;
+                        margin-bottom: 5px;
+                    }
+                    & .upperSecSubHeading {
+                        font-family: 'Gilroy-Regular';
+                        font-size: 17px;
+                        line-height: 25px;
+                        color: #3C3C3C;
+                        margin-bottom: 12px;
+                    }
+                    & .uperSecFormOuter {
+                        & .uperSecFormInner {
+                            gap: 20px;
+                            & .formRadioInputOuter {
+                                & .radioCustomLabel {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-size: 17px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                    margin-bottom: 5px;
+                                }
+                                & .form-check {
+                                    margin: 0;
+                                    border-radius: 5px;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 0;
+                                    & .form-check-input {
+                                        visibility: hidden;
+                                        display: none;
+                                        &:checked+.form-check-label {
+                                            background-color: #E91515;
+                                            color: #FFFFFF;
+                                            border-color: #E91515;
+                                        }
+                                    }
+                                    & .form-check-label {
+                                        cursor: pointer;
+                                        font-family: 'Gilroy-Medium';
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                        color: #7C7C7C;
+                                        width: 200px;
+                                        height: 40px;
+                                        border: 1px solid #3C3C3C;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        &.leftInput {
+                                            border-radius: 5px 0px 0px 5px;
+                                        }
+                                        &.rightInput {
+                                            border-radius: 0px 5px 5px 0px;
+                                        }
+                                    }
+                                }
+                            }
+                            & .subjectInput {
+                                & .form-label {font-family: 'Gilroy-SemiBold';
+                                    font-size: 17px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                    margin-bottom: 5px;
+                                }
+                                & .form-control {
+                                    font-family: 'Gilroy-Medium';
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #7C7C7C;
+                                    border: 1px solid #3C3C3C;
+                                    border-radius: 5px;
+                                    width: 100%;
+                                    height: 40px;
+                                    box-shadow: none;
+                                    &:placeholder-shown {
+                                        font-family: 'Gilroy-Medium';
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                        color: #7C7C7C;
+                                    }
+                                }
+                            }
+                            & .findYourProgramMatchesBtn {
+                                font-family: 'Gilroy-Medium';
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #FFFFFF;
+                                border: 2px solid #E91515;
+                                background: #E91515;
+                                border-radius: 5px;
+                                width: 260px;
+                                height: 40px;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                &:hover {
+                                    background-color: #FFFFFF;
+                                    color: #E91515;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            background: #F5F5F5;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            & .sectionSecondInner {
+                gap: 80px;
+                & .programSection {
+                    & .textSide {
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 42px;
+                            line-height: 49px;
+                            color: #1C1C1C;
+                            margin-bottom: 20px;
+                        }
+                        & .proSubHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 15px;
+                        }
+                        & .proPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            max-width: 674px;
+                        }
+                    }
+                    & .imgSide {
+                        width: 458px;
+                        height: auto;
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                        width: 458px;
+                    }
+                    & .textSide {
+                        padding-left: 68px !important;
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 42px;
+                            line-height: 49px;
+                            color: #1C1C1C;
+                            margin-bottom: 12px;
+                        }
+                        & .proSubHeading {
+                            font-family: 'Gilroy-Medium';
+                            font-size: 25px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 16px;
+                        }
+                        & .graduatesBox {
+                            margin-bottom: 40px;
+                            & .graduatesBoxInner {
+                                margin-right: 43px;
+                                & .graduatesBoxHeading {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-size: 17px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                    margin-bottom: 5px;
+                                }
+                                & .graduatesBoxSubHeading {
+                                    font-family: 'Gilroy-Regular';
+                                    font-size: 17px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 22px;
+                            line-height: 25px;
+                            color: #1C1C1C;
+                            margin-bottom: 14px;
+                        }
+                        & .proPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 5px;
+                            max-width: 660px;
+                            &.marginClass {
+                                margin-bottom: 20px;
+                            }
+                        }
+                        & .customPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 40px;
+                        }
+                        & .lastPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 42px;
+                            line-height: 49px;
+                            color: #1C1C1C;
+                            margin-bottom: 12px;
+                        }
+                        & .proPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 12px;
+                            max-width: 660px;
+                        }
+                        & .proSubHeading {
+                            font-family: 'Gilroy-Medium';
+                            font-size: 25px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 14px;
+                        }
+                        & .customPra {
+                            font-family: 'Gilroy-Medium';
+                            font-size: 17px;
+                            line-height: 25px;
+                            color: #2C2C2C;
+                            margin-bottom: 5px;
+                            & span {
+                                font-family: 'Gilroy-Regular';
+                            }
+                            &.lastPra {
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+                    & .imgSide {
+                        width: 458px;
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            & .sectionInner {
+                & .imgOuter {
+                    width: 78px;
+                    height: 78px;
+                }
+                & .sectionHeading {
+                    font-family: 'Gilroy-SemiBold';
+                    font-size: 42px;
+                    line-height: 49px;
+                    text-align: center;
+                    color: #000000;
+                    margin-bottom: 15px;
+                    max-width: 576px;
+                }
+                & .sectionPra {
+                    font-family: 'Gilroy-Regular';
+                    font-size: 17px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: #3C3C3C;
+                    margin-bottom: 15px;
+                    max-width: 894px;
+                }
+                & .visaRequirmentBtn {
+                    font-family: 'Gilroy-Bold';
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #FFFFFF;
+                    width: 305px;
+                    height: 56px;
+                    background: #E91515;
+                    border-radius: 5px;
+                    border: 2px solid #E91515;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover {
+                        background-color: #FFFFFF;
+                        color: #E91515;
+                    }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {
+        & .heroSection {
+            & .heroInner {
+                & .leftPart {
+                    & .heroHeading {
+                    }
+                    & .heroText {
+                    }
+                    & .startApplicationBtn {
+                        &:hover {
+                        }
+                    }
+                    & .admissionReqBtn {
+                        &:hover {
+                        }
+                    }
+                }
+                & .rightPart {
+                    & .rightPartInner {
+                        & .rightHeading {
+                        }
+                        & .rightSubHeading {
+                            & span {
+                            }
+                        }
+                        & .programFacts {
+                            & .programFactsInner {
+                                & .imgOuter {
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                    }
+                                    & .boldHeading {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            & .sectionSecondInner {
+                & .programSection {
+                    & .textSide {
+                        padding-right: 68px !important;
+                        & .proHeading {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .proPra {
+                        }
+                    }
+                    & .imgSide {
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                    }
+                    & .textSide {
+                        & .proHeading {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .graduatesBox {
+                            & .graduatesBoxInner {
+                                & .graduatesBoxHeading {
+                                }
+                                & .graduatesBoxSubHeading {
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {
+                        }
+                        & .proPra {
+                            &.marginClass {
+                            }
+                        }
+                        & .customPra {
+                        }
+                        & .lastPra {
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        padding-right: 82px !important;
+                        & .proHeading {
+                        }
+                        & .proPra {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .customPra {
+                            & span {
+                            }
+                            &.lastPra {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            & .sectionInner {
+                & .imgOuter {
+                }
+                & .sectionHeading {
+                }
+                & .sectionPra {
+                }
+                & .visaRequirmentBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        & .heroSection {
+            & .heroInner {
+                & .leftPart {
+                    & .heroHeading {
+                        font-size: 38px;
+                    }
+                    & .heroText {
+                        font-size: 19px;
+                        line-height: 26px;
+                    }
+                    & .startApplicationBtn {                     
+                        width: 170px;
+                        height: 50px;
+                        font-size: 16px;
+                        &:hover {
+                        }
+                    }
+                    & .admissionReqBtn {
+                        height: 50px;
+                        width: 230px;
+                        font-size: 16px;
+                        &:hover {
+                        }
+                    }
+                }
+                & .rightPart {
+                    max-width: 425px;
+                    & .rightPartInner {
+                        padding: 25px 35px;
+                        & .rightHeading {
+                            font-size: 30px;
+                            line-height: 36px;
+                        }
+                        & .rightSubHeading {
+                            font-size: 19px;
+                            line-height: 26px;
+                            & span {
+                            }
+                        }
+                        & .programFacts {
+                            row-gap: 5px;
+                            & .programFactsInner {
+                                & .imgOuter {
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
+                                    & .boldHeading {
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .upperSection {
+                & .upperSectionInner {
+                    padding: 30px 40px;
+                    & .upperSecHeading {
+                        font-size: 26px;
+                        line-height: 30px;
+                    }
+                    & .upperSecSubHeading {
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                    & .uperSecFormOuter {
+                        & .uperSecFormInner {
+                            & .formRadioInputOuter {
+                                & .radioCustomLabel {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                                & .form-check {
+                                    & .form-check-input {
+                                        &:checked+.form-check-label {
+                                        }
+                                    }
+                                    & .form-check-label {
+                                        font-size: 15px;
+                                        line-height: 18px;
+                                        width: 160px;
+                                        &.leftInput {
+                                        }
+                                        &.rightInput {
+                                        }
+                                    }
+                                }
+                            }
+                            & .subjectInput {
+                                & .form-label {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                                & .form-control {
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    &:placeholder-shown {
+                                        font-size: 15px;
+                                        line-height: 18px;
+                                    }
+                                }
+                            }
+                            & .findYourProgramMatchesBtn {    
+                                width: 230px;
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            & .sectionSecondInner {
+                & .programSection {
+                    & .textSide {
+                        & .proHeading {
+                            font-size: 36px;
+                        }
+                        & .proSubHeading {
+                            font-size: 16px;
+                        }
+                        & .proPra {
+                            font-size: 16px;
+                            max-width: 490px;
+                        }
+                    }
+                    & .imgSide {
+                        width: 400px;
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                        & img {
+                            object-fit: contain;
+                            object-position: top center;
+                        }
+                    }
+                    & .textSide {
+                        & .proHeading {
+                            font-size: 36px;
+                            line-height: 34px;
+                            margin-bottom: 12px;
+                        }
+                        & .proSubHeading {
+                            font-size: 23px;
+                            margin-bottom: 12px;
+                        }
+                        & .graduatesBox {
+                            margin-bottom: 20px;
+                            & .graduatesBoxInner {
+                                & .graduatesBoxHeading {
+                                    font-size: 16px;
+                                }
+                                & .graduatesBoxSubHeading {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {
+                            font-size: 21px;
+                        }
+                        & .proPra {
+                            font-size: 16px;
+                            line-height: 22px;
+                            &.marginClass {
+                                margin-bottom: 15px;
+                            }
+                        }
+                        & .customPra {
+                            font-size: 16px;
+                            margin-bottom: 25px;
+                            line-height: 22px;
+                        }
+                        & .lastPra {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        & .proHeading {
+                            font-size: 34px;
+                            line-height: 36px;
+                        }
+                        & .proPra {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                        & .proSubHeading {
+                            font-size: 23px;
+                        }
+                        & .customPra {
+                            font-size: 16px;
+                            line-height: 22px;
+                            & span {
+                            }
+                            &.lastPra {
+                            }
+                        }
+                    }
+                    & .imgSide {
+                        & img {
+                            object-fit: contain;
+                            object-position: top center;
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            & .sectionInner {
+                & .imgOuter {
+                }
+                & .sectionHeading {
+                }
+                & .sectionPra {
+                }
+                & .visaRequirmentBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        & .heroSection {
+            & .heroInner {
+                padding: 100px 0px 150px 0px;
+                max-width: 600px;
+                margin: auto;
+                position: relative;
+                & .leftPart {
+                    & .heroHeading {
+                    }
+                    & .heroText {
+                        max-width: 555px;
+                    }
+                    & .startApplicationBtn {
+                        &:hover {
+                        }
+                    }
+                    & .admissionReqBtn {
+                        &:hover {
+                        }
+                    }
+                }
+                & .rightPart {
+                    max-width: 100%;
+                    position: absolute;
+                    bottom: -40%;
+                    & .rightPartInner {
+                        & .rightHeading {
+                        }
+                        & .rightSubHeading {
+                            & span {
+                            }
+                        }
+                        & .programFacts {
+                            & .programFactsInner {
+                                & .imgOuter {
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                    }
+                                    & .boldHeading {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .upperSection {
+                transform: translateY(240%);
+                & .upperSectionInner {
+                    padding: 25px 30px;
+                    & .upperSecHeading {
+                        font-size: 23px;
+                        line-height: 26px;
+                    }
+                    & .upperSecSubHeading {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                    & .uperSecFormOuter {
+                        & .uperSecFormInner {
+                            gap: 10px;
+                            & .formRadioInputOuter {
+                                & .radioCustomLabel {
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                                & .form-check {
+                                    & .form-check-input {
+                                        &:checked+.form-check-label {
+                                        }
+                                    }
+                                    & .form-check-label {
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        width: 130px;
+                                        &.leftInput {
+                                        }
+                                        &.rightInput {
+                                        }
+                                    }
+                                }
+                            }
+                            & .subjectInput {
+                                & .form-label {
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                                & .form-control {
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    &:placeholder-shown {
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                    }
+                                }
+                            }
+                            & .findYourProgramMatchesBtn {
+                                font-size: 15px;
+                                line-height: 18px;
+                                width: 210px;
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            padding-top: 350px;
+            padding-bottom: 50px;
+            & .sectionSecondInner {
+                & .programSection {
+                    & .textSide {
+                        padding-right: 40px !important;
+                        & .proHeading {
+                            font-size: 26px;
+                            line-height: 30px;
+                            margin-bottom: 15px;
+                        }
+                        & .proSubHeading {
+                            font-size: 15px;
+                            line-height: 20px;
+                            margin-bottom: 20px;
+                        }
+                        & .proPra {
+                            line-height: 20px;
+                            font-size: 15px;
+                        }
+                    }
+                    & .imgSide {
+                        width: 350px;
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                        width: 350px;
+                    }
+                    & .textSide {
+                        padding-left: 40px !important;
+                        & .proHeading {
+                            font-size: 26px;
+                            line-height: 30px;
+                            margin-bottom: 12px;
+                        }
+                        & .proSubHeading {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                            line-height: 25px;
+                        }
+                        & .graduatesBox {
+                            & .graduatesBoxInner {
+                                & .graduatesBoxHeading {
+                                }
+                                & .graduatesBoxSubHeading {
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {
+                            font-size: 18px;
+                            line-height: 22px;
+                            margin-bottom: 12px;
+                        }
+                        & .proPra {
+                            font-size: 15px;
+                            line-height: 20px;
+                            margin-bottom: 5px;
+                            &.marginClass {
+                            }
+                        }
+                        & .customPra {
+                            font-size: 16px;
+                            margin-bottom: 20px;
+                            line-height: 22px;
+                        }
+                        & .lastPra {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        padding-right: 40px !important;
+                        & .proHeading {
+                            font-size: 26px;
+                            line-height: 30px;
+                        }
+                        & .proPra {
+                        }
+                        & .proSubHeading {
+                            font-size: 20px;
+                            line-height: 23px;
+                            margin-bottom: 12px;
+                        }
+                        & .customPra {
+                            & span {
+                            }
+                            &.lastPra {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    & .imgSide {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            & .sectionInner {
+                & .imgOuter {
+                }
+                & .sectionHeading {
+                }
+                & .sectionPra {
+                }
+                & .visaRequirmentBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        & .heroSection {
+            padding: 0px 28px !important;
+            & .heroInner {
+                padding-top: 57px;
+                padding-bottom: 88px;
+                & .leftPart {
+                    & .heroHeading {
+                    }
+                    & .heroText {
+                    }
+                    & .startApplicationBtn {
+                        &:hover {
+                        }
+                    }
+                    & .admissionReqBtn {
+                        font-size: 14px;
+                        line-height: 14px;
+                        height: 45px;
+                        width: 220px;
+                        &:hover {
+                        }
+                    }
+                    & .chooseAProgramBtn {
+                        font-family: "Gilroy-Bold";
+                        font-size: 14px;
+                        line-height: 14px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        border: 2px solid #e91515;
+                        width: 160px;
+                        height: 45px;
+                        background: #e91515;
+                        border-radius: 5px;
+                        margin-right: 20px;
+                        &:hover {
+                            background-color: #FFFFFF;
+                            color: #E91515;
+                        }
+                    }
+                }
+                & .rightPart {
+                    bottom: -52%;
+                    & .rightPartInner {
+                        & .rightHeading {
+                        }
+                        & .rightSubHeading {
+                            margin-bottom: 25px;
+                            & span {
+                            }
+                        }
+                        & .programFacts {
+                            & .programFactsInner {
+                                & .imgOuter {
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                    }
+                                    & .boldHeading {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .upperSection {
+                transform: translateY(185%);
+                & .upperSectionInner {
+                    padding: 30px 28px;
+                    & .upperSecHeading {
+                        font-size: 23px;
+                        line-height: 26px;
+                    }
+                    & .upperSecSubHeading {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                    & .uperSecFormOuter {
+                        & .uperSecFormInner {
+                            gap: 10px;
+                            & .formRadioInputOuter {
+                                width: 100%;
+                                & .radioCustomLabel {
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                                & .form-check {
+                                    & .form-check-input {
+                                        &:checked+.form-check-label {
+                                        }
+                                    }
+                                    & .form-check-label {
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        width: 100%;
+                                        &.leftInput {
+                                        }
+                                        &.rightInput {
+                                        }
+                                    }
+                                }
+                            }
+                            & .subjectInput {
+                                width: 100%;
+                                & .form-label {
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                                & .form-control {
+                                    width: 100%;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    &:placeholder-shown {
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                    }
+                                }
+                            }
+                            & .findYourProgramMatchesBtn {
+                                font-size: 15px;
+                                line-height: 18px;
+                                width: 100%;
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            padding-left: 28px;
+            padding-right: 28px;
+            & .sectionSecondInner {
+                gap: 60px;
+                & .programSection {
+                    & .textSide {
+                        padding-top: 30px !important;
+                        padding-right: 0 !important;
+                        & .proHeading {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .proPra {
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                    & .imgSide {
+                        width: 100%;
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                        width: 100%;
+                    }
+                    & .textSide {
+                        padding-left: 0px !important;
+                        padding-top: 30px;
+                        & .proHeading {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .graduatesBox {
+                            & .graduatesBoxInner {
+                                & .graduatesBoxHeading {
+                                }
+                                & .graduatesBoxSubHeading {
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {
+                        }
+                        & .proPra {
+                            &.marginClass {
+                            }
+                        }
+                        & .customPra {
+                        }
+                        & .lastPra {
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        padding-right: 0px !important;
+                        padding-top: 30px;
+                        & .proHeading {
+                        }
+                        & .proPra {
+                        }
+                        & .proSubHeading {
+                        }
+                        & .customPra {
+                            & span {
+                            }
+                            &.lastPra {
+                            }
+                        }
+                    }
+                    & .imgSide  {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            & .sectionInner {
+                & .imgOuter {
+                    width: 68px;
+                    height: 68px;
+                }
+                & .sectionHeading {
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+                & .sectionPra {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+                & .visaRequirmentBtn {
+                    height: 50px;
+                    font-size: 16px;
+                    width: 280px;
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        & .heroSection {
+            & .heroInner {
+                padding-top: 47px;
+                padding-bottom: 78px;
+                & .leftPart {
+                    padding: 0 !important;
+                    max-width: 365px;
+                    width: 100%;
+                    max-width: 100%;
+                    & .heroHeading {
+                        font-family: 'Gilroy-Bold';
+                        font-size: 20px;
+                        line-height: 107.8%;
+                        /* or 22px */
+
+
+                        color: #FFFFFF;
+                    }
+                    & .heroText {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                    & .startApplicationBtn {
+                        &:hover {
+                        }
+                    }
+                    & .admissionReqBtn {
+                        font-size: 12px;
+                        line-height: 14px;
+                        height: 30px;
+                        width: 179px;
+                        &:hover {
+                        }
+                    }
+                    & .chooseAProgramBtn {
+                        font-size: 12px;
+                        line-height: 14px;
+                        width: 128px;
+                        width: 128px;
+                        height: 30px;
+                        margin-right: 5px !important;
+                        margin-bottom: 10px;
+                        &:hover {
+                        }
+                    }
+                }
+                & .rightPart {
+                    bottom: -150px;
+                    & .rightPartInner {
+                        padding: 30px 20px 25px 28px;
+                        & .rightHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #1C1C1C;
+                            margin-bottom: 10px;
+                        }
+                        & .rightSubHeading {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #000000;
+                            margin-bottom: 33px;
+                            & span {
+                            }
+                        }
+                        & .programFacts {
+                            row-gap: 10px;
+                            & .programFactsInner {
+                                & .imgOuter {
+                                    width: 16px;
+                                    height: 16px;
+                                    margin-top: 0px;
+                                }
+                                & .textSide {
+                                    & .smHeading {
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                    }
+                                    & .boldHeading {
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .upperSection {
+                transform: translateY(150%);
+                & .upperSectionInner {
+                    padding: 30px 29px 33px 28px;
+                    & .upperSecHeading {
+                        font-family: 'Gilroy-SemiBold';
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: #1C1C1C;
+                        margin-bottom: 7px;
+                    }
+                    & .upperSecSubHeading {
+                        font-family: 'Gilroy-Regular';
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #5C5C5C;
+                        margin-bottom: 5px;
+                    }
+                    & .uperSecFormOuter {
+                        & .uperSecFormInner {
+                            gap: 10px;
+                            & .formRadioInputOuter {
+                                width: 100%;
+                                & .radioCustomLabel {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                    margin-bottom: 5px;
+                                }
+                                & .form-check {
+                                    & .form-check-input {
+                                        &:checked+.form-check-label {
+                                        }
+                                    }
+                                    & .form-check-label {
+                                        font-family: 'Gilroy-Medium';
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                        color: #FFFFFF;
+                                        height: 30px;
+                                        margin-bottom: 12px;
+                                        &.leftInput {
+                                        }
+                                        &.rightInput {
+                                        }
+                                    }
+                                }
+                            }
+                            & .subjectInput {
+                                width: 100%;
+                                & .form-label {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                    margin-bottom: 5px;
+                                }
+                                & .form-control {
+                                    font-family: 'Gilroy-Medium';
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    color: #7C7C7C;
+                                    height: 30px;
+                                    &:placeholder-shown {
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                    }
+                                }
+                            }
+                            & .findYourProgramMatchesBtn {
+                                font-family: 'Gilroy-Medium';
+                                font-size: 14px;
+                                line-height: 16px;
+                                color: #FFFFFF;
+                                height: 40px;
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionSecond {
+            padding-top: 250px;
+            & .sectionSecondInner {
+                gap: 30px;
+                & .programSection {
+                    & .textSide {
+                        padding-top: 15px !important;
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #1C1C1C;
+                            margin-bottom: 12px;
+                        }
+                        & .proSubHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #3C3C3C;
+                            margin-bottom: 12px;
+                        }
+                        & .proPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 11px;
+                            line-height: 19px;
+                            /* or 173% */
+
+
+                            color: #3C3C3C
+                        }
+                    }
+                    & .imgSide {
+                    }
+                }
+                & .admissionsRequirementsSection {
+                    & .imgSide {
+                    }
+                    & .textSide {
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #1C1C1C;
+                        }
+                        & .proSubHeading {font-family: 'Gilroy-Medium';
+                            font-size: 16px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                        }
+                        & .graduatesBox {
+                            & .graduatesBoxInner {
+                                & .graduatesBoxHeading {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                }
+                                & .graduatesBoxSubHeading {
+                                    font-family: 'Gilroy-Regular';
+                                    font-size: 12px;
+                                    line-height: 25px;
+                                    color: #3C3C3C;
+                                }
+                            }
+                        }
+                        & .proAnotherHeading {font-family: 'Gilroy-SemiBold';
+                            font-size: 14px;
+                            line-height: 25px;
+                            color: #1C1C1C;
+                        }
+                        & .proPra {font-family: 'Gilroy-Regular';
+                            font-size: 12px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                            margin-bottom: 6px;
+                            &.marginClass {
+                                margin-bottom: 15px;
+                            }
+                        }
+                        & .customPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 12px;
+                            line-height: 19px;
+                            color: #3C3C3C;
+                        }
+                        & .lastPra {font-family: 'Gilroy-Regular';
+                            font-size: 12px;
+                            line-height: 19px;
+                            color: #3C3C3C;
+                        }
+                    }
+                }
+                & .feesAndFundingSection {
+                    & .textSide {
+                        padding-top: 40px;
+                        & .proHeading {
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #1C1C1C;
+                        }
+                        & .proPra {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 12px;
+                            line-height: 19px;
+                            color: #3C3C3C;
+                        }
+                        & .proSubHeading {font-family: 'Gilroy-Medium';
+                            font-size: 14px;
+                            line-height: 25px;
+                            color: #3C3C3C;
+                        }
+                        & .customPra {font-family: 'Gilroy-Medium';
+                            font-size: 12px;
+                            line-height: 25px;
+                            color: #2C2C2C;
+                            & span {
+                            }
+                            &.lastPra {
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .sectionThird {
+            padding: 65px 27px;
+            padding-top: 65px;
+            padding-bottom: 65px;
+            & .sectionInner {
+                & .imgOuter {
+                    width: 54px;
+                    height: 54px;
+                }
+                & .sectionHeading {
+                    font-family: 'Gilroy-SemiBold';
+                    font-size: 22px;
+                    line-height: 26px;
+                    text-align: center;
+                    color: #000000;
+                }
+                & .sectionPra {
+                    font-family: 'Gilroy-Regular';
+                    font-size: 12px;
+                    line-height: 19px;
+                    text-align: center;
+                    color: #3C3C3C;
+                }
+                & .visaRequirmentBtn {
+                    width: 241px;
+                    height: 30px;
+                    font-family: 'Gilroy-Bold';
+                    font-size: 14px;
+                    line-height: 16px;
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=studyaBoardPageTwo] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  Studya Board Page-2 start  ]@@@@@@@@@@@@@@@@@@@@@@
 
