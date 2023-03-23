@@ -562,6 +562,7 @@
             }
         }
         .contactUsSection {
+            padding-top: 45px;
             & .sectionHeading {
                 font-family: 'Gilroy-Bold';
                 font-size: 42px;
@@ -604,6 +605,9 @@
                     background-color: #ffffff;
                     color: #E91515;
                 }
+            }
+            & .contactImg {
+                aspect-ratio: 501/696;
             }
         }
     }
@@ -668,6 +672,85 @@
                     & img {
                     }
                 }
+            }
+        }
+        .stepSection {
+            & .sectionHeading {
+            }
+            & .sectionText {
+            }
+            & .contactBtn {
+                &:hover {
+                }
+            }
+        }
+        .faqSection {
+            & .sectionHeading {
+            }
+            & .allReviews {
+                & a {
+                    & span {
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & span {
+                        }
+                    }
+                }
+            }
+            & .userFeedback {
+                &:first-child {
+                }
+                & .feedbackText {
+                }
+                & .userImg {
+                    & img {
+                    }
+                }
+                & .name {
+                }
+                & .description {
+                }
+                & .outOfNumber {
+                }
+            }
+        }
+        .partnerSection {
+            & .countriesSectionInner {
+                & .SectionHeading {
+                }
+                & .partnerSectionItems {
+                    & .partnerSectionItem {
+                        & .partnerSectionItemInner {
+                            & .partnerSectionItemImg {
+                                & img {
+                                }
+                                &:hover {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contactUsSection {
+            & .sectionHeading {
+            }
+            & .form-control {
+                &::placeholder {
+                }
+                &.textarea {
+                }
+            }
+            & .sendBtn {
+                &:hover,
+                &:active {
+                }
+            }
+            & .contactImg {
             }
         }
     }
@@ -836,6 +919,85 @@
                 }
             }
         }
+        .stepSection {
+            & .sectionHeading {
+            }
+            & .sectionText {
+            }
+            & .contactBtn {
+                &:hover {
+                }
+            }
+        }
+        .faqSection {
+            & .sectionHeading {
+            }
+            & .allReviews {
+                & a {
+                    & span {
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & span {
+                        }
+                    }
+                }
+            }
+            & .userFeedback {
+                &:first-child {
+                }
+                & .feedbackText {
+                }
+                & .userImg {
+                    & img {
+                    }
+                }
+                & .name {
+                }
+                & .description {
+                }
+                & .outOfNumber {
+                }
+            }
+        }
+        .partnerSection {
+            & .countriesSectionInner {
+                & .SectionHeading {
+                }
+                & .partnerSectionItems {
+                    & .partnerSectionItem {
+                        & .partnerSectionItemInner {
+                            & .partnerSectionItemImg {
+                                & img {
+                                }
+                                &:hover {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contactUsSection {
+            & .sectionHeading {
+            }
+            & .form-control {
+                &::placeholder {
+                }
+                &.textarea {
+                }
+            }
+            & .sendBtn {
+                &:hover,
+                &:active {
+                }
+            }
+            & .contactImg {
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
@@ -963,6 +1125,85 @@
                 }
             }
         }
+        .stepSection {
+            & .sectionHeading {
+            }
+            & .sectionText {
+            }
+            & .contactBtn {
+                &:hover {
+                }
+            }
+        }
+        .faqSection {
+            & .sectionHeading {
+            }
+            & .allReviews {
+                & a {
+                    & span {
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & span {
+                        }
+                    }
+                }
+            }
+            & .userFeedback {
+                &:first-child {
+                }
+                & .feedbackText {
+                }
+                & .userImg {
+                    & img {
+                    }
+                }
+                & .name {
+                }
+                & .description {
+                }
+                & .outOfNumber {
+                }
+            }
+        }
+        .partnerSection {
+            & .countriesSectionInner {
+                & .SectionHeading {
+                }
+                & .partnerSectionItems {
+                    & .partnerSectionItem {
+                        & .partnerSectionItemInner {
+                            & .partnerSectionItemImg {
+                                & img {
+                                }
+                                &:hover {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contactUsSection {
+            & .sectionHeading {
+            }
+            & .form-control {
+                &::placeholder {
+                }
+                &.textarea {
+                }
+            }
+            & .sendBtn {
+                &:hover,
+                &:active {
+                }
+            }
+            & .contactImg {
+            }
+        }
     }
 
     @include media-breakpoint-down(md) {
@@ -1065,6 +1306,85 @@
             & .bottomRow {
                 & .bottomText {
                 }
+            }
+        }
+        .stepSection {
+            & .sectionHeading {
+            }
+            & .sectionText {
+            }
+            & .contactBtn {
+                &:hover {
+                }
+            }
+        }
+        .faqSection {
+            & .sectionHeading {
+            }
+            & .allReviews {
+                & a {
+                    & span {
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & span {
+                        }
+                    }
+                }
+            }
+            & .userFeedback {
+                &:first-child {
+                }
+                & .feedbackText {
+                }
+                & .userImg {
+                    & img {
+                    }
+                }
+                & .name {
+                }
+                & .description {
+                }
+                & .outOfNumber {
+                }
+            }
+        }
+        .partnerSection {
+            & .countriesSectionInner {
+                & .SectionHeading {
+                }
+                & .partnerSectionItems {
+                    & .partnerSectionItem {
+                        & .partnerSectionItemInner {
+                            & .partnerSectionItemImg {
+                                & img {
+                                }
+                                &:hover {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contactUsSection {
+            & .sectionHeading {
+            }
+            & .form-control {
+                &::placeholder {
+                }
+                &.textarea {
+                }
+            }
+            & .sendBtn {
+                &:hover,
+                &:active {
+                }
+            }
+            & .contactImg {
             }
         }
     }
@@ -1179,6 +1499,85 @@
                 & .bottomText {
                     font-size: 12px;
                 }
+            }
+        }
+        .stepSection {
+            & .sectionHeading {
+            }
+            & .sectionText {
+            }
+            & .contactBtn {
+                &:hover {
+                }
+            }
+        }
+        .faqSection {
+            & .sectionHeading {
+            }
+            & .allReviews {
+                & a {
+                    & span {
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & span {
+                        }
+                    }
+                }
+            }
+            & .userFeedback {
+                &:first-child {
+                }
+                & .feedbackText {
+                }
+                & .userImg {
+                    & img {
+                    }
+                }
+                & .name {
+                }
+                & .description {
+                }
+                & .outOfNumber {
+                }
+            }
+        }
+        .partnerSection {
+            & .countriesSectionInner {
+                & .SectionHeading {
+                }
+                & .partnerSectionItems {
+                    & .partnerSectionItem {
+                        & .partnerSectionItemInner {
+                            & .partnerSectionItemImg {
+                                & img {
+                                }
+                                &:hover {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contactUsSection {
+            & .sectionHeading {
+            }
+            & .form-control {
+                &::placeholder {
+                }
+                &.textarea {
+                }
+            }
+            & .sendBtn {
+                &:hover,
+                &:active {
+                }
+            }
+            & .contactImg {
             }
         }
     }
