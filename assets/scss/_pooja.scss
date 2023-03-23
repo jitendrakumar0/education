@@ -1,0 +1,196 @@
+[data-page-name=studyaBoardPageTwo] {
+    @include media-breakpoint(basic) {
+        & .facilities {
+            margin-top: 35px; 
+            & .facilitiesInner {
+                
+                & .facilitiesHeading  {
+                    font-family: 'Gilroy-Bold';
+                    font-size: 42px;
+                    line-height: 49px;
+                    text-transform: capitalize;
+                    color: #1C1C1C;
+                }
+                & .facilitiesItem {
+                    padding-top: 35px;
+                    & .facilitiesItemBox {
+                        background: #FFFFFF;
+                        border-left: 3px solid #E91515;
+                        box-shadow: 0px 10px 20px rgba(102, 102, 102, 0.15);
+                        padding: 27px 27px 46px 25px;
+                        min-height: 309px;
+                        & .facilitiesItemBoxImg {
+                            width: 60px;
+                            height: 60px;
+                            padding-bottom: 12px;
+                        }
+                        & .facilitiesItemBoxHeading {
+                            padding-bottom: 15px;
+                            font-family: 'Gilroy-SemiBold';
+                            font-size: 28px;
+                            line-height: 33px;
+
+                            color: #1C1C1C;
+                        }
+                        & .facilitiesItemBoxList {
+                            & .facilitiesItemBoxListItem {
+                                margin: 0;
+                                padding: 0;
+                                & .facilitiesItemBoxListItems {
+                                    list-style: none;
+                                    display: flex;
+                                    align-items: center;
+                                    & .listImg {
+                                        width: 12px;
+                                        height: 12px;
+                                        margin-right: 5px;
+                                        display: flex;
+                                        & img {
+                                            aspect-ratio: 10/10;
+                                            object-fit: contain;
+                                            object-position: center;
+                                        }
+                                    }
+                                    & .listText {
+                                        font-family: 'Gilroy-Regular';
+                                        font-size: 17px;
+                                        line-height: 25px;
+                                        /* identical to box height, or 147% */
+                                        color: #3C3C3C;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .admitted {
+            margin-top: 80px;
+            & .admittedInner {
+                & .admittedHeading {
+                    font-family: 'Gilroy-Bold';
+                    font-size: 42px;
+                    line-height: 49px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    max-width: 611px;
+                    width: 100%;
+                    color: #1C1C1C;
+                    padding-bottom: 40px;
+                }
+                & .admittedItem {
+                    & .admittedItemImg {
+                        width: 80px;
+                        height: 80px;
+                        display: flex;
+                        padding-bottom: 21px;
+                        & img {
+                            aspect-ratio: 10/10;
+                            object-fit: contain;
+                            object-position: center;
+                        }
+                    }
+                    & .admittedItemHeading {
+                        font-family: 'Gilroy-SemiBold';
+                        font-size: 28px;
+                        line-height: 33px;
+                        text-transform: capitalize;
+                        padding-bottom: 10px;
+                        color: #1C1C1C;
+                    }
+                    & .admittedItemPara {
+                        font-family: 'Gilroy-Regular';
+                        font-size: 17px;
+                        line-height: 25px;
+                        color: #3C3C3C;
+                    }
+                    & .serviceHeadline {
+                        padding-top: 53px;
+                        font-family: 'Gilroy-Bold';
+                        font-size: 22px;
+                        line-height: 26px;
+                        text-align: center;
+                        text-transform: capitalize;
+                        color: #3C3C3C;
+                        & span {
+                            color: #E91515;
+                        }
+                    }
+                    & .admitButton {
+                        max-width: 305px;
+                        width: 100%;
+                        height: 56px;
+                        margin: 20px auto 0px;
+                        background-color: #E91515;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: none;
+                        border: none;
+                        font-family: 'Gilroy-Bold';
+                        font-size: 18px;
+                        line-height: 21px;
+                        text-align: center;
+
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=signin] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
