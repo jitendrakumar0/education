@@ -1476,6 +1476,28 @@
                 }
             }
         }
+        & .studyAbroadSection {
+            padding: 187px 0px 80px;
+            background-color: #F5F5F5;
+            & .studyAbroadheading {
+                font-family: 'Gilroy-SemiBold';
+                font-size: 42px;
+                line-height: 49px;
+                text-transform: capitalize;
+                text-align: center;
+                color: #1C1C1C;
+                margin-bottom: 20px;
+            }
+            & .studyAbroadtext {
+                max-width: 1033px;
+                font-family: 'Gilroy-Regular';
+                font-size: 17px;
+                line-height: 25px;
+                text-align: center;
+                color: #3C3C3C;
+                margin-bottom: 20px;
+            }
+        }
         & .sectionSecond {
             background: #F5F5F5;
             padding-top: 80px;
@@ -1728,6 +1750,12 @@
                 }
             }
         }
+        & .studyAbroadSection {
+            & .studyAbroadheading {
+            }
+            & .studyAbroadtext {
+            }
+        }
         & .sectionSecond {
             & .sectionSecondInner {
                 & .programSection {
@@ -1922,6 +1950,17 @@
                         }
                     }
                 }
+            }
+        }
+        & .studyAbroadSection {
+            & .studyAbroadheading {
+                font-size: 38px;
+                line-height: 45px;
+            }
+            & .studyAbroadtext {
+                font-size: 16px;
+                line-height: 23px;
+                max-width: 830px;
             }
         }
         & .sectionSecond {
@@ -2147,6 +2186,16 @@
                         }
                     }
                 }
+            }
+        }
+        & .studyAbroadSection {
+            padding: 490px 0px 70px;
+            & .studyAbroadheading {
+                font-size: 36px;
+                line-height: 40px;
+            }
+            & .studyAbroadtext {
+                max-width: 630px;
             }
         }
         & .sectionSecond {
@@ -2397,6 +2446,16 @@
                         }
                     }
                 }
+            }
+        }
+        & .studyAbroadSection {
+            padding: 690px 28px 60px 28px;
+            & .studyAbroadheading {
+                font-size: 30px;
+                line-height: 35px;
+            }
+            & .studyAbroadtext {
+                max-width: 480px;
             }
         }
         & .sectionSecond {
@@ -2671,6 +2730,29 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        & .studyAbroadSection {
+            padding: 600px 28px 40px 28px;
+            & .studyAbroadheading {
+                font-family: 'Gilroy-SemiBold';
+                font-size: 22px;
+                line-height: 26px;
+                text-align: center;
+                color: #1C1C1C;
+                margin-bottom: 8px;
+            }
+            & .studyAbroadtext {
+                max-width: 100%;
+                font-family: 'Gilroy-Regular';
+                font-size: 11px;
+                line-height: 19px;
+                text-align: center;
+                color: #3C3C3C;
+                margin-bottom: 8px;
+                &:last-child {
+                    margin: 0 !important;
                 }
             }
         }
