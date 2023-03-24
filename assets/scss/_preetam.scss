@@ -189,6 +189,27 @@
                             &.active {
                                 color: #E32333;
                             }
+                            &.collapseLink {
+                                position: relative ;
+                                display: block;
+                                &::after {
+                                    content: "";
+                                    width: 16px;
+                                    height: 16px;
+                                    background-image: url('../img/svg/headerDropdown.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    background-position: center;
+                                    right: 0;
+                                    position: absolute;
+                                    left: auto;
+                                }
+                                &:not(.collapsed) {
+                                    &::after {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -945,6 +966,8 @@
         }
         .stepSection {
             & .sectionHeading {
+                font-size: 38px;
+                line-height: 45px;
             }
             & .sectionText {
             }
@@ -1163,7 +1186,11 @@
             }
         }
         .stepSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
             & .sectionHeading {
+                font-size: 35px;
+                line-height: 35px;
             }
             & .sectionText {
             }
@@ -1375,6 +1402,8 @@
         }
         .stepSection {
             & .sectionHeading {
+                font-size: 30px;
+                line-height: 40px;
             }
             & .sectionText {
             }
@@ -1595,10 +1624,19 @@
         }
         .stepSection {
             & .sectionHeading {
+                font-size: 25px;
+                line-height: 29px;
             }
             & .sectionText {
+                font-size: 12px;
+                line-height: 14px;
             }
             & .contactBtn {
+                width: 104px;
+                height: 30px;
+                font-size: 12px;
+                line-height: 14px;
+                bottom: 37px;
                 &:hover {
                 }
             }

@@ -73,8 +73,63 @@
                 }
             }
         }
-        & .counterSection {
+        & .counterInpSection {
             margin-top: -92px;
+            margin-bottom: 90px;
+            z-index: 10;
+            position: relative;
+            & .counterInpSectionInner {
+                background: $white;
+                border-left: 3px solid $theme1;
+                box-shadow: 0px 10px 40px rgba($black, 0.15);
+                padding: 45px 50px;
+                & .form-label {
+                    font-family: 'Gilroy-SemiBold';
+                    font-size: 22px;
+                    line-height: 25px;
+                    color: #3C3C3C;
+                    margin-bottom: 13px;
+                }
+                & .form-control {
+                    font-family: 'Gilroy-Medium';
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #7C7C7C;
+                    height: 56px;
+                    width: 100%;
+                    box-shadow: none;
+                    border: 1px solid #3C3C3C;
+                    &:placeholder-shown {
+                        font-family: 'Gilroy-Medium';
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #7C7C7C;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                & .findAProgramBtn {
+                    font-family: 'Gilroy-Medium';
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #FFFFFF;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #E91515;
+                    border-radius: 5px;
+                    width: 260px;
+                    height: 56px;
+                    border: 2px solid #D40F2B;
+                    &:hover {
+                        background-color: #FFFFFF;
+                        color: #D40F2B;
+                    }
+                }
+            }
+        }
+        & .counterSection {
             margin-bottom: 90px;
             z-index: 10;
             position: relative;
@@ -556,6 +611,22 @@
                 }
             }
         }
+        & .counterInpSection {
+            & .counterInpSectionInner {
+                & .form-label {
+                }
+                & .form-control {
+                    &:placeholder-shown {
+                    }
+                    &:focus {
+                    }
+                }
+                & .findAProgramBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
         & .counterSection {
             & .counterSectionInner {
                 & .counterSectionItems {
@@ -779,6 +850,30 @@
                 }
             }
         }
+        & .counterInpSection {
+            & .counterInpSectionInner {
+                & .form-label {
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+                & .form-control {
+                    height: 50px;
+                    font-size: 15px;
+                    &:placeholder-shown {
+                        font-size: 15px;
+                    }
+                    &:focus {
+                    }
+                }
+                & .findAProgramBtn {
+                    font-size: 15px;
+                    width: 220px;
+                    height: 50px;
+                    &:hover {
+                    }
+                }
+            }
+        }
         & .counterSection {
             & .counterSectionInner {
                 & .counterSectionItems {
@@ -805,6 +900,7 @@
                 }
                 & .whyChooseUsImg {
                     & img {
+                        max-height: 180px;
                     }
                 }
                 & .whyChooseUsLearnMore {
@@ -910,6 +1006,7 @@
                     }
                 }
                 & .countriesSectionItems {  
+                    row-gap: 30px;
                     & .countriesSectionItem {
                         & .countriesSectionItemInner {
                             & .countriesSectionItemImg {
@@ -943,6 +1040,7 @@
                             & .popularProgramsSectionItemTitle {
                             }
                             & .popularProgramsSectionItemLocation {
+                                padding-bottom: 8px;
                             }
                             & .popularProgramsSectionItemLocate {
                                 & span {
@@ -1002,6 +1100,31 @@
                 }
             }
         }
+        & .counterInpSection {
+            margin-top: -50px;
+            & .counterInpSectionInner {
+                padding: 32px 30px;
+                & .form-label {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+                & .form-control {
+                    font-size: 14px;
+                    height: 45px;
+                    &:placeholder-shown {
+                    }
+                    &:focus {
+                    }
+                }
+                & .findAProgramBtn {
+                    font-size: 14px;
+                    width: 200px;
+                    height: 45px;
+                    &:hover {
+                    }
+                }
+            }
+        }
         & .counterSection {
             margin-top: -50px;
             & .counterSectionInner {
@@ -1030,11 +1153,13 @@
             }
         }
         & .whyChooseUs {
+            padding-bottom: 30px;
             & .whyChooseUsInner {
                 & .whyChooseUsTitle {
                 }
                 & .whyChooseUsImg {
                     & img {
+                        max-height: 170px;
                     }
                 }
                 & .whyChooseUsLearnMore {
@@ -1076,6 +1201,8 @@
             }
         }
         & .counter2Section {
+            padding-top: 30px;
+            padding-bottom: 30px;
             & .counter2SectionInner {
                 & .counter2SectionItems {
                     & .counter2SectionItem {
@@ -1096,6 +1223,8 @@
             }
         }
         & .videoSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
             & .videoSectionInner {
                 & .plyr {
                     & .plyr__controls {
@@ -1132,6 +1261,8 @@
             }
         }
         & .countriesSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
             & .countriesSectionInner {
                 & .countriesSectionHeading {
                 }
@@ -1156,6 +1287,8 @@
             }
         }
         & .popularProgramsSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
             & .popularProgramsSectionInner {
                 & .popularProgramsSectionHeading {
                 }
@@ -1236,6 +1369,25 @@
                 }
             }
         }
+        & .counterInpSection {
+            & .counterInpSectionInner {
+                & .counterInpSectionInnerForm {
+                    gap: 20px;
+                }
+                & .form-label {
+                }
+                & .form-control {
+                    &:placeholder-shown {
+                    }
+                    &:focus {
+                    }
+                }
+                & .findAProgramBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
         & .counterSection {
             & .counterSectionInner {
                 & .counterSectionItems {
@@ -1266,6 +1418,7 @@
                 }
                 & .whyChooseUsImg {
                     & img {
+                         max-height: 202px;
                     }
                 }
                 & .whyChooseUsLearnMore {
@@ -1313,11 +1466,17 @@
                         & .counter2SectionItemInner {
                             & .counter2SectionImg {
                                 & img {
+                                    width: 70px;
+                                    height: 70px;
                                 }
                             }
-                            & .counter2SectionTitle {
+                            & .counter2SectionTitle {     
+                                font-size: 30px;
+                                line-height: 35px;
                             }
                             & .counter2SectionValue {
+                                font-size: 20px;
+                                line-height: 25px;
                             }
                         }
                         &:hover {
@@ -1467,6 +1626,27 @@
                 }
             }
         }
+        & .counterInpSection {
+            & .counterInpSectionInner {
+                padding: 25px 29px 25px 28px;
+                & .counterInpSectionInnerForm {
+                    gap: 12px;
+                }
+                & .form-label {
+                }
+                & .form-control {
+                    &:placeholder-shown {
+                    }
+                    &:focus {
+                    }
+                }
+                & .findAProgramBtn {
+                    width: 100%;
+                    &:hover {
+                    }
+                }
+            }
+        }
         & .counterSection {
             & .counterSectionInner {
                 & .counterSectionItems {
@@ -1495,8 +1675,11 @@
             }
         }
         & .whyChooseUs {
+            padding-bottom: 0px;
             & .whyChooseUsInner {
                 & .whyChooseUsTitle {
+                    font-size: 25px;
+                    line-height: 29px;
                 }
                 & .whyChooseUsImg {
                     & img {
@@ -1505,6 +1688,8 @@
                 & .whyChooseUsLearnMore {
                     & a {
                         & span {
+                            font-size: 14px;
+                            line-height: 16px;
                             & img {
                             }
                         }
@@ -1515,7 +1700,10 @@
                     }
                 }
                 & .whyChooseUsContent {
+                    gap: 10px;
                     & .whyChooseUsContentParagraph {
+                        font-size: 11px;
+                        line-height: 19px;
                     }
                 }
             }
@@ -1547,11 +1735,17 @@
                         & .counter2SectionItemInner {
                             & .counter2SectionImg {
                                 & img {
+                                    width: 50px;
+                                    height: 50px;
                                 }
                             }
                             & .counter2SectionTitle {
+                                font-size: 16px;
+                                line-height: 19px;
                             }
                             & .counter2SectionValue {
+                                font-size: 12px;
+                                line-height: 14px;
                             }
                         }
                         &:hover {
@@ -1561,6 +1755,8 @@
             }
         }
         & .videoSection {
+            padding-top: 0;
+            padding-bottom: 0;
             & .videoSectionInner {
                 & .plyr {
                     & .plyr__controls {
@@ -1597,11 +1793,17 @@
             }
         }
         & .countriesSection {
+            padding-top: 40px;
+            padding-bottom: 40px;
             & .countriesSectionInner {
                 & .countriesSectionHeading {
+                    font-size: 22px;
+                    line-height: 26px;
                 }
                 & .countriesSectionAllBtn {
                     & a {
+                        font-size: 14px;
+                        line-height: 16px;
                     }
                 }
                 & .countriesSectionItems {  
@@ -1609,9 +1811,13 @@
                         & .countriesSectionItemInner {
                             & .countriesSectionItemImg {
                                 & img {
+                                    width: 79px;
+                                    height: 40px;
                                 }
                             }
                             & .countriesSectionItemTitle {
+                                font-size: 16px;
+                                line-height: 19px;
                             }
                         }
                         &:hover {
@@ -1621,8 +1827,8 @@
             }
         }
         & .popularProgramsSection {
-            padding-top: 20px;
             padding-bottom: 20px;
+            padding-top: 20px;
             & .popularProgramsSectionInner {
                 & .popularProgramsSectionHeading {
                     font-size: 22px;

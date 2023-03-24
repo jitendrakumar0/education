@@ -98,6 +98,7 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/libs/node_modules/plyr/dist/plyr.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
+        <link rel="stylesheet" href="assets/libs/node_modules/swiper/swiper-bundle.min.css"/>
 
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
     </head>
@@ -230,6 +231,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container-fluid counterInpSection counter-show">
+                        <div class="container counterInpSectionInner">
+                            <form class="row align-items-end counterInpSectionInnerForm">
+                                <div class="col-md col-12">
+                                    <label for="location" class="form-label">Location</label>
+                                    <input type="text" class="form-control" placeholder="Start Application" id="location" aria-describedby="location">
+                                </div>
+                                <div class="col-md col-12">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" placeholder="Enter a subject" id="subject" aria-describedby="subject">
+                                </div>
+                                <div class="col-md-auto col-12 mt-2 mt-sm-0">
+                                    <a href="javascript:;" class="findAProgramBtn">Find Your Program Matches</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                     <div class="container-fluid counterSection counter-show">
                         <div class="container counterSectionInner">
                             <div class="row">
@@ -281,13 +299,13 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-lg-4 col-md-5">
                                             <div class="row">
                                                 <div class="col-12 whyChooseUsTitle">Why do students choose us?</div>
                                                 <div class="col-12 whyChooseUsImg">
                                                     <img src="./assets/img/svg/20Theme1.svg" alt="20Theme1">
                                                 </div>
-                                                <div class="col-12 whyChooseUsLearnMore">
+                                                <div class="col-12 whyChooseUsLearnMore d-md-block d-none">
                                                     <a href="javascript:;">
                                                         <span>Learn More</span>
                                                         <span>
@@ -297,7 +315,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-lg-8 col-md-7">
                                             <div class="row whyChooseUsContent">
                                                 <div class="col-12 whyChooseUsContentParagraph">Because of its uniqueness , because the SIR company is the organizer and founder of the Ukrainian Association of Agencies for International Education and Exchange (AIEEA UKRAINE), which is an association of leading educational agencies in Ukraine</div>
                                                 <div class="col-12 whyChooseUsContentParagraph">Through professionalism - since 2001, we have been working and developing for your successful study and career abroad</div>
@@ -305,6 +323,14 @@
                                                 <div class="col-12 whyChooseUsContentParagraph">Due to the high trust of our clients , because we have helped more than 5000 students to get the desired education</div>
                                                 <div class="col-12 whyChooseUsContentParagraph">Through an individual approach , as our team guarantees an individual approach to each of its clients</div>
                                                 <div class="col-12 whyChooseUsContentParagraph">Through comprehensive support during your stay in Ukraine and studying abroad</div>
+                                                <div class="col-12 whyChooseUsLearnMore d-md-none d-block">
+                                                    <a href="javascript:;">
+                                                        <span>Learn More</span>
+                                                        <span>
+                                                            <img src="./assets/img/svg/arrowRightTheme1.svg" alt="arrowRightTheme1">
+                                                        </span>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -316,8 +342,8 @@
                         <div class="container counter2SectionInner">
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="row counter2SectionItems">
-                                        <div class="col-md-2 counter2SectionItem">
+                                    <div class="row counter2SectionItems g-4 g-xl-0">
+                                        <div class="col-xl-2 col-4 counter2SectionItem">
                                             <div class="row counter2SectionItemInner mx-0">
                                                 <div class="col-12 counter2SectionImg">
                                                     <img src="./assets/img/svg/placementTheme2.svg" alt="placementTheme2">
@@ -326,7 +352,7 @@
                                                 <div class="col-12 counter2SectionValue">Placement</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-2 counter2SectionItem">
+                                        <div class="col-xl-2 col-4 counter2SectionItem">
                                             <div class="row counter2SectionItemInner mx-0">
                                                 <div class="col-12 counter2SectionImg">
                                                     <img src="./assets/img/svg/classesTheme2.svg" alt="classesTheme2">
@@ -335,7 +361,7 @@
                                                 <div class="col-12 counter2SectionValue">Classes</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-2 counter2SectionItem">
+                                        <div class="col-xl-2 col-4 counter2SectionItem">
                                             <div class="row counter2SectionItemInner mx-0">
                                                 <div class="col-12 counter2SectionImg">
                                                     <img src="./assets/img/svg/locationTheme2.svg" alt="locationTheme2">
@@ -344,7 +370,7 @@
                                                 <div class="col-12 counter2SectionValue">Location</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-2 counter2SectionItem">
+                                        <div class="col-xl-2 col-4 counter2SectionItem">
                                             <div class="row counter2SectionItemInner mx-0">
                                                 <div class="col-12 counter2SectionImg">
                                                     <img src="./assets/img/svg/cityTheme2.svg" alt="cityTheme2">
@@ -353,7 +379,7 @@
                                                 <div class="col-12 counter2SectionValue">City</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-2 counter2SectionItem">
+                                        <div class="col-xl-2 col-4 counter2SectionItem">
                                             <div class="row counter2SectionItemInner mx-0">
                                                 <div class="col-12 counter2SectionImg">
                                                     <img src="./assets/img/svg/jobsTheme2.svg" alt="jobsTheme2">
@@ -362,7 +388,7 @@
                                                 <div class="col-12 counter2SectionValue">Jobs</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-2 counter2SectionItem">
+                                        <div class="col-xl-2 col-4 counter2SectionItem">
                                             <div class="row counter2SectionItemInner mx-0">
                                                 <div class="col-12 counter2SectionImg">
                                                     <img src="./assets/img/svg/helpTheme2.svg" alt="helpTheme2">
@@ -430,7 +456,7 @@
                                                 <div class="col-auto countriesSectionItemTitle">Poland</div>
                                             </div>
                                         </a>
-                                        <a href="javascript:;" class="col-auto countriesSectionItem">
+                                        <a href="javascript:;" class="col-auto countriesSectionItem order-sm-4 order-5">
                                             <div class="row countriesSectionItemInner">
                                                 <div class="col-auto countriesSectionItemImg">
                                                     <img src="./assets/img/svg/flagCzechRepublic.svg" alt="flagCzechRepublic">
@@ -438,7 +464,7 @@
                                                 <div class="col-auto countriesSectionItemTitle">Czech Republic</div>
                                             </div>
                                         </a>
-                                        <a href="javascript:;" class="col-auto countriesSectionItem">
+                                        <a href="javascript:;" class="col-auto countriesSectionItem order-sm-5 order-4">
                                             <div class="row countriesSectionItemInner">
                                                 <div class="col-auto countriesSectionItemImg">
                                                     <img src="./assets/img/svg/flagGermany.svg" alt="flagGermany">
@@ -463,8 +489,8 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="row popularProgramsSectionItems mx-n3">
-                                        <a href="javascript:;" class="col-md-3 popularProgramsSectionItem">
+                                    <div class="row popularProgramsSectionItems mx-n3 gy-md-4 gy-3 gy-lg-0">
+                                        <a href="javascript:;" class="col-lg-3 col-md-6 popularProgramsSectionItem">
                                             <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
                                                 <div class="col-12 popularProgramsSectionItemImg px-0">
                                                     <img src="./assets/img/popularPrograms1.png" alt="popularPrograms1">
@@ -479,7 +505,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="javascript:;" class="col-md-3 popularProgramsSectionItem">
+                                        <a href="javascript:;" class="col-lg-3 col-md-6 popularProgramsSectionItem">
                                             <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
                                                 <div class="col-12 popularProgramsSectionItemImg px-0">
                                                     <img src="./assets/img/popularPrograms2.png" alt="popularPrograms2">
@@ -494,7 +520,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="javascript:;" class="col-md-3 popularProgramsSectionItem">
+                                        <a href="javascript:;" class="col-lg-3 col-md-6 popularProgramsSectionItem">
                                             <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
                                                 <div class="col-12 popularProgramsSectionItemImg px-0">
                                                     <img src="./assets/img/popularPrograms3.png" alt="popularPrograms3">
@@ -509,7 +535,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="javascript:;" class="col-md-3 popularProgramsSectionItem">
+                                        <a href="javascript:;" class="col-lg-3 col-md-6 popularProgramsSectionItem">
                                             <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
                                                 <div class="col-12 popularProgramsSectionItemImg px-0">
                                                     <img src="./assets/img/popularPrograms4.png" alt="popularPrograms4">
@@ -556,8 +582,8 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="row popularProgramsSectionItems mx-n3">
-                                        <a href="javascript:;" class="col-md-4 popularProgramsSectionItem">
+                                    <div class="row popularProgramsSectionItems mx-n3 gy-lg-0 gy-sm-4 gy-3">
+                                        <a href="javascript:;" class="col-lg-4 col-md-6 col-12 popularProgramsSectionItem">
                                             <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
                                                 <div class="col-12 popularProgramsSectionItemImg px-0">
                                                     <img src="./assets/img/news1.png" alt="news1">
@@ -572,7 +598,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="javascript:;" class="col-md-4 popularProgramsSectionItem">
+                                        <a href="javascript:;" class="col-lg-4 col-md-6 col-12 popularProgramsSectionItem">
                                             <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
                                                 <div class="col-12 popularProgramsSectionItemImg px-0">
                                                     <img src="./assets/img/news2.png" alt="news2">
@@ -587,7 +613,70 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="javascript:;" class="col-md-4 popularProgramsSectionItem">
+                                        <a href="javascript:;" class="col-lg-4 col-md-6 col-12 popularProgramsSectionItem">
+                                            <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
+                                                <div class="col-12 popularProgramsSectionItemImg px-0">
+                                                    <img src="./assets/img/news3.png" alt="news3">
+                                                </div>
+                                                <div class="col-12 popularProgramsSectionItemTitle">NEWS</div>
+                                                <div class="col-lg-10 popularProgramsSectionItemLocation">New changes in Canada's immigration policy</div>
+                                                <div class="col-12 popularProgramsSectionItemLocate">
+                                                    <span>
+                                                        <img src="./assets/img/svg/locatorTheme1.svg" alt="locatorTheme1">
+                                                    </span>
+                                                    <span>Kitchener , Ontario</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid popularProgramsSection">
+                        <div class="container popularProgramsSectionInner">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col popularProgramsSectionHeading">Latest Events</div>
+                                        <div class="col-auto popularProgramsSectionAllBtn">
+                                            <a href="javascript:;">All news</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row popularProgramsSectionItems mx-n3 gy-lg-0 gy-sm-4 gy-3">
+                                        <a href="javascript:;" class="col-lg-4 col-md-6 col-12 popularProgramsSectionItem">
+                                            <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
+                                                <div class="col-12 popularProgramsSectionItemImg px-0">
+                                                    <img src="./assets/img/news1.png" alt="news1">
+                                                </div>
+                                                <div class="col-12 popularProgramsSectionItemTitle">NEWS</div>
+                                                <div class="col-lg-10 popularProgramsSectionItemLocation">New changes in Canada's immigration policy</div>
+                                                <div class="col-12 popularProgramsSectionItemLocate">
+                                                    <span>
+                                                        <img src="./assets/img/svg/locatorTheme1.svg" alt="locatorTheme1">
+                                                    </span>
+                                                    <span>Ontario Toronto</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="col-lg-4 col-md-6 col-12 popularProgramsSectionItem">
+                                            <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
+                                                <div class="col-12 popularProgramsSectionItemImg px-0">
+                                                    <img src="./assets/img/news2.png" alt="news2">
+                                                </div>
+                                                <div class="col-12 popularProgramsSectionItemTitle">NEWS</div>
+                                                <div class="col-lg-10 popularProgramsSectionItemLocation">The province of Ontario helps Ukrainians with employment</div>
+                                                <div class="col-12 popularProgramsSectionItemLocate">
+                                                    <span>
+                                                        <img src="./assets/img/svg/locatorTheme1.svg" alt="locatorTheme1">
+                                                    </span>
+                                                    <span>Ontario Toronto</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="col-lg-4 col-md-6 col-12 popularProgramsSectionItem">
                                             <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
                                                 <div class="col-12 popularProgramsSectionItemImg px-0">
                                                     <img src="./assets/img/news3.png" alt="news3">
@@ -624,63 +713,82 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
-                                    <div class="row mx-lg-0 userFeedback align-items-center">
-                                        <div class="col-12 feedbackText">
-                                            Hello everyone! My name is Mikhail. It's been exactly 2 months since I've been studying and living in Toronto, all thanks to the work of the CIP company - a huge thank you to them! I study at George Brown College on the Strategic Relationship Marketing program. Studying is not easy (compared to Ukraine), but it is often very interesting and informative. Here, they are more focused on training future professionals, so there is a minimum of boring theory, and more practice. Therefore, they set many group projects, where you need to work in a team and solve cases as close as possible to future work. Also, the college helps in the search for co-op and internship (work for students without experience in the field of education). Toronto is a very beautiful multicultural city. People from all over the world live here. I like everything so far. If you have the opportunity to study in Canada, definitely try it. 
-                                        </div>
-                                        <div class="col">
-                                            <div class="row mx-0 align-items-center">
-                                                <div class="col-auto px-0">
-                                                    <div class="userImg">
-                                                        <img src="assets/img/user1.png" alt="">
-                                                    </div>
+                                    <div class="heroswiper">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                          <!-- Slides -->
+                                          <div class="swiper-slide">
+                                            <div class="row mx-lg-0 userFeedback align-items-center">
+                                                <div class="col-12 feedbackText">
+                                                    Hello everyone! My name is Mikhail. It's been exactly 2 months since I've been studying and living in Toronto, all thanks to the work of the CIP company - a huge thank you to them! I study at George Brown College on the Strategic Relationship Marketing program. Studying is not easy (compared to Ukraine), but it is often very interesting and informative. Here, they are more focused on training future professionals, so there is a minimum of boring theory, and more practice. Therefore, they set many group projects, where you need to work in a team and solve cases as close as possible to future work. Also, the college helps in the search for co-op and internship (work for students without experience in the field of education). Toronto is a very beautiful multicultural city. People from all over the world live here. I like everything so far. If you have the opportunity to study in Canada, definitely try it. 
                                                 </div>
                                                 <div class="col">
-                                                    <div class="name">Mykhailo Andriychuk</div>
-                                                    <div class="description">George Brown College</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto outOfNumber">1/3</div>
-                                    </div>
-                                    <div class="row mx-lg-0 userFeedback align-items-center">
-                                        <div class="col-12 feedbackText">
-                                            Hello, my name is Adelina and I want to thank the CIP agency in the city of Sumy for giving me the chance to study abroad! And I am very glad that I came across such professionals in my field! Everything was done quickly and qualitatively. There were many different colleges and I was really confused about the choice, but the CIP agency consulted on each of them and helped me quickly decide where it would be best for me to enroll. I didn't pass IELTS, so now I'm studying at the ICEAP language school. I like it very much at school, here I get exactly what I lacked in a normal school. I was very lucky with the teachers of this school, they are all cheerful, they behave with us like with friends (in moderation, of course), unlike Ukrainian teachers. Every day, coming to ICEAP, the teacher asks how we are doing, what's new, how everyone's day was and what plans we constantly play games, work in pairs, this helps a lot in learning English. They do everything so that lessons are not boring. Anyone who wants to know English perfectly or just learn it - choose the language school "ICEAP" in Toronto!!!
-                                        </div>
-                                        <div class="col">
-                                            <div class="row mx-0 align-items-center">
-                                                <div class="col-auto px-0">
-                                                    <div class="userImg">
-                                                        <img src="assets/img/user2.png" alt="">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto px-0">
+                                                            <div class="userImg">
+                                                                <img src="assets/img/user1.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="name">Mykhailo Andriychuk</div>
+                                                            <div class="description">George Brown College</div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col">
-                                                    <div class="name">Adelina Korchak</div>
-                                                    <div class="description">ICEAP</div>
-                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-auto outOfNumber">2/3</div>
-                                    </div>
-                                    <div class="row mx-lg-0 userFeedback align-items-center">
-                                        <div class="col-12 feedbackText">
-                                            "Its 100% better to go to a training program than to take IELTS." Congratulations to our student from Lviv - - on the successful completion of the training program - University Pathway - at the ILSC language school in Toronto, Canada! Now Olesya will start her studies at the Canadian college - Humber College! This program provides an opportunity to enroll in a college without taking the IELTS test. Here are a few words from Olesya about the program: "It is 100% better to go to the training program than to take the IELTS. Many skills are developed here. We made various presentations, posters, interestingly developed speaking skills through debates and all kinds of games. They also teach the Academic Essay with all references and how to make them correctly. This helps students a lot later on in college or university. I highly recommend everyone to go through pre-study training and the ILSC language school." 
-                                        </div>
-                                        <div class="col">
-                                            <div class="row mx-0 align-items-center">
-                                                <div class="col-auto px-0">
-                                                    <div class="userImg">
-                                                        <img src="assets/img/user1.png" alt="">
+                                          </div>
+                                          <div class="swiper-slide">
+                                            <div class="row mx-lg-0 userFeedback align-items-center">
+                                                <div class="col-12 feedbackText">
+                                                    Hello, my name is Adelina and I want to thank the CIP agency in the city of Sumy for giving me the chance to study abroad! And I am very glad that I came across such professionals in my field! Everything was done quickly and qualitatively. There were many different colleges and I was really confused about the choice, but the CIP agency consulted on each of them and helped me quickly decide where it would be best for me to enroll. I didn't pass IELTS, so now I'm studying at the ICEAP language school. I like it very much at school, here I get exactly what I lacked in a normal school. I was very lucky with the teachers of this school, they are all cheerful, they behave with us like with friends (in moderation, of course), unlike Ukrainian teachers. Every day, coming to ICEAP, the teacher asks how we are doing, what's new, how everyone's day was and what plans we constantly play games, work in pairs, this helps a lot in learning English. They do everything so that lessons are not boring. Anyone who wants to know English perfectly or just learn it - choose the language school "ICEAP" in Toronto!!!
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto px-0">
+                                                            <div class="userImg">
+                                                                <img src="assets/img/user2.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="name">Adelina Korchak</div>
+                                                            <div class="description">ICEAP</div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                          </div>
+                                          <div class="swiper-slide">
+                                            <div class="row mx-lg-0 userFeedback align-items-center">
+                                                <div class="col-12 feedbackText">
+                                                    "Its 100% better to go to a training program than to take IELTS." Congratulations to our student from Lviv - - on the successful completion of the training program - University Pathway - at the ILSC language school in Toronto, Canada! Now Olesya will start her studies at the Canadian college - Humber College! This program provides an opportunity to enroll in a college without taking the IELTS test. Here are a few words from Olesya about the program: "It is 100% better to go to the training program than to take the IELTS. Many skills are developed here. We made various presentations, posters, interestingly developed speaking skills through debates and all kinds of games. They also teach the Academic Essay with all references and how to make them correctly. This helps students a lot later on in college or university. I highly recommend everyone to go through pre-study training and the ILSC language school." 
+                                                </div>
                                                 <div class="col">
-                                                    <div class="name">Olesya Steshko</div>
-                                                    <div class="description">ILSC</div>
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto px-0">
+                                                            <div class="userImg">
+                                                                <img src="assets/img/user1.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="name">Olesya Steshko</div>
+                                                            <div class="description">ILSC</div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                          </div>
                                         </div>
-                                        <div class="col-auto outOfNumber">3/3</div>
-                                    </div>
+                                        <!-- If we need pagination -->
+                                        <div class="swiper-pagination"></div>
+                                      
+                                        <!-- If we need navigation buttons -->
+                                        <!-- <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div> -->
+                                      
+                                        <!-- If we need scrollbar -->
+                                        <!-- <div class="swiper-scrollbar"></div> -->
+                                      </div>
+
                                 </div>
                             </div>
                         </div>
@@ -881,7 +989,16 @@
             <div class="offcanvas-body">
                 <ul class="m-0 p-0 list-unstyled linkItems">                                       
                     <li class="linkItem"><a class="linkAnchor" href="javascript::">About Us</a></li>
-                    <li class="linkItem"><a class="linkAnchor" href="javascript::">Education Abroad</a></li>
+                    <li class="linkItem"><a class="linkAnchor collapseLink collapsed" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Education Abroad</a>
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <ul class="m-0 ps-2 list-unstyled linkItems"> 
+                                <li class="linkItem"><a class="linkAnchor" href="javascript::">Education Abroad 1</a></li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript::">Education Abroad 2</a></li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript::">Education Abroad 3</a></li>
+                                <li class="linkItem"><a class="linkAnchor" href="javascript::">Education Abroad 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="linkItem"><a class="linkAnchor" href="javascript::">Immigration</a></li>
                     <li class="linkItem"><a class="linkAnchor" href="javascript::">Countries</a></li>
                     <li class="linkItem"><a class="linkAnchor" href="javascript::">News</a></li>
@@ -953,6 +1070,7 @@
         </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/plyr/dist/plyr.min.js"></script>
+        <script src="assets/libs/node_modules/swiper/swiper-bundle.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
         <script>
             const players = document.querySelectorAll('.player');
@@ -961,6 +1079,32 @@
             const plyr = new Plyr(player);
             });
 
+        </script>
+
+        
+        <script>
+            const swiper = new Swiper('.heroswiper', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: "fraction",
+            },
+
+            // Navigation arrows
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+            });
         </script>
     </body>
 </html>

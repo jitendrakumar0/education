@@ -1232,7 +1232,8 @@
 
 // ? @@@@@@@@@@@@@@@@@@@@@@[  Studya Board Page-2 start  ]@@@@@@@@@@@@@@@@@@@@@@
 
-.swiper {
+.swiper-initialized {
+    overflow: hidden;
     position: relative;
     & .swiper-pagination {
         position: absolute;
@@ -1242,6 +1243,27 @@
         display: inline-block;
         left: auto;
         bottom: auto;
+        font-family: 'Gilroy-SemiBold';
+        font-size: 18px;
+        line-height: 25px;
+        text-align: right;
+        color: #2C2C2C;
+    }
+    &.heroswiper {
+        & .swiper-pagination {
+            position: absolute;
+            width: auto;
+            right: 0;
+            bottom: 0;
+            display: inline-block;
+            left: auto;
+            top: auto;
+            font-family: 'Gilroy-SemiBold';
+            font-size: 18px;
+            line-height: 25px;
+            text-align: right;
+            color: #2C2C2C;
+        }
     }
 } 
 
