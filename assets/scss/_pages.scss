@@ -1621,30 +1621,52 @@
             }
         }
         & .popularProgramsSection {
+            padding-top: 20px;
+            padding-bottom: 20px;
             & .popularProgramsSectionInner {
                 & .popularProgramsSectionHeading {
+                    font-size: 22px;
+                    line-height: 26px;
                 }
                 & .popularProgramsSectionAllBtn {
                     & a {
+                        font-size: 14px;
+                        line-height: 16px;
                     }
                 }
                 & .popularProgramsSectionItems {    
                     & .popularProgramsSectionItem {
+                        margin-bottom: 25px;
                         & .popularProgramsSectionItemInner {
                             & .popularProgramsSectionItemImg {
                                 & img {
                                 }
                             }
                             & .popularProgramsSectionItemTitle {
+                                font-size: 11px;
+                                line-height: 13px;
+                                padding: 0px 27px 6px 27px;
                             }
                             & .popularProgramsSectionItemLocation {
+                                font-size: 14px;
+                                line-height: 16px;
+                                padding-bottom: 3px;
+                                padding: 0px 27px 3px 27px;
                             }
                             & .popularProgramsSectionItemLocate {
+                                padding: 0px 27px 18px 27px;
                                 & span {
+                                    font-size: 12px;
+                                    line-height: 14px;
                                     & img {
+                                        width: 11px;
+                                        height: 11px;
                                     }
                                 }
                             }
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
                         }
                         &:hover {
                         }
