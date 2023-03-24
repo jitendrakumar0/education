@@ -119,7 +119,7 @@
                     justify-content: center;
                     background: #E91515;
                     border-radius: 5px;
-                    width: 260px;
+                    width: 102px;
                     height: 56px;
                     border: 2px solid #D40F2B;
                     &:hover {
@@ -867,7 +867,6 @@
                 }
                 & .findAProgramBtn {
                     font-size: 15px;
-                    width: 220px;
                     height: 50px;
                     &:hover {
                     }
@@ -1118,7 +1117,7 @@
                 }
                 & .findAProgramBtn {
                     font-size: 14px;
-                    width: 200px;
+                    width: 80px;
                     height: 45px;
                     &:hover {
                     }
@@ -1383,6 +1382,7 @@
                     }
                 }
                 & .findAProgramBtn {
+                    width: 100%;
                     &:hover {
                     }
                 }
@@ -1641,7 +1641,6 @@
                     }
                 }
                 & .findAProgramBtn {
-                    width: 100%;
                     &:hover {
                     }
                 }

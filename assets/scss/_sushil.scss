@@ -1249,22 +1249,22 @@
         text-align: right;
         color: #2C2C2C;
     }
-    &.heroswiper {
-        & .swiper-pagination {
-            position: absolute;
-            width: auto;
-            right: 0;
-            bottom: 0;
-            display: inline-block;
-            left: auto;
-            top: auto;
-            font-family: 'Gilroy-SemiBold';
-            font-size: 18px;
-            line-height: 25px;
-            text-align: right;
-            color: #2C2C2C;
-        }
-    }
+    // &.heroswiper {
+    //     & .swiper-pagination {
+    //         position: absolute;
+    //         width: auto;
+    //         right: 0;
+    //         bottom: 0;
+    //         display: inline-block;
+    //         left: auto;
+    //         top: auto;
+    //         font-family: 'Gilroy-SemiBold';
+    //         font-size: 18px;
+    //         line-height: 25px;
+    //         text-align: right;
+    //         color: #2C2C2C;
+    //     }
+    // }
 } 
 
 [data-page-name=studyaBoardPageTwo] {
@@ -1514,7 +1514,8 @@
             }
         }
         & .studyAbroadSection {
-            padding: 187px 0px 80px;
+            padding: 68px 0px 80px;
+            // padding: 187px 0px 80px;
             background-color: #FFFFFF;
             & .studyAbroadheading {
                 font-family: 'Gilroy-SemiBold';
@@ -2637,7 +2638,8 @@
             }
         }
         & .studyAbroadSection {
-            padding: 490px 0px 70px;
+            padding: 260px 0px 70px;
+            // padding: 490px 0px 70px;
             & .studyAbroadheading {
                 font-size: 36px;
                 line-height: 40px;
@@ -2991,7 +2993,8 @@
             }
         }
         & .studyAbroadSection {
-            padding: 690px 28px 60px 28px;
+            padding: 260px 28px 60px 28px;
+            // padding: 690px 28px 60px 28px;
             & .studyAbroadheading {
                 font-size: 30px;
                 line-height: 35px;
@@ -3401,7 +3404,8 @@
             }
         }
         & .studyAbroadSection {
-            padding: 600px 28px 40px 28px;
+            padding: 180px 28px 40px 28px;
+            // padding: 600px 28px 40px 28px;
             & .studyAbroadheading {
                 font-family: 'Gilroy-SemiBold';
                 font-size: 22px;
