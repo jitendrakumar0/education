@@ -236,18 +236,32 @@
                             <form class="row align-items-end counterInpSectionInnerForm">
                                 <div class="col-md col-12">
                                     <label for="location" class="form-label">Location</label>
-                                    <select type="text" class="form-control" placeholder="Start Application" id="location" aria-describedby="location">
-                                        <option value="Start Application">Start Application</option>
-                                        <option value="Start Application 1">Start Application 1</option>
-                                        <option value="Start Application 2">Start Application 2</option>
+                                    <select class="form-control" id="location" aria-describedby="location">
+                                        <option value="India">India</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="America">America</option>
+                                    </select>
+                                </div>
+                                <div class="col-md col-12">
+                                    <label for="educationLevel" class="form-label">Education Level</label>
+                                    <select  class="form-control" id="educationLevel" aria-describedby="educationLevel">
+                                        <option value="Artificial Engineering">Artificial Engineering</option>
+                                        <option value="Artificial Engineering">Artificial Engineering</option>
+                                        <option value="Artificial Engineering">Artificial Engineering</option>
+                                        <option value="Artificial Engineering">Artificial Engineering</option>
                                     </select>
                                 </div>
                                 <div class="col-md col-12">
                                     <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" placeholder="Enter a subject" id="subject" aria-describedby="subject">
+                                    <select  class="form-control" id="subject" aria-describedby="subject">
+                                        <option value="Artificial Engineering">Artificial Engineering</option>
+                                        <option value="Artificial Engineering">Artificial Engineering</option>
+                                        <option value="Artificial Engineering">Artificial Engineering</option>
+                                        <option value="Artificial Engineering">Artificial Engineering</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-auto col-12 mt-2 mt-sm-0">
-                                    <a href="javascript:;" class="findAProgramBtn">Find Your Program Matches</a>
+                                    <a href="javascript:;" class="findAProgramBtn">Search</a>
                                 </div>
                             </form>
                         </div>
@@ -720,32 +734,49 @@
                                     <div class="heroswiper">
                                         <!-- Additional required wrapper -->
                                         <div class="swiper-wrapper">
-                                          <!-- Slides -->
-                                          <div class="swiper-slide">
-                                            <div class="row mx-lg-0 userFeedback align-items-center">
-                                                <div class="col-12 feedbackText">
-                                                    Hello everyone! My name is Mikhail. It's been exactly 2 months since I've been studying and living in Toronto, all thanks to the work of the CIP company - a huge thank you to them! I study at George Brown College on the Strategic Relationship Marketing program. Studying is not easy (compared to Ukraine), but it is often very interesting and informative. Here, they are more focused on training future professionals, so there is a minimum of boring theory, and more practice. Therefore, they set many group projects, where you need to work in a team and solve cases as close as possible to future work. Also, the college helps in the search for co-op and internship (work for students without experience in the field of education). Toronto is a very beautiful multicultural city. People from all over the world live here. I like everything so far. If you have the opportunity to study in Canada, definitely try it. 
-                                                </div>
-                                                <div class="col">
-                                                    <div class="row mx-0 align-items-center">
-                                                        <div class="col-auto px-0">
-                                                            <div class="userImg">
-                                                                <img src="assets/img/user1.png" alt="">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide">
+                                                <div class="row mx-lg-0 userFeedback align-items-center">
+                                                    <div class="col">
+                                                        <div class="row mx-0 align-items-center">
+                                                            <div class="col-auto px-0">
+                                                                <div class="userImg">
+                                                                    <img src="assets/img/user1.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="name">Viivi Vauhkonen</div>
+                                                                <div class="description">Finland</div>
                                                             </div>
                                                         </div>
-                                                        <div class="col">
-                                                            <div class="name">Mykhailo Andriychuk</div>
-                                                            <div class="description">George Brown College</div>
-                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 feedbackText">
+                                                        Hello, my name is Adelina and I want to thank the CIP agency in the city of Sumy for giving me the chance to study abroad! And I am very glad that I came across such professionals in my field! Everything was done quickly and qualitatively. There were many different colleges and I was really confused about the choice, but the CIP agency consulted on each of them and helped me quickly decide where it would be best for me to enroll. I didn't pass IELTS, so now I'm studying at the ICEAP language school. I like it very much at school, here I get exactly what I lacked in a normal school. I was very lucky with the teachers of this school, they are all cheerful, they behave with us like with friends (in moderation, of course), unlike Ukrainian teachers. Every day, coming to ICEAP, the teacher asks how we are doing, what's new, how everyone's day was and what plans we constantly play games, work in pairs, this helps a lot in learning English. They do everything so that lessons are not boring. Anyone who wants to know English perfectly or just learn it - choose the language school "ICEAP" in Toronto!!! 
                                                     </div>
                                                 </div>
                                             </div>
-                                          </div>
-                                          <div class="swiper-slide">
-                                            <div class="row mx-lg-0 userFeedback align-items-center">
-                                                <div class="col-12 feedbackText">
-                                                    Hello, my name is Adelina and I want to thank the CIP agency in the city of Sumy for giving me the chance to study abroad! And I am very glad that I came across such professionals in my field! Everything was done quickly and qualitatively. There were many different colleges and I was really confused about the choice, but the CIP agency consulted on each of them and helped me quickly decide where it would be best for me to enroll. I didn't pass IELTS, so now I'm studying at the ICEAP language school. I like it very much at school, here I get exactly what I lacked in a normal school. I was very lucky with the teachers of this school, they are all cheerful, they behave with us like with friends (in moderation, of course), unlike Ukrainian teachers. Every day, coming to ICEAP, the teacher asks how we are doing, what's new, how everyone's day was and what plans we constantly play games, work in pairs, this helps a lot in learning English. They do everything so that lessons are not boring. Anyone who wants to know English perfectly or just learn it - choose the language school "ICEAP" in Toronto!!!
+                                            <div class="swiper-slide">
+                                                <div class="row mx-lg-0 userFeedback align-items-center">
+                                                    <div class="col">
+                                                        <div class="row mx-0 align-items-center">
+                                                            <div class="col-auto px-0">
+                                                                <div class="userImg">
+                                                                    <img src="assets/img/user1.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="name">Samira Hiesl</div>
+                                                                <div class="description">Samira Hiesl</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 feedbackText">
+                                                        Hello, my name is Adelina and I want to thank the CIP agency in the city of Sumy for giving me the chance to study abroad! And I am very glad that I came across such professionals in my field! Everything was done quickly and qualitatively. There were many different colleges and I was really confused about the choice, but the CIP agency consulted on each of them and helped me quickly decide where it would be best for me to enroll. I didn't pass IELTS, so now I'm studying at the ICEAP language school. I like it very much at school, here I get exactly what I lacked in a normal school. I was very lucky with the teachers of this school, they are all cheerful, they behave with us like with friends (in moderation, of course), unlike Ukrainian teachers. Every day, coming to ICEAP, the teacher asks how we are doing, what's new, how everyone's day was and what plans we constantly play games, work in pairs, this helps a lot in learning English. They do everything so that lessons are not boring. Anyone who wants to know English perfectly or just learn it - choose the language school "ICEAP" in Toronto!!! 
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row mx-lg-0 userFeedback align-items-center">
                                                 <div class="col">
                                                     <div class="row mx-0 align-items-center">
                                                         <div class="col-auto px-0">
@@ -754,33 +785,56 @@
                                                             </div>
                                                         </div>
                                                         <div class="col">
-                                                            <div class="name">Adelina Korchak</div>
-                                                            <div class="description">ICEAP</div>
+                                                            <div class="name">Coralie Champandard</div>
+                                                            <div class="description">France</div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                          </div>
-                                          <div class="swiper-slide">
-                                            <div class="row mx-lg-0 userFeedback align-items-center">
                                                 <div class="col-12 feedbackText">
-                                                    "Its 100% better to go to a training program than to take IELTS." Congratulations to our student from Lviv - - on the successful completion of the training program - University Pathway - at the ILSC language school in Toronto, Canada! Now Olesya will start her studies at the Canadian college - Humber College! This program provides an opportunity to enroll in a college without taking the IELTS test. Here are a few words from Olesya about the program: "It is 100% better to go to the training program than to take the IELTS. Many skills are developed here. We made various presentations, posters, interestingly developed speaking skills through debates and all kinds of games. They also teach the Academic Essay with all references and how to make them correctly. This helps students a lot later on in college or university. I highly recommend everyone to go through pre-study training and the ILSC language school." 
+                                                    Hello, my name is Adelina and I want to thank the CIP agency in the city of Sumy for giving me the chance to study abroad! And I am very glad that I came across such professionals in my field! Everything was done quickly and qualitatively. There were many different colleges and I was really confused about the choice, but the CIP agency consulted on each of them and helped me quickly decide where it would be best for me to enroll. I didn't pass IELTS, so now I'm studying at the ICEAP language school. I like it very much at school, here I get exactly what I lacked in a normal school. I was very lucky with the teachers of this school, they are all cheerful, they behave with us like with friends (in moderation, of course), unlike Ukrainian teachers. Every day, coming to ICEAP, the teacher asks how we are doing, what's new, how everyone's day was and what plans we constantly play games, work in pairs, this helps a lot in learning English. They do everything so that lessons are not boring. Anyone who wants to know English perfectly or just learn it - choose the language school "ICEAP" in Toronto!!!
                                                 </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row mx-lg-0 userFeedback align-items-center">
+                                                    <div class="col">
+                                                        <div class="row mx-0 align-items-center">
+                                                            <div class="col-auto px-0">
+                                                                <div class="userImg">
+                                                                    <img src="assets/img/user1.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="name">Samira Hiesl</div>
+                                                                <div class="description">Samira Hiesl</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 feedbackText">
+                                                        Hello, my name is Adelina and I want to thank the CIP agency in the city of Sumy for giving me the chance to study abroad! And I am very glad that I came across such professionals in my field! Everything was done quickly and qualitatively. There were many different colleges and I was really confused about the choice, but the CIP agency consulted on each of them and helped me quickly decide where it would be best for me to enroll. I didn't pass IELTS, so now I'm studying at the ICEAP language school. I like it very much at school, here I get exactly what I lacked in a normal school. I was very lucky with the teachers of this school, they are all cheerful, they behave with us like with friends (in moderation, of course), unlike Ukrainian teachers. Every day, coming to ICEAP, the teacher asks how we are doing, what's new, how everyone's day was and what plans we constantly play games, work in pairs, this helps a lot in learning English. They do everything so that lessons are not boring. Anyone who wants to know English perfectly or just learn it - choose the language school "ICEAP" in Toronto!!! 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row mx-lg-0 userFeedback align-items-center">
                                                 <div class="col">
                                                     <div class="row mx-0 align-items-center">
                                                         <div class="col-auto px-0">
                                                             <div class="userImg">
-                                                                <img src="assets/img/user1.png" alt="">
+                                                                <img src="assets/img/user2.png" alt="">
                                                             </div>
                                                         </div>
                                                         <div class="col">
-                                                            <div class="name">Olesya Steshko</div>
-                                                            <div class="description">ILSC</div>
+                                                            <div class="name">Coralie Champandard</div>
+                                                            <div class="description">France</div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-12 feedbackText">
+                                                    Hello, my name is Adelina and I want to thank the CIP agency in the city of Sumy for giving me the chance to study abroad! And I am very glad that I came across such professionals in my field! Everything was done quickly and qualitatively. There were many different colleges and I was really confused about the choice, but the CIP agency consulted on each of them and helped me quickly decide where it would be best for me to enroll. I didn't pass IELTS, so now I'm studying at the ICEAP language school. I like it very much at school, here I get exactly what I lacked in a normal school. I was very lucky with the teachers of this school, they are all cheerful, they behave with us like with friends (in moderation, of course), unlike Ukrainian teachers. Every day, coming to ICEAP, the teacher asks how we are doing, what's new, how everyone's day was and what plans we constantly play games, work in pairs, this helps a lot in learning English. They do everything so that lessons are not boring. Anyone who wants to know English perfectly or just learn it - choose the language school "ICEAP" in Toronto!!!
+                                                </div>
+                                                </div>
                                             </div>
-                                          </div>
                                         </div>
                                         <!-- If we need pagination -->
                                         <div class="swiper-pagination"></div>
