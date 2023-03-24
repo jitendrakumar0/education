@@ -748,6 +748,7 @@
                         & .partnerSectionItemInner {
                             & .partnerSectionItemImg {
                                 & img {
+                                    height: 75px;
                                 }
                                 &:hover {
                                     & img {
@@ -953,6 +954,8 @@
             }
         }
         .feedbackSection {
+            padding-top: 35px;
+            padding-bottom: 35px;
             & .sectionHeading {
                 font-size: 38px;
                 line-height: 45px;
@@ -991,14 +994,19 @@
             }
         }
         .partnerSection {
+            padding-top: 35px;
+            padding-bottom: 35px;
             & .countriesSectionInner {
                 & .SectionHeading {
+                    font-size: 38px;
+                    line-height: 45px;
                 }
                 & .partnerSectionItems {
                     & .partnerSectionItem {
                         & .partnerSectionItemInner {
                             & .partnerSectionItemImg {
                                 & img {
+                                    height: 65px;
                                 }
                                 &:hover {
                                     & img {
@@ -1165,6 +1173,8 @@
             }
         }
         .feedbackSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
             & .sectionHeading {
                 font-size: 35px;
                 line-height: 35px;
@@ -1207,14 +1217,20 @@
             }
         }
         .partnerSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
             & .countriesSectionInner {
                 & .SectionHeading {
+                    font-size: 35px;
+                    line-height: 35px;
+                    margin-bottom: 20px;
                 }
                 & .partnerSectionItems {
                     & .partnerSectionItem {
                         & .partnerSectionItemInner {
                             & .partnerSectionItemImg {
                                 & img {
+                                    height: 50px;
                                 }
                                 &:hover {
                                     & img {
@@ -1227,15 +1243,25 @@
             }
         }
         .contactUsSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
             & .sectionHeading {
+                font-size: 35px;
+                line-height: 35px;
+                margin-bottom: 20px;
             }
             & .form-control {
+                height: 64px;
+                font-size: 15px;
+                line-height: 74px;
                 &::placeholder {
                 }
                 &.textarea {
                 }
             }
             & .sendBtn {
+                height: 54px;
+                font-size: 17px;
                 &:hover,
                 &:active {
                 }
@@ -1358,6 +1384,8 @@
             }
         }
         .feedbackSection {
+            padding-top: 25px;
+            padding-bottom: 25px;
             & .sectionHeading {
                 font-size: 30px;
                 line-height: 40px;
@@ -1399,14 +1427,21 @@
             }
         }
         .partnerSection {
+            padding-top: 25px;
+            padding-bottom: 25px;
             & .countriesSectionInner {
                 & .SectionHeading {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 20px;
                 }
                 & .partnerSectionItems {
                     & .partnerSectionItem {
                         & .partnerSectionItemInner {
+                            justify-content: center;
                             & .partnerSectionItemImg {
                                 & img {
+                                    height: 60px;
                                 }
                                 &:hover {
                                     & img {
@@ -1419,15 +1454,24 @@
             }
         }
         .contactUsSection {
+            padding-top: 25px;
+            padding-bottom: 25px;
             & .sectionHeading {
+                font-size: 30px;
+                line-height: 40px;
             }
             & .form-control {
+                height: 56px;
+                font-size: 14px;
+                line-height: 66px;            
                 &::placeholder {
                 }
                 &.textarea {
                 }
             }
             & .sendBtn {
+                height: 52px;
+                font-size: 16px;
                 &:hover,
                 &:active {
                 }
@@ -1560,6 +1604,8 @@
             }
         }
         .feedbackSection {
+            padding-top: 20px;
+            padding-bottom: 20px;
             & .sectionHeading {
                 font-size: 22px;
                 line-height: 26px;
@@ -1606,14 +1652,20 @@
             }
         }
         .partnerSection {
+            padding-top: 20px;
+            padding-bottom: 20px;
             & .countriesSectionInner {
                 & .SectionHeading {
+                    font-size: 22px;
+                    line-height: 26px;
+                    margin-bottom: 12px;
                 }
                 & .partnerSectionItems {
                     & .partnerSectionItem {
                         & .partnerSectionItemInner {
                             & .partnerSectionItemImg {
                                 & img {
+                                    height: 41px;
                                 }
                                 &:hover {
                                     & img {
@@ -1626,15 +1678,28 @@
             }
         }
         .contactUsSection {
+            padding-top: 20px;
+            padding-bottom: 40px;
             & .sectionHeading {
+                font-size: 22px;
+                line-height: 26px;
             }
             & .form-control {
+                height: 40px;
+                font-size: 12px;
+                line-height: 14px;
+                margin-bottom: 10px;
                 &::placeholder {
                 }
                 &.textarea {
+                    height: 100px;
                 }
             }
             & .sendBtn {
+                width: 74px;
+                height: 30px;
+                font-size: 14px;
+                line-height: 16px;
                 &:hover,
                 &:active {
                 }
