@@ -355,6 +355,10 @@
                             font-size: 15px;
                             line-height: 18px;
                             color: #FFFFFF;
+                            transition: 0.3s ease;
+                            &:hover {
+                                color: $theme1;
+                            }
                         }
                     }
                 }
@@ -366,6 +370,12 @@
                         & img {
                             height: 16px;
                             width: 16px;
+                            transition: 0.3s ease;
+                        }
+                        &:hover  {
+                            & img {
+                                transform: scale(1.3);
+                            }
                         }
                         &:nth-child(2) {
                             margin: 0 21px;
@@ -395,6 +405,10 @@
                             font-size: 17px;
                             line-height: 25px;
                             color: #C1C1C1;
+                            transition: 0.3s ease;
+                            &:hover {
+                                color: #FFFFFF;
+                            }
                         }
                         &:first-child {
                             margin-bottom: 14px;
@@ -408,6 +422,12 @@
                     font-size: 17px;
                     line-height: 25px;
                     color: #C5C5C5;
+                    transition: 0.3s ease;
+                    &:hover {
+                        &:not(.copyrighText) {
+                            color: #ffffff;
+                        }
+                    }
                 }
             }
         }
@@ -453,7 +473,7 @@
                 }
             }
         }
-        .faqSection {
+        .feedbackSection {
             padding-top: 45px;
             padding-bottom: 45px;
             & .sectionHeading {
@@ -461,10 +481,13 @@
                 font-size: 42px;
                 line-height: 49px;
                 color: #1C1C1C;
-                max-width: 324px;
+                max-width: 350px;
             }
             & .allReviews {
                 & a {
+                    display: block;
+                    white-space: nowrap;
+                    // min-width: 140px;
                     & span {
                         font-family: "Gilroy-Bold";
                         font-style: normal;
@@ -684,7 +707,7 @@
                 }
             }
         }
-        .faqSection {
+        .feedbackSection {
             & .sectionHeading {
             }
             & .allReviews {
@@ -929,12 +952,15 @@
                 }
             }
         }
-        .faqSection {
+        .feedbackSection {
             & .sectionHeading {
+                font-size: 38px;
+                line-height: 45px;
             }
             & .allReviews {
                 & a {
                     & span {
+                        font-size: 17px;
                         & img {
                         }
                     }
@@ -950,10 +976,13 @@
                 & .feedbackText {
                 }
                 & .userImg {
+                    width: 80px;
+                    height: 80px;
                     & img {
                     }
                 }
                 & .name {
+                    margin-bottom: 0;
                 }
                 & .description {
                 }
@@ -1135,13 +1164,18 @@
                 }
             }
         }
-        .faqSection {
+        .feedbackSection {
             & .sectionHeading {
+                font-size: 35px;
+                line-height: 35px;
             }
             & .allReviews {
                 & a {
                     & span {
+                        font-size: 16px;
+                        line-height: 20px;
                         & img {
+                            width: 14px;
                         }
                     }
                     &:hover {
@@ -1152,14 +1186,19 @@
             }
             & .userFeedback {
                 &:first-child {
+                    margin-top: 20px;
                 }
                 & .feedbackText {
+                    font-size: 16px;
                 }
                 & .userImg {
+                    width: 75px;
+                    height: 75px;                
                     & img {
                     }
                 }
                 & .name {
+                    margin-bottom: 0;
                 }
                 & .description {
                 }
@@ -1318,12 +1357,16 @@
                 }
             }
         }
-        .faqSection {
+        .feedbackSection {
             & .sectionHeading {
+                font-size: 30px;
+                line-height: 40px;
             }
             & .allReviews {
                 & a {
                     & span {
+                        font-size: 16px;
+                        line-height: 20px;
                         & img {
                         }
                     }
@@ -1337,12 +1380,17 @@
                 &:first-child {
                 }
                 & .feedbackText {
+                    font-size: 16px;
+                    line-height: 23px;
                 }
                 & .userImg {
+                    width: 70px;
+                    height: 70px;
                     & img {
                     }
                 }
                 & .name {
+                    font-size: 17px;
                 }
                 & .description {
                 }
@@ -1511,12 +1559,16 @@
                 }
             }
         }
-        .faqSection {
+        .feedbackSection {
             & .sectionHeading {
+                font-size: 22px;
+                line-height: 26px;
             }
             & .allReviews {
                 & a {
                     & span {
+                        font-size: 14px;
+                        line-height: 16px;
                         & img {
                         }
                     }
@@ -1530,16 +1582,26 @@
                 &:first-child {
                 }
                 & .feedbackText {
+                    font-size: 12px;
+                    line-height: 19px;
                 }
                 & .userImg {
+                    height: 50px;
+                    width: 50px;
                     & img {
                     }
                 }
                 & .name {
+                    font-size: 14px;
+                    line-height: 25px;
                 }
                 & .description {
+                    font-size: 12px;
+                    line-height: 25px;
                 }
                 & .outOfNumber {
+                    font-size: 18px;
+                    line-height: 25px;
                 }
             }
         }
