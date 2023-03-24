@@ -1231,6 +1231,20 @@
 
 
 // ? @@@@@@@@@@@@@@@@@@@@@@[  Studya Board Page-2 start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+.swiper {
+    position: relative;
+    & .swiper-pagination {
+        position: absolute;
+        width: auto;
+        right: 0;
+        top: 0;
+        display: inline-block;
+        left: auto;
+        bottom: auto;
+    }
+} 
+
 [data-page-name=studyaBoardPageTwo] {
     @include media-breakpoint(basic) {
         & .heroSection {
@@ -1612,6 +1626,87 @@
                 }
             }
         }
+        & .feedbackSection {
+            padding-top: 45px;
+            padding-bottom: 45px;
+            & .sectionHeading {
+                font-family: 'Gilroy-Bold';
+                font-size: 42px;
+                line-height: 49px;
+                color: #1C1C1C;
+                max-width: 350px;
+            }
+            & .allReviews {
+                & a {
+                    display: block;
+                    white-space: nowrap;
+                    // min-width: 140px;
+                    & span {
+                        font-family: "Gilroy-Bold";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        text-align: right;
+                        margin-right: 11px;
+                        color: #e91515;
+                        transition: .3s all;
+                        & img {
+                            width: 16px;
+                        }
+                    }
+                    &:hover {
+                        & span {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+            & .userFeedback {
+                margin-top: 20px;
+                &:first-child {
+                    margin-top: 0;
+                }
+                & .feedbackText {
+                    font-family: 'Gilroy-Regular';
+                    font-size: 17px;
+                    line-height: 25px;
+                    color: #3C3C3C;
+                    margin-top: 14px;
+                    margin-bottom: 0px;
+                }
+                & .userImg {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    & img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .name {
+                    font-family: 'Gilroy-SemiBold';
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #2C2C2C;
+                    margin-bottom: 5px;
+                }
+                & .description {
+                    font-family: 'Gilroy-Regular';
+                    font-size: 14px;
+                    line-height: 25px;
+                    color: #7C7C7C;
+                }
+                & .outOfNumber {
+                    font-family: 'Gilroy-SemiBold';
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #2C2C2C;
+                }
+            }
+        }
         & .facilities {
             margin-top: 35px; 
             & .facilitiesInner {
@@ -1651,12 +1746,13 @@
                                 & .facilitiesItemBoxListItems {
                                     list-style: none;
                                     display: flex;
-                                    align-items: center;
+                                    align-items: start;
                                     & .listImg {
                                         width: 12px;
                                         height: 12px;
                                         margin-right: 5px;
                                         display: flex;
+                                        margin-top: 6px;
                                         & img {
                                             aspect-ratio: 10/10;
                                             object-fit: contain;
@@ -1744,8 +1840,12 @@
                         font-size: 18px;
                         line-height: 21px;
                         text-align: center;
-
                         color: #FFFFFF;
+                        border: 2px solid #E91515;
+                        &:hover {
+                            background-color: #FFFFFF;
+                            color: #E91515;
+                        }
                     }
                 }
             }
@@ -1967,6 +2067,82 @@
                 }
             }
         }
+        & .facilities {
+            & .facilitiesInner {
+                & .facilitiesHeading  {
+                }
+                & .facilitiesItem {
+                    & .facilitiesItemBox {
+                        & .facilitiesItemBoxImg {
+                        }
+                        & .facilitiesItemBoxHeading {
+                        }
+                        & .facilitiesItemBoxList {
+                            & .facilitiesItemBoxListItem {
+                                & .facilitiesItemBoxListItems {
+                                    & .listImg {
+                                        & img {
+                                        }
+                                    }
+                                    & .listText {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .admitted {
+            & .admittedInner {
+                & .admittedHeading {
+                }
+                & .admittedItem {
+                    & .admittedItemImg {
+                        & img {
+                        }
+                    }
+                    & .admittedItemHeading {
+                    }
+                    & .admittedItemPara {
+                    }
+                    & .serviceHeadline {
+                        & span {
+                        }
+                    }
+                    & .admitButton {
+                    }
+                }
+            }
+        }
+        & .feesAndFundingSection {
+            & .feesAndFundingSectionInner {
+                & .imgSide {
+                    & img {
+                    }
+                }
+                & .textSide {
+                    & .textSideMain {
+                        & .proHeading {
+                        }
+                        & .feesProPra {
+                            & span {
+                            }
+                            &.first {
+                            }
+                            &.cutsomMargin {
+                            }
+                        }
+                        & .proSubHeading {
+                        }
+                        & .proMiniHeading {
+                        }
+                        & .proSubHeadingTwo {
+                        }
+                    }
+                }
+            }
+        }
         & .sectionThird {
             & .sectionInner {
                 & .imgOuter {
@@ -2168,6 +2344,150 @@
                 }
             }
         }
+        & .feedbackSection {
+            & .sectionHeading {
+                font-size: 38px;
+                line-height: 45px;
+            }
+            & .allReviews {
+                & a {
+                    & span {
+                        font-size: 17px;
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & span {
+                        }
+                    }
+                }
+            }
+            & .userFeedback {
+                &:first-child {
+                }
+                & .feedbackText {
+                }
+                & .userImg {
+                    width: 80px;
+                    height: 80px;
+                    & img {
+                    }
+                }
+                & .name {
+                    margin-bottom: 0;
+                }
+                & .description {
+                }
+                & .outOfNumber {
+                }
+            }
+        }
+        & .facilities {
+            & .facilitiesInner {
+                & .facilitiesHeading  {
+                    font-size: 38px;
+                    line-height: 45px;
+                }
+                & .facilitiesItem {
+                    & .facilitiesItemBox {
+                        min-height: 215px;
+                        & .facilitiesItemBoxImg {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        & .facilitiesItemBoxHeading {
+                            font-size: 26px;
+                            line-height: 30px;
+                        }
+                        & .facilitiesItemBoxList {
+                            & .facilitiesItemBoxListItem {
+                                & .facilitiesItemBoxListItems {
+                                    & .listImg {
+                                        & img {
+                                        }
+                                    }
+                                    & .listText {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .admitted {
+            & .admittedInner {
+                & .admittedHeading {
+                    font-size: 38px;
+                    line-height: 45px;
+                }
+                & .admittedItem {
+                    & .admittedItemImg {
+                        width: 70px;
+                        height: 70px;
+                        & img {
+                        }
+                    }
+                    & .admittedItemHeading {
+                        font-size: 26px;
+                        line-height: 30px;
+                    }
+                    & .admittedItemPara {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    & .serviceHeadline {
+                        font-size: 20px;
+                        line-height: 24px;                    
+                        & span {
+                        }
+                    }
+                    & .admitButton {
+                    }
+                }
+            }
+        }
+        & .feesAndFundingSection {
+            & .feesAndFundingSectionInner {
+                & .imgSide {
+                    background-color: #F2F2F2;
+                    & img {
+                        object-position: top center !important;
+                    }
+                }
+                & .textSide {
+                    & .textSideMain {
+                        & .proHeading {
+                            font-size: 38px;
+                            line-height: 45px;
+                            margin-bottom: 15px; 
+                        }
+                        & .feesProPra {
+                            & span {
+                            }
+                            &.first {
+                                margin-bottom: 25px;
+                            }
+                            &.cutsomMargin {
+                                margin-bottom: 25px !important;
+                            }
+                        }
+                        & .proSubHeading {
+                            font-size: 22px;
+                            line-height: 22px;
+                            margin-bottom: 13px;
+                        }
+                        & .proMiniHeading {
+                            font-size: 20px;
+                            line-height: 23px;
+                            margin-bottom: 13px;
+                        }
+                        & .proSubHeadingTwo {
+                        }
+                    }
+                }
+            }
+        }
         & .sectionThird {
             & .sectionInner {
                 & .imgOuter {
@@ -2359,6 +2679,141 @@
                             margin-bottom: 15px;
                             &:last-child {
                             }
+                        }
+                    }
+                }
+            }
+        }
+        & .feedbackSection {
+            & .sectionHeading {
+                font-size: 35px;
+                line-height: 35px;
+            }
+            & .allReviews {
+                & a {
+                    & span {
+                        font-size: 16px;
+                        line-height: 20px;
+                        & img {
+                            width: 14px;
+                        }
+                    }
+                    &:hover {
+                        & span {
+                        }
+                    }
+                }
+            }
+            & .userFeedback {
+                &:first-child {
+                    margin-top: 20px;
+                }
+                & .feedbackText {
+                    font-size: 16px;
+                }
+                & .userImg {
+                    width: 75px;
+                    height: 75px;                
+                    & img {
+                    }
+                }
+                & .name {
+                    margin-bottom: 0;
+                }
+                & .description {
+                }
+                & .outOfNumber {
+                }
+            }
+        }
+        & .facilities {
+            & .facilitiesInner {
+                & .facilitiesHeading  {
+                    font-size: 36px;
+                    line-height: 40px;
+                }
+                & .facilitiesItem {
+                    & .facilitiesItemBox {
+                        & .facilitiesItemBoxImg {
+                        }
+                        & .facilitiesItemBoxHeading {
+                        }
+                        & .facilitiesItemBoxList {
+                            & .facilitiesItemBoxListItem {
+                                & .facilitiesItemBoxListItems {
+                                    & .listImg {
+                                        & img {
+                                        }
+                                    }
+                                    & .listText {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .admitted {
+            & .admittedInner {
+                & .admittedHeading {
+                    font-size: 36px;
+                    line-height: 40px;
+                }
+                & .admittedItem {
+                    & .admittedItemImg {
+                        & img {
+                        }
+                    }
+                    & .admittedItemHeading {
+                    }
+                    & .admittedItemPara {
+                    }
+                    & .serviceHeadline {
+                        & span {
+                        }
+                    }
+                    & .admitButton {
+                    }
+                }
+            }
+        }
+        & .feesAndFundingSection {
+            & .feesAndFundingSectionInner {
+                & .imgSide {
+                    max-width: 350px;
+                    & img {
+                        object-position: top center !important;
+                    }
+                }
+                & .textSide {
+                    padding-left: 40px !important;
+                    & .textSideMain {
+                        & .proHeading {
+                            font-size: 26px;
+                            line-height: 30px;
+                            margin-bottom: 10px;
+                        }
+                        & .feesProPra {
+                            font-size: 16px;
+                            line-height: 20px;
+                            & span {
+                            }
+                            &.first {
+                                margin-bottom: 15px;
+                            }
+                            &.cutsomMargin {
+                                margin-bottom: 20px !important;
+                            }
+                        }
+                        & .proSubHeading {
+                            font-size: 20px;
+                        }
+                        & .proMiniHeading {
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+                        & .proSubHeadingTwo {
                         }
                     }
                 }
@@ -2575,6 +3030,150 @@
                         & .proPra {
                             &:last-child {
                             }
+                        }
+                    }
+                }
+            }
+        }
+        & .feedbackSection {
+            padding-top: 0px;
+            & .sectionHeading {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            & .allReviews {
+                & a {
+                    & span {
+                        font-size: 16px;
+                        line-height: 20px;
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & span {
+                        }
+                    }
+                }
+            }
+            & .userFeedback {
+                &:first-child {
+                }
+                & .feedbackText {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+                & .userImg {
+                    width: 70px;
+                    height: 70px;
+                    & img {
+                    }
+                }
+                & .name {
+                    font-size: 17px;
+                }
+                & .description {
+                }
+                & .outOfNumber {
+                }
+            }
+        }
+        & .facilities {
+            margin-top: 0;
+            & .facilitiesInner {
+                & .facilitiesHeading  {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                & .facilitiesItem {
+                    & .facilitiesItemBox {
+                        & .facilitiesItemBoxImg {
+                            width: 45px;
+                            height: 45px;
+                        }
+                        & .facilitiesItemBoxHeading {
+                            font-size: 22px;
+                            line-height: 26px;
+                        }
+                        & .facilitiesItemBoxList {
+                            & .facilitiesItemBoxListItem {
+                                & .facilitiesItemBoxListItems {
+                                    & .listImg {
+                                        & img {
+                                        }
+                                    }
+                                    & .listText {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .admitted {
+            margin-top: 60px;
+            & .admittedInner {
+                & .admittedHeading {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                & .admittedItem {
+                    & .admittedItemImg {
+                        width: 60px;
+                        height: 60px;
+                        & img {
+                        }
+                    }
+                    & .admittedItemHeading {
+                        font-size: 22px;
+                        line-height: 26px;
+                    }
+                    & .admittedItemPara {
+                    }
+                    & .serviceHeadline {
+                        padding-top: 30px;
+                        font-size: 18px;
+                        line-height: 20px;
+                        & span {
+                        }
+                    }
+                    & .admitButton {
+                        max-width: 250px;
+                        height: 50px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        & .feesAndFundingSection {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            & .feesAndFundingSectionInner {
+                & .imgSide {
+                    max-width: 100%;
+                    height: auto !important;
+                    & img {
+                    }
+                }
+                & .textSide {
+                    padding-left: 0 !important;
+                    padding-top: 40px;
+                    & .textSideMain {
+                        & .proHeading {
+                        }
+                        & .feesProPra {
+                            & span {
+                            }
+                            &.first {
+                            }
+                            &.cutsomMargin {
+                            }
+                        }
+                        & .proSubHeading {
+                        }
+                        & .proMiniHeading {
+                        }
+                        & .proSubHeadingTwo {
                         }
                     }
                 }
@@ -2803,6 +3402,7 @@
             }
         }
         & .sectionSecond {
+            padding-bottom: 0;
             & .sectionSecondInner {
                 gap: 30px;
                 & .programSection {
@@ -2834,26 +3434,201 @@
                     }
                 }
                 & .admissionsRequirementsSection {
+                    padding-top: 25px;
                     & .imgSide {
                     }
                     & .textSide {
+                        padding-top: 40px !important;
                         & .proHeading {
-                        }
-                        & .proSubHeading {
-                        }
-                        & .graduatesBox {
-                            & .graduatesBoxInner {
-                                & .graduatesBoxHeading {
-                                }
-                                & .graduatesBoxSubHeading {
-                                }
-                            }
-                        }
-                        & .proAnotherHeading {
+                            font-size: 22px;
+                            line-height: 26px;
+                            margin-bottom: 8px;
                         }
                         & .proPra {
-                            &:last-child {
+                            font-size: 12px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+        & .feedbackSection {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            & .sectionHeading {
+                font-size: 22px;
+                line-height: 26px;
+            }
+            & .allReviews {
+                & a {
+                    & span {
+                        font-size: 14px;
+                        line-height: 16px;
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & span {
+                        }
+                    }
+                }
+            }
+            & .userFeedback {
+                &:first-child {
+                }
+                & .feedbackText {
+                    font-size: 12px;
+                    line-height: 19px;
+                }
+                & .userImg {
+                    height: 50px;
+                    width: 50px;
+                    & img {
+                    }
+                }
+                & .name {
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+                & .description {
+                    font-size: 12px;
+                    line-height: 25px;
+                }
+                & .outOfNumber {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            }
+        }
+        & .facilities {
+            margin-top: 0;
+            & .facilitiesInner {
+                & .facilitiesHeading  {
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+                & .facilitiesItem {
+                    & .facilitiesItemBox {
+                        padding: 5px 9px 7px 14px;
+                        & .facilitiesItemBoxImg {
+                            width: 40px;
+                            height: 40px;
+                        }
+                        & .facilitiesItemBoxHeading {
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                        & .facilitiesItemBoxList {
+                            & .facilitiesItemBoxListItem {
+                                & .facilitiesItemBoxListItems {
+                                    & .listImg {
+                                        & img {
+                                        }
+                                    }
+                                    & .listText {
+                                        font-size: 12px;
+                                        line-height: 25px;
+                                    }
+                                }
                             }
+                        }
+                    }
+                }
+            }
+        }
+        & .admitted {
+            & .admittedInner {
+                & .admittedHeading {
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+                & .admittedItem {
+                    & .admittedItemImg {
+                        margin: auto;
+                        width: 60px;
+                        height: 60px;
+                        padding-bottom: 0;
+                        margin-bottom: 13px;
+                        & img {
+                        }
+                    }
+                    & .admittedItemHeading {
+                        text-align: center;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                    & .admittedItemPara {
+                        text-align: center;
+                        font-size: 12px;
+                        line-height: 19px;
+                    }
+                    & .serviceHeadline {
+                        font-size: 12px;
+                        line-height: 19px;
+                        padding-top: 0px;
+                        & span {
+                        }
+                    }
+                    & .admitButton {
+                        width: 197px;
+                        height: 30px;
+                        font-size: 14px;
+                        line-height: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+        & .feesAndFundingSection {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            & .feesAndFundingSectionInner {
+                & .imgSide {
+                    & img {
+                    }
+                }
+                & .textSide {
+                    padding-top: 18px;
+                    & .textSideMain {
+                        & .proHeading {
+                            font-size: 22px;
+                            line-height: 26px;
+                        }
+                        & .feesProPra {
+                            font-size: 12px;
+                            line-height: 19px;
+                            & span {
+                            }
+                            &.first {
+                            }
+                            &.cutsomMargin {
+                            }
+                        }
+                        & .proSubHeading {
+                            font-family: 'Gilroy-Medium';
+                            font-size: 22px;
+                            line-height: 25px;
+                            margin-bottom: 8px;
+                            &.two {
+                                font-family: 'Gilroy-Medium';
+                                font-size: 14px;
+                                line-height: 16px;
+                                color: #3C3C3C;
+                                margin-bottom: 5px;
+                            }
+                        }
+                        & .proMiniHeading {
+                            font-size: 14px;
+                            line-height: 25px;
+                            margin-bottom: 4px;
+                        }
+                        & .proSubHeadingTwo {
+                            font-size: 14px;
+                            line-height: 25px;
                         }
                     }
                 }
