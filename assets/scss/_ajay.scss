@@ -1,6 +1,142 @@
-[data-page-name=studyaBoardPageTwo] {
+[data-page-name="loginPage"] {
     @include media-breakpoint(basic) {
-        
+        & .loginsection{
+            background-color: #FAFAFA;
+            padding-top: 62px;
+            padding-bottom: 180px;
+            & .loginForm {
+                max-width: 493px;
+                width: 100%;
+                background: #FFFFFF;
+                border: 1px solid #EFEFEF;
+                border-radius: 19.3125px;
+                & .card-body {
+                    padding: 30px 42px 47px 42px;
+                    & .formHeadign {
+                        font-family: 'Gilroy-SemiBold';
+                        font-size: 24px;
+                        line-height: 28px;
+                        /* identical to box height */
+                        color: #000000;
+                        margin-bottom: 28px;
+                    }
+                    & .inputform {
+                        gap: 20px;
+                        & .inputBox {
+                            & .form-control {
+                                height: 44px;
+                                border: 1px solid #EBEBEB;
+                                border-radius: 8.04688px;
+                                font-family: 'Gilroy-Medium';
+                                font-size: 18px;
+                                line-height: 21px;
+                                color: #7C7C7C;
+                                padding: 12px 12px 12px 24px;
+                                &::placeholder{
+                                    color: #7C7C7C;
+                                }
+                                &.form-select {
+                                    padding: 12px 40px 12px 24px;
+                                }
+                                &.otpFormControl {
+                                    letter-spacing: 0.72em;
+                                    &:focus{
+                                        border: 1px solid rgba(233, 21, 21, 0.34);
+                                    }
+                                    &::placeholder{
+                                        letter-spacing: 0px;
+                                    }
+                                    &.otpinput {
+                                        border: 1px solid rgba(233, 21, 21, 0.34);
+                                    }
+                                }
+                            }
+                            &.input-group {
+                                & .input-group-text {
+                                    background-color: transparent;
+                                    height: 44px;
+                                    border: 1px solid #EBEBEB;
+                                    border-radius: 8.04688px;
+                                    font-family: 'Gilroy-Medium';
+                                    font-size: 18px;
+                                    line-height: 21px;
+                                    color: #7C7C7C;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        & .otpsandBtn {
+                            height: 44px;
+                            & .otpBtn{
+                                background: #E91515;
+                                border: 1px solid #E91515;
+                                border-radius: 8.04688px;
+                                font-family: 'Gilroy-Medium';
+                                font-size: 18px;
+                                line-height: 21px;
+                                color: $white;
+                                &:disabled{
+                                    border: 1px solid #EBEBEB;
+                                    font-family: 'Gilroy-Medium';
+                                    color: #A6A6A6;
+                                    background: $white;
+                                }
+                                &.timerBtn {
+                                    background: rgba(233, 21, 21, 0.13) !important;
+                                    color: #E91515 !important;
+                                    opacity: 1 !important;
+                                    border-color: transparent !important;
+                                    width: 119.78px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                        & .proccedBtn {
+                            background: #E91515;
+                            border-radius: 8.04688px;
+                            font-family: 'Gilroy-Bold';
+                            font-size: 22.5312px;
+                            line-height: 26px;
+                            color: #FFFFFF;
+                            height: 48px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.3s;
+                            border: 1px solid #E91515;
+                            &:hover{
+                                background: $white;
+                                color: #E91515;
+                            }
+                            &.blankBtn{
+                                border: 1px solid #E91515;
+                                font-size: 20px;
+                                line-height: 23px;
+                                color: #E91515;
+                                background-color: transparent;
+                                &:hover{
+                                    background: #E91515;
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                        & .horizontalBorder {
+                            border: 1px solid #EBEBEB !important;
+                        }
+                        & .createAccountBtn {
+                            font-family: 'Gilroy-Regular';
+                            font-size: 18px;
+                            line-height: 21px;
+                            /* identical to box height */
+                            color: #E91515;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -19,11 +155,163 @@
 
     @include media-breakpoint-down(xl) {}
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        & .loginsection{
+            padding-top: 62px;
+            padding-bottom: 130px;
+            & .loginForm {
+                & .card-body {
+                    & .formHeadign {
+                    }
+                    & .inputform {
+                        & .inputBox {
+                            & .form-control {
+                            }
+                            &.input-group {
+                                & .input-group-text {
+                                }
+                            }
+                        }
+                        & .proccedBtn {
+                            &.blankBtn{
+                            }
+                        }
+                        & .horizontalBorder {
+                        }
+                        & .createAccountBtn {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
+        & .loginsection{
+            padding-top: 55px;
+            padding-bottom: 90px;
+            & .loginForm {
+                & .card-body {
+                    & .formHeadign {
+                    }
+                    & .inputform {
+                        & .inputBox {
+                            & .form-control {
+                            }
+                            &.input-group {
+                                & .input-group-text {
+                                }
+                            }
+                        }
+                        & .proccedBtn {
+                            &.blankBtn{
+                            }
+                        }
+                        & .horizontalBorder {
+                        }
+                        & .createAccountBtn {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+        & .loginsection{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            & .loginForm {
+                max-width: 493px;
+                & .card-body {
+                    padding: 20px 25px 28px 25px;
+                    & .formHeadign {
+                        font-size: 20px;
+                        line-height: 25px;
+                        margin-bottom: 25px;
+                    }
+                    & .inputform {
+                        gap: 20px;
+                        & .inputBox {
+                            & .form-control {
+                                height: 40px;
+                                font-size: 16px;
+                                line-height: 19px;
+                                padding: 8px 10px 8px 20px;
+                                &.form-select {
+                                    padding: 8px 40px 8px 20px;
+                                }
+                            }
+                            &.input-group {
+                                & .input-group-text {
+                                    height: 40px;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                }
+                            }
+                            
+                        }
+                        & .otpsandBtn {
+                            height: 40px;
+                            & .otpBtn{
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
+                        }
+                        & .proccedBtn {
+                            font-size: 18px;
+                            line-height: 24px;
+                            height: 44px;
+                            &.blankBtn{
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
+                        }
+                        & .horizontalBorder {
+                            border: 1px solid #EBEBEB !important;
+                        }
+                        & .createAccountBtn {
+                            font-size: 13px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 350px) {
+        .loginsection{
+            & .loginForm {
+                & .card-body {
+                    & .formHeadign {
+                    }
+                    & .inputform {
+                        & .inputBox {
+                            & .form-control {
+                                &.otpFormControl {
+                                    letter-spacing: 0.50em !important;
+                                }
+                            }
+                            &.input-group {
+                                & .input-group-text {
+                                }
+                            }
+                        }
+                        & .proccedBtn {
+                            &.blankBtn{
+                            }
+                        }
+                        & .horizontalBorder {
+                        }
+                        & .createAccountBtn {
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
 }
 
 [data-bs-theme=dark] {
@@ -57,3 +345,4 @@
         }
     }
 }
+
