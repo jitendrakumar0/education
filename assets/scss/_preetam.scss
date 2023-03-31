@@ -1,7 +1,11 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  navbar  ]@@@@@@@@@@@@@@@@@@@@@@
     @include media-breakpoint(basic) {
         .topNavbar {
+            position: sticky;
+            top: 0;
             height: 89px;
+            background-color: #FFFFFF;
+            z-index: 1;
             & .logoBox {
                 & .logoAnchor {
                     & .logoImg {
