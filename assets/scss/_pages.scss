@@ -73,8 +73,63 @@
                 }
             }
         }
-        & .counterSection {
+        & .counterInpSection {
             margin-top: -92px;
+            margin-bottom: 90px;
+            z-index: 10;
+            position: relative;
+            & .counterInpSectionInner {
+                background: $white;
+                border-left: 3px solid $theme1;
+                box-shadow: 0px 10px 40px rgba($black, 0.15);
+                padding: 45px 50px;
+                & .form-label {
+                    font-family: 'Gilroy-SemiBold';
+                    font-size: 22px;
+                    line-height: 25px;
+                    color: #3C3C3C;
+                    margin-bottom: 13px;
+                }
+                & .form-control {
+                    font-family: 'Gilroy-Medium';
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #7C7C7C;
+                    height: 56px;
+                    width: 100%;
+                    box-shadow: none;
+                    border: 1px solid #3C3C3C;
+                    &:placeholder-shown {
+                        font-family: 'Gilroy-Medium';
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #7C7C7C;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                & .findAProgramBtn {
+                    font-family: 'Gilroy-Medium';
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #FFFFFF;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #E91515;
+                    border-radius: 5px;
+                    width: 102px;
+                    height: 56px;
+                    border: 2px solid #D40F2B;
+                    &:hover {
+                        background-color: #FFFFFF;
+                        color: #D40F2B;
+                    }
+                }
+            }
+        }
+        & .counterSection {
             margin-bottom: 90px;
             z-index: 10;
             position: relative;
@@ -516,15 +571,1315 @@
     @include media-breakpoint-up(xxl) {}
 
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xxl) {
+        & .heroSection {
+            & .carousel {
+                & .carousel-inner {
+                    & .carousel-item {
+                        & .carousel-item-content {
+                            & .carousel-item-content-inner {
+                                & .carousel-item-content-heading {
+                                    font-size: 58px;
+                                    line-height: 68px;
+                                }
+                                & .chooseProgramBtn {
+                                    margin-top: 50px;
+                                    & a {
+                                        font-size: 17px;
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
 
-    @include media-breakpoint-down(xl) {}
+                        }
+                    }
+                }
+                & [class*=carousel-control-] {
+                    & .carouselBtn {
+                        & img {
+                        }
+                    }
+                    &.carousel-control-prev {
+    
+                    }
+                    &.carousel-control-next {
+                        
+                    }
+                }
+            }
+        }
+        & .counterInpSection {
+            & .counterInpSectionInner {
+                & .form-label {
+                }
+                & .form-control {
+                    &:placeholder-shown {
+                    }
+                    &:focus {
+                    }
+                }
+                & .findAProgramBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .counterSection {
+            & .counterSectionInner {
+                & .counterSectionItems {
+                    & .counterSectionItem {
+                        & .counterSectionItemInner {
+                            & .counterSectionImg {
+                                & img {
+                                }
+                            }
+                            & .counterSectionTitle {
+                            }
+                            & .counterSectionValue {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .whyChooseUs {
+            & .whyChooseUsInner {
+                & .whyChooseUsTitle {
+                }
+                & .whyChooseUsImg {
+                    & img {
+                    }
+                }
+                & .whyChooseUsLearnMore {
+                    & a {
+                        & span {
+                            & img {
+                            }
+                        }
+                        &:hover {
+                            & span {
+                            }
+                        }
+                    }
+                }
+                & .whyChooseUsContent {
+                    & .whyChooseUsContentParagraph {
+                    }
+                }
+            }
+        }
+        & .secondSection {
+            & .secondSectionInner {
+                & .secondSectionItems {
+                    & .secondSectionItem {
+                        & .secondSectionItemInner {
+                            & .secondSectionImg {
+                                & img {
+                                }
+                            }
+                            & .secondSectionTitle {
+                            }
+                            & .secondSectionValue {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .counter2Section {
+            & .counter2SectionInner {
+                & .counter2SectionItems {
+                    & .counter2SectionItem {
+                        & .counter2SectionItemInner {
+                            & .counter2SectionImg {
+                                & img {
+                                }
+                            }
+                            & .counter2SectionTitle {
+                            }
+                            & .counter2SectionValue {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .videoSection {
+            & .videoSectionInner {
+                & .plyr {
+                    & .plyr__controls {
+                        & .plyr__progress__container {
+                            & .plyr__progress {
+                                & input[type="range" i]::-webkit-slider-runnable-track {
+                                }
+                            }
+                        }
+                        & .plyr__volume {
+                            & button {
+                                &:hover {
+                                }
+                            }
+                            & input[type="range" i]::-webkit-slider-runnable-track {
+                            }
+                        }
+                        & button.plyr__controls__item {
+                            &:hover {
+                            }
+                        }
+                        & .plyr__menu {
+                            & button {
+                                &.plyr__control[aria-expanded=true] {
+                                }
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .plyr__control--overlaid {
+                    }
+                }
+            }
+        }
+        & .countriesSection {
+            & .countriesSectionInner {
+                & .countriesSectionHeading {
+                }
+                & .countriesSectionAllBtn {
+                    & a {
+                    }
+                }
+                & .countriesSectionItems {  
+                    & .countriesSectionItem {
+                        & .countriesSectionItemInner {
+                            & .countriesSectionItemImg {
+                                & img {
+                                }
+                            }
+                            & .countriesSectionItemTitle {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .popularProgramsSection {
+            & .popularProgramsSectionInner {
+                & .popularProgramsSectionHeading {
+                }
+                & .popularProgramsSectionAllBtn {
+                    & a {
+                    }
+                }
+                & .popularProgramsSectionItems {    
+                    & .popularProgramsSectionItem {
+                        & .popularProgramsSectionItemInner {
+                            & .popularProgramsSectionItemImg {
+                                & img {
+                                }
+                            }
+                            & .popularProgramsSectionItemTitle {
+                            }
+                            & .popularProgramsSectionItemLocation {
+                            }
+                            & .popularProgramsSectionItemLocate {
+                                & span {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(xl) {
+        
+        & .heroSection {
+            & .carousel {
+                & .carousel-inner {
+                    & .carousel-item {
+                        & .carousel-item-content {
+                            & .carousel-item-content-inner {
+                                & .carousel-item-content-heading {
+                                    font-size: 45px;
+                                    line-height: 50px;
+                                }
+                                & .chooseProgramBtn {
+                                    margin-top: 40px;
+                                    & a {
+                                        width: 200px;
+                                        height: 52px;
+                                        font-size: 16px;
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
 
-    @include media-breakpoint-down(md) {}
+                        }
+                    }
+                }
+                & [class*=carousel-control-] {
+                    & .carouselBtn {
+                        & img {
+                        }
+                    }
+                    &.carousel-control-prev {
+    
+                    }
+                    &.carousel-control-next {
+                        
+                    }
+                }
+            }
+        }
+        & .counterInpSection {
+            & .counterInpSectionInner {
+                & .form-label {
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+                & .form-control {
+                    height: 50px;
+                    font-size: 15px;
+                    &:placeholder-shown {
+                        font-size: 15px;
+                    }
+                    &:focus {
+                    }
+                }
+                & .findAProgramBtn {
+                    font-size: 15px;
+                    height: 50px;
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .counterSection {
+            & .counterSectionInner {
+                & .counterSectionItems {
+                    & .counterSectionItem {
+                        & .counterSectionItemInner {
+                            & .counterSectionImg {
+                                & img {
+                                }
+                            }
+                            & .counterSectionTitle {
+                            }
+                            & .counterSectionValue {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .whyChooseUs {
+            & .whyChooseUsInner {
+                & .whyChooseUsTitle {
+                }
+                & .whyChooseUsImg {
+                    & img {
+                        max-height: 180px;
+                    }
+                }
+                & .whyChooseUsLearnMore {
+                    & a {
+                        & span {
+                            & img {
+                            }
+                        }
+                        &:hover {
+                            & span {
+                            }
+                        }
+                    }
+                }
+                & .whyChooseUsContent {
+                    & .whyChooseUsContentParagraph {
+                    }
+                }
+            }
+        }
+        & .secondSection {
+            & .secondSectionInner {
+                & .secondSectionItems {
+                    & .secondSectionItem {
+                        & .secondSectionItemInner {
+                            & .secondSectionImg {
+                                & img {
+                                }
+                            }
+                            & .secondSectionTitle {
+                            }
+                            & .secondSectionValue {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .counter2Section {
+            & .counter2SectionInner {
+                & .counter2SectionItems {
+                    & .counter2SectionItem {
+                        & .counter2SectionItemInner {
+                            & .counter2SectionImg {
+                                & img {
+                                }
+                            }
+                            & .counter2SectionTitle {
+                            }
+                            & .counter2SectionValue {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .videoSection {
+            & .videoSectionInner {
+                & .plyr {
+                    & .plyr__controls {
+                        & .plyr__progress__container {
+                            & .plyr__progress {
+                                & input[type="range" i]::-webkit-slider-runnable-track {
+                                }
+                            }
+                        }
+                        & .plyr__volume {
+                            & button {
+                                &:hover {
+                                }
+                            }
+                            & input[type="range" i]::-webkit-slider-runnable-track {
+                            }
+                        }
+                        & button.plyr__controls__item {
+                            &:hover {
+                            }
+                        }
+                        & .plyr__menu {
+                            & button {
+                                &.plyr__control[aria-expanded=true] {
+                                }
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .plyr__control--overlaid {
+                    }
+                }
+            }
+        }
+        & .countriesSection {
+            & .countriesSectionInner {
+                & .countriesSectionHeading {
+                }
+                & .countriesSectionAllBtn {
+                    & a {
+                    }
+                }
+                & .countriesSectionItems {  
+                    row-gap: 30px;
+                    & .countriesSectionItem {
+                        & .countriesSectionItemInner {
+                            & .countriesSectionItemImg {
+                                & img {
+                                }
+                            }
+                            & .countriesSectionItemTitle {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .popularProgramsSection {
+            & .popularProgramsSectionInner {
+                & .popularProgramsSectionHeading {
+                }
+                & .popularProgramsSectionAllBtn {
+                    & a {
+                    }
+                }
+                & .popularProgramsSectionItems {    
+                    & .popularProgramsSectionItem {
+                        & .popularProgramsSectionItemInner {
+                            & .popularProgramsSectionItemImg {
+                                & img {
+                                }
+                            }
+                            & .popularProgramsSectionItemTitle {
+                            }
+                            & .popularProgramsSectionItemLocation {
+                                padding-bottom: 8px;
+                            }
+                            & .popularProgramsSectionItemLocate {
+                                & span {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(lg) {
+        
+        & .heroSection {
+            & .carousel {
+                & .carousel-inner {
+                    & .carousel-item {
+                        & .carousel-item-content {
+                            & .carousel-item-content-inner {
+                                & .carousel-item-content-heading {
+                                    font-size: 36px;
+                                    line-height: 45px;
+                                }
+                                & .chooseProgramBtn {
+                                    margin-top: 30px;
+                                    & a {
+                                        width: 190px;
+                                        height: 48px;
+                                        font-size: 15px;
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
+
+                        }
+                    }
+                }
+                & [class*=carousel-control-] {
+                    & .carouselBtn {
+                        & img {
+                        }
+                    }
+                    &.carousel-control-prev {
+    
+                    }
+                    &.carousel-control-next {
+                        
+                    }
+                }
+            }
+        }
+        & .counterInpSection {
+            margin-top: -50px;
+            & .counterInpSectionInner {
+                padding: 32px 30px;
+                & .form-label {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+                & .form-control {
+                    font-size: 14px;
+                    height: 45px;
+                    &:placeholder-shown {
+                    }
+                    &:focus {
+                    }
+                }
+                & .findAProgramBtn {
+                    font-size: 14px;
+                    width: 80px;
+                    height: 45px;
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .counterSection {
+            margin-top: -50px;
+            & .counterSectionInner {
+                & .counterSectionItems {
+                    & .counterSectionItem {
+                        & .counterSectionItemInner {
+                            & .counterSectionImg {
+                                & img {
+                                    height: 50px;
+                                    width: 50px;
+                                }
+                            }
+                            & .counterSectionTitle {
+                                font-size: 15px;
+                                padding: 0;
+                                margin: 0;
+                            }
+                            & .counterSectionValue {
+                                font-size: 14px;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .whyChooseUs {
+            padding-bottom: 30px;
+            & .whyChooseUsInner {
+                & .whyChooseUsTitle {
+                }
+                & .whyChooseUsImg {
+                    & img {
+                        max-height: 170px;
+                    }
+                }
+                & .whyChooseUsLearnMore {
+                    & a {
+                        & span {
+                            & img {
+                            }
+                        }
+                        &:hover {
+                            & span {
+                            }
+                        }
+                    }
+                }
+                & .whyChooseUsContent {
+                    & .whyChooseUsContentParagraph {
+                    }
+                }
+            }
+        }
+        & .secondSection {
+            & .secondSectionInner {
+                & .secondSectionItems {
+                    & .secondSectionItem {
+                        & .secondSectionItemInner {
+                            & .secondSectionImg {
+                                & img {
+                                }
+                            }
+                            & .secondSectionTitle {
+                            }
+                            & .secondSectionValue {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .counter2Section {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            & .counter2SectionInner {
+                & .counter2SectionItems {
+                    & .counter2SectionItem {
+                        & .counter2SectionItemInner {
+                            & .counter2SectionImg {
+                                & img {
+                                }
+                            }
+                            & .counter2SectionTitle {
+                            }
+                            & .counter2SectionValue {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .videoSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            & .videoSectionInner {
+                & .plyr {
+                    & .plyr__controls {
+                        & .plyr__progress__container {
+                            & .plyr__progress {
+                                & input[type="range" i]::-webkit-slider-runnable-track {
+                                }
+                            }
+                        }
+                        & .plyr__volume {
+                            & button {
+                                &:hover {
+                                }
+                            }
+                            & input[type="range" i]::-webkit-slider-runnable-track {
+                            }
+                        }
+                        & button.plyr__controls__item {
+                            &:hover {
+                            }
+                        }
+                        & .plyr__menu {
+                            & button {
+                                &.plyr__control[aria-expanded=true] {
+                                }
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .plyr__control--overlaid {
+                    }
+                }
+            }
+        }
+        & .countriesSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            & .countriesSectionInner {
+                & .countriesSectionHeading {
+                }
+                & .countriesSectionAllBtn {
+                    & a {
+                    }
+                }
+                & .countriesSectionItems {  
+                    & .countriesSectionItem {
+                        & .countriesSectionItemInner {
+                            & .countriesSectionItemImg {
+                                & img {
+                                }
+                            }
+                            & .countriesSectionItemTitle {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .popularProgramsSection {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            & .popularProgramsSectionInner {
+                & .popularProgramsSectionHeading {
+                }
+                & .popularProgramsSectionAllBtn {
+                    & a {
+                    }
+                }
+                & .popularProgramsSectionItems {    
+                    & .popularProgramsSectionItem {
+                        & .popularProgramsSectionItemInner {
+                            & .popularProgramsSectionItemImg {
+                                & img {
+                                }
+                            }
+                            & .popularProgramsSectionItemTitle {
+                            }
+                            & .popularProgramsSectionItemLocation {
+                            }
+                            & .popularProgramsSectionItemLocate {
+                                & span {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        
+        & .heroSection {
+            & .carousel {
+                & .carousel-inner {
+                    & .carousel-item {
+                        background-image: url(../img/mobBanner1.png) !important;
+                        min-height: 250px;
+                        & .carousel-item-content {
+                            & .carousel-item-content-inner {
+                                & .carousel-item-content-heading {
+                                    font-size: 24px;
+                                    line-height: 30px;
+                                }
+                                & .chooseProgramBtn {
+                                    margin-top: 20px;
+                                    & a {
+                                        width: 166px;
+                                        height: 40px;
+                                        font-size: 14px;
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
+
+                        }
+                    }
+                }
+                & [class*=carousel-control-] {
+                    & .carouselBtn {
+                        & img {
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                    &.carousel-control-prev {
+    
+                    }
+                    &.carousel-control-next {
+                        
+                    }
+                }
+            }
+        }
+        & .counterInpSection {
+            & .counterInpSectionInner {
+                & .counterInpSectionInnerForm {
+                    gap: 20px;
+                }
+                & .form-label {
+                }
+                & .form-control {
+                    &:placeholder-shown {
+                    }
+                    &:focus {
+                    }
+                }
+                & .findAProgramBtn {
+                    width: 100%;
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .counterSection {
+            & .counterSectionInner {
+                & .counterSectionItems {
+                    & .counterSectionItem {
+                        & .counterSectionItemInner {
+                            & .counterSectionImg {
+                                & img {
+                                    height: 50px;
+                                    width: 50px;
+                                }
+                            }
+                            & .counterSectionTitle {
+                                font-size: 16px;
+                            }
+                            & .counterSectionValue {
+                                font-size: 15px;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .whyChooseUs {
+            & .whyChooseUsInner {
+                & .whyChooseUsTitle {
+                }
+                & .whyChooseUsImg {
+                    & img {
+                         max-height: 202px;
+                    }
+                }
+                & .whyChooseUsLearnMore {
+                    & a {
+                        & span {
+                            & img {
+                            }
+                        }
+                        &:hover {
+                            & span {
+                            }
+                        }
+                    }
+                }
+                & .whyChooseUsContent {
+                    & .whyChooseUsContentParagraph {
+                    }
+                }
+            }
+        }
+        & .secondSection {
+            & .secondSectionInner {
+                & .secondSectionItems {
+                    & .secondSectionItem {
+                        & .secondSectionItemInner {
+                            & .secondSectionImg {
+                                & img {
+                                }
+                            }
+                            & .secondSectionTitle {
+                            }
+                            & .secondSectionValue {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .counter2Section {
+            & .counter2SectionInner {
+                & .counter2SectionItems {
+                    & .counter2SectionItem {
+                        & .counter2SectionItemInner {
+                            & .counter2SectionImg {
+                                & img {
+                                    width: 70px;
+                                    height: 70px;
+                                }
+                            }
+                            & .counter2SectionTitle {     
+                                font-size: 30px;
+                                line-height: 35px;
+                            }
+                            & .counter2SectionValue {
+                                font-size: 20px;
+                                line-height: 25px;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .videoSection {
+            & .videoSectionInner {
+                & .plyr {
+                    & .plyr__controls {
+                        & .plyr__progress__container {
+                            & .plyr__progress {
+                                & input[type="range" i]::-webkit-slider-runnable-track {
+                                }
+                            }
+                        }
+                        & .plyr__volume {
+                            & button {
+                                &:hover {
+                                }
+                            }
+                            & input[type="range" i]::-webkit-slider-runnable-track {
+                            }
+                        }
+                        & button.plyr__controls__item {
+                            &:hover {
+                            }
+                        }
+                        & .plyr__menu {
+                            & button {
+                                &.plyr__control[aria-expanded=true] {
+                                }
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .plyr__control--overlaid {
+                    }
+                }
+            }
+        }
+        & .countriesSection {
+            & .countriesSectionInner {
+                & .countriesSectionHeading {
+                }
+                & .countriesSectionAllBtn {
+                    & a {
+                    }
+                }
+                & .countriesSectionItems {  
+                    & .countriesSectionItem {
+                        & .countriesSectionItemInner {
+                            & .countriesSectionItemImg {
+                                & img {
+                                }
+                            }
+                            & .countriesSectionItemTitle {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .popularProgramsSection {
+            & .popularProgramsSectionInner {
+                & .popularProgramsSectionHeading {
+                }
+                & .popularProgramsSectionAllBtn {
+                    & a {
+                    }
+                }
+                & .popularProgramsSectionItems {    
+                    & .popularProgramsSectionItem {
+                        & .popularProgramsSectionItemInner {
+                            & .popularProgramsSectionItemImg {
+                                & img {
+                                }
+                            }
+                            & .popularProgramsSectionItemTitle {
+                            }
+                            & .popularProgramsSectionItemLocation {
+                            }
+                            & .popularProgramsSectionItemLocate {
+                                & span {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        
+        & .heroSection {
+            & .carousel {
+                & .carousel-inner {
+                    & .carousel-item {
+                        & .carousel-item-content {
+                            & .carousel-item-content-inner {
+                                max-width: 350px;
+                                margin-left: 8% !important;
+                                & .carousel-item-content-heading {
+                                    font-size: 20px;
+                                    line-height: 22px;
+                                }
+                                & .chooseProgramBtn {
+                                    & a {
+                                        width: 128px;
+                                        height: 30px;
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                        &:hover {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
+
+                        }
+                    }
+                }
+                & [class*=carousel-control-] {
+                    & .carouselBtn {
+                        & img {
+                            height: 22px;
+                            width: 22px;
+                        }
+                    }
+                    &.carousel-control-prev {
+    
+                    }
+                    &.carousel-control-next {
+                        
+                    }
+                }
+            }
+        }
+        & .counterInpSection {
+            & .counterInpSectionInner {
+                padding: 25px 29px 25px 28px;
+                & .counterInpSectionInnerForm {
+                    gap: 12px;
+                }
+                & .form-label {
+                }
+                & .form-control {
+                    &:placeholder-shown {
+                    }
+                    &:focus {
+                    }
+                }
+                & .findAProgramBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .counterSection {
+            & .counterSectionInner {
+                & .counterSectionItems {
+                    & .counterSectionItem {
+                        & .counterSectionItemInner {
+                            & .counterSectionImg {
+                                & img {
+                                    height: 50px;
+                                    width: 50px;
+                                }
+                            }
+                            & .counterSectionTitle {
+                                font-size: 12px;
+                                line-height: 14px;
+                                padding: 0;
+                            }
+                            & .counterSectionValue {
+                                font-size: 10px;
+                                line-height: 25px;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .whyChooseUs {
+            padding-bottom: 0px;
+            & .whyChooseUsInner {
+                & .whyChooseUsTitle {
+                    font-size: 25px;
+                    line-height: 29px;
+                }
+                & .whyChooseUsImg {
+                    & img {
+                    }
+                }
+                & .whyChooseUsLearnMore {
+                    & a {
+                        & span {
+                            font-size: 14px;
+                            line-height: 16px;
+                            & img {
+                            }
+                        }
+                        &:hover {
+                            & span {
+                            }
+                        }
+                    }
+                }
+                & .whyChooseUsContent {
+                    gap: 10px;
+                    & .whyChooseUsContentParagraph {
+                        font-size: 11px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+        & .secondSection {
+            & .secondSectionInner {
+                & .secondSectionItems {
+                    & .secondSectionItem {
+                        & .secondSectionItemInner {
+                            & .secondSectionImg {
+                                & img {
+                                }
+                            }
+                            & .secondSectionTitle {
+                            }
+                            & .secondSectionValue {
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .counter2Section {
+            & .counter2SectionInner {
+                & .counter2SectionItems {
+                    & .counter2SectionItem {
+                        & .counter2SectionItemInner {
+                            & .counter2SectionImg {
+                                & img {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+                            & .counter2SectionTitle {
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
+                            & .counter2SectionValue {
+                                font-size: 12px;
+                                line-height: 14px;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .videoSection {
+            padding-top: 0;
+            padding-bottom: 0;
+            & .videoSectionInner {
+                & .plyr {
+                    & .plyr__controls {
+                        & .plyr__progress__container {
+                            & .plyr__progress {
+                                & input[type="range" i]::-webkit-slider-runnable-track {
+                                }
+                            }
+                        }
+                        & .plyr__volume {
+                            & button {
+                                &:hover {
+                                }
+                            }
+                            & input[type="range" i]::-webkit-slider-runnable-track {
+                            }
+                        }
+                        & button.plyr__controls__item {
+                            &:hover {
+                            }
+                        }
+                        & .plyr__menu {
+                            & button {
+                                &.plyr__control[aria-expanded=true] {
+                                }
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .plyr__control--overlaid {
+                    }
+                }
+            }
+        }
+        & .countriesSection {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            & .countriesSectionInner {
+                & .countriesSectionHeading {
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+                & .countriesSectionAllBtn {
+                    & a {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+                & .countriesSectionItems {  
+                    & .countriesSectionItem {
+                        & .countriesSectionItemInner {
+                            & .countriesSectionItemImg {
+                                & img {
+                                    width: 79px;
+                                    height: 40px;
+                                }
+                            }
+                            & .countriesSectionItemTitle {
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        & .popularProgramsSection {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            & .popularProgramsSectionInner {
+                & .popularProgramsSectionHeading {
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+                & .popularProgramsSectionAllBtn {
+                    & a {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+                & .popularProgramsSectionItems {    
+                    & .popularProgramsSectionItem {
+                        margin-bottom: 25px;
+                        & .popularProgramsSectionItemInner {
+                            & .popularProgramsSectionItemImg {
+                                & img {
+                                }
+                            }
+                            & .popularProgramsSectionItemTitle {
+                                font-size: 11px;
+                                line-height: 13px;
+                                padding: 0px 27px 6px 27px;
+                            }
+                            & .popularProgramsSectionItemLocation {
+                                font-size: 14px;
+                                line-height: 16px;
+                                padding-bottom: 3px;
+                                padding: 0px 27px 3px 27px;
+                            }
+                            & .popularProgramsSectionItemLocate {
+                                padding: 0px 27px 18px 27px;
+                                & span {
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    & img {
+                                        width: 11px;
+                                        height: 11px;
+                                    }
+                                }
+                            }
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 [data-bs-theme=dark] {
