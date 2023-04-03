@@ -161,13 +161,10 @@
                     <div class="container-fluid mainSection ">
                         <div class="row mx-0">
                             <div class="col-auto leftSidePart offcanvas-lg offcanvas-start" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                <div class="offcanvas-header px-0 py-1">
-                                    <button type="button" class="btn-close shadow-none ms-auto" onclick="$('#offcanvasExample').offcanvas('hide')" id="offcanvasClose"></button>
-                                </div>
-                                <div class="row mx-0 leftPartInnerSide offcanvas-body p-0">
-                                    <div class="col-12 filterBtnOuter">
+                                <div class="offcanvas-header p-0">
+                                    <div class="col-12 filterBtnOuter d-lg-none">
                                         <div class="row mx-0 justify-content-between align-items-center">
-                                            <a class="col-auto filterBtn" href="javascript:;">
+                                            <a class="col-auto p-0 filterBtn" href="javascript:;">
                                                 <div class="row mx-0 align-items-center">
                                                     <div class="col-auto imgOuter p-0 me-2">
                                                         <img src="assets/img/svg/filter-icon.svg" class="w-100" alt="">
@@ -175,228 +172,251 @@
                                                     <div class="col-auto btnText p-0">Filters</div>
                                                 </div>
                                             </a>
-                                            <a href="javascript:;" class="col-auto px-0 resetBtn">Reset</a>
+                                            <a href="javascript:;" class="col-auto px-0 resetBtn d-none d-lg-inline">Reset</a>
+                                            <button type="button" class="btn-close shadow-none ms-auto d-lg-none" onclick="$('#offcanvasExample').offcanvas('hide')" id="offcanvasClose"></button>
                                         </div>
                                     </div>
-                                    <div class="col-12 p-0 collapseBoxOuter">
-                                        <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#tuitionFee" role="button" aria-expanded="false" aria-controls="tuitionFee">
-                                            Tuition Fee
-                                        </a>
-                                        <div class="collapse" id="tuitionFee">
-                                            <div class="card card-body">
-                                                <div class="wrapper">
-                                                    <div class="slid-container">
-                                                      <div class="slider-track"></div>
-                                                      <input type="range" min="0" max="162000" value="12000" id="slider-1" oninput="slideOne()">
-                                                      <input type="range" min="0" max="162000" value="150000" id="slider-2" oninput="slideTwo()">
+                                </div>
+                                <div class="offcanvas-body p-0">
+                                    <div class="row mx-0 leftPartInnerSide">
+                                        <div class="col-12 filterBtnOuter d-none d-lg-block">
+                                            <div class="row mx-0 justify-content-between align-items-center">
+                                                <a class="col-auto p-0 filterBtn" href="javascript:;">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto imgOuter p-0 me-2">
+                                                            <img src="assets/img/svg/filter-icon.svg" class="w-100" alt="">
+                                                        </div>
+                                                        <div class="col-auto btnText p-0">Filters</div>
                                                     </div>
-                                                    <div class="values">
-                                                      <span id="range1">
-                                                        $12000
-                                                      </span>
-                                                      <span id="range2">
-                                                        $150000
-                                                      </span>
-                                                    </div>
-                                                </div>
+                                                </a>
+                                                <a href="javascript:;" class="col-auto px-0 resetBtn d-none d-lg-inline">Reset</a>
+                                                <button type="button" class="btn-close shadow-none ms-auto d-lg-none" onclick="$('#offcanvasExample').offcanvas('hide')" id="offcanvasClose"></button>
                                             </div>
                                         </div>
-
-                                        <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#degreeType" role="button" aria-expanded="false" aria-controls="degreeType">
-                                            Degree Type
-                                        </a>
-                                        <div class="collapse" id="degreeType">
-                                            <div class="card card-body">
-                                                <div class="checkBoxOuter">
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="marsters">
-                                                            Masters
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value="" id="marsters">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="jointMasters">
-                                                            Joint Masters
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value="" id="jointMasters">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="bachelors">
-                                                            Bachelors
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value="" id="bachelors">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="diploma">
-                                                            Diploma
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value="" id="diploma">
+                                        <div class="col-12 p-0 collapseBoxOuter">
+                                            <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#tuitionFee" role="button" aria-expanded="false" aria-controls="tuitionFee">
+                                                Tuition Fee
+                                            </a>
+                                            <div class="collapse" id="tuitionFee">
+                                                <div class="card card-body">
+                                                    <div class="wrapper">
+                                                        <div class="slid-container">
+                                                          <div class="slider-track"></div>
+                                                          <input type="range" min="0" max="162000" value="12000" id="slider-1" oninput="slideOne()">
+                                                          <input type="range" min="0" max="162000" value="150000" id="slider-2" oninput="slideTwo()">
+                                                        </div>
+                                                        <div class="values">
+                                                          <span id="range1">
+                                                            $12000
+                                                          </span>
+                                                          <span id="range2">
+                                                            $150000
+                                                          </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+    
+                                            <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#degreeType" role="button" aria-expanded="false" aria-controls="degreeType">
+                                                Degree Type
+                                            </a>
+                                            <div class="collapse" id="degreeType">
+                                                <div class="card card-body">
+                                                    <div class="checkBoxOuter">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="marsters">
+                                                                Masters
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value="" id="marsters">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="jointMasters">
+                                                                Joint Masters
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value="" id="jointMasters">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="bachelors">
+                                                                Bachelors
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value="" id="bachelors">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="diploma">
+                                                                Diploma
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value="" id="diploma">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#programDuration" role="button" aria-expanded="false" aria-controls="programDuration">
+                                                Program Duration
+                                            </a>
+                                            <div class="collapse" id="programDuration">
+                                                <div class="card card-body">
+                                                    <div class="checkBoxOuter">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="sixMonths">
+                                                                6 Months
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value="" id="sixMonths">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="twleMonths">
+                                                                12 Months
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value="" id="twleMonths">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="sixteenMonths">
+                                                                16 Months
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value="" id="sixteenMonths">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="twentyFourMonths">
+                                                                24 Months
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value="" id="twentyFourMonths">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+    
+                                            <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#intakes" role="button" aria-expanded="false" aria-controls="intakes">
+                                                Intakes
+                                            </a>
+                                            <div class="collapse" id="intakes">
+                                                <div class="card card-body">
+                                                    <div class="checkBoxOuter">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="fall">
+                                                                Fall
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value="" id="fall">
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="spring">
+                                                                Spring
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" value="" id="spring">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#testScores" role="button" aria-expanded="false" aria-controls="testScores">
+                                                Test Scores
+                                            </a>
+                                            <div class="collapse" id="testScores">
+                                                <div class="card card-body">
+                                                    <div class="wrapper">
+                                                        <div class="sliderHeading">IELTS</div>
+                                                        <div class="slid-container">
+                                                          <div class="slider-track "></div>
+                                                          <input type="range" min="0" max="12" value="6.0" id="slider-1a" oninput="slideAOne()">
+                                                          <input type="range" min="0" max="12" value="6.5" id="slider-2a" oninput="slideATwo()">
+                                                        </div>
+                                                        <div class="values">
+                                                          <span id="rangeA1">
+                                                            6.0
+                                                          </span>
+                                                          <span id="rangeA2">
+                                                            6.5
+                                                          </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrapper">
+                                                        <div class="sliderHeading">GRE</div>
+                                                        <div class="slid-container">
+                                                          <div class="slider-track "></div>
+                                                          <input type="range" min="0" max="600" value="290" id="slider-1b" oninput="slideBOne()">
+                                                          <input type="range" min="0" max="600" value="315" id="slider-2b" oninput="slideBTwo()">
+                                                        </div>
+                                                        <div class="values">
+                                                          <span id="rangeB1">
+                                                            290
+                                                          </span>
+                                                          <span id="rangeB2">
+                                                            315
+                                                          </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrapper">
+                                                        <div class="sliderHeading">Duolingo</div>
+                                                        <div class="slid-container">
+                                                          <div class="slider-track "></div>
+                                                          <input type="range" min="0" max="200" value="90" id="slider-1c" oninput="slideCOne()">
+                                                          <input type="range" min="0" max="200" value="120" id="slider-2c" oninput="slideCTwo()">
+                                                        </div>
+                                                        <div class="values">
+                                                          <span id="rangeC1">
+                                                            90
+                                                          </span>
+                                                          <span id="rangeC2">
+                                                            120
+                                                          </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrapper">
+                                                        <div class="sliderHeading">PTE</div>
+                                                        <div class="slid-container">
+                                                          <div class="slider-track"></div>
+                                                          <input type="range" min="0" max="200" value="60" id="slider-1d" oninput="slideDOne()">
+                                                          <input type="range" min="0" max="200" value="75" id="slider-2d" oninput="slideDTwo()">
+                                                        </div>
+                                                        <div class="values">
+                                                          <span id="rangeD1">
+                                                            60
+                                                          </span>
+                                                          <span id="rangeD2">
+                                                            75
+                                                          </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrapper">
+                                                        <div class="sliderHeading">TOEFL</div>
+                                                        <div class="slid-container">
+                                                          <div class="slider-track"></div>
+                                                          <input type="range" min="0" max="200" value="60" id="slider-1e" oninput="slideEOne()">
+                                                          <input type="range" min="0" max="200" value="75" id="slider-2e" oninput="slideETwo()">
+                                                        </div>
+                                                        <div class="values">
+                                                          <span id="rangeE1">
+                                                            60
+                                                          </span>
+                                                          <span id="rangeE2">
+                                                            75
+                                                          </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrapper">
+                                                        <div class="sliderHeading">SAT</div>
+                                                        <div class="slid-container">
+                                                          <div class="slider-track"></div>
+                                                          <input type="range" min="0" max="200" value="60" id="slider-1f" oninput="slideFOne()">
+                                                          <input type="range" min="0" max="200" value="75" id="slider-2f" oninput="slideFTwo()">
+                                                        </div>
+                                                        <div class="values">
+                                                          <span id="rangeF1">
+                                                            60
+                                                          </span>
+                                                          <span id="rangeF2">
+                                                            75
+                                                          </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
                                         </div>
-                                        
-                                        <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#programDuration" role="button" aria-expanded="false" aria-controls="programDuration">
-                                            Program Duration
-                                        </a>
-                                        <div class="collapse" id="programDuration">
-                                            <div class="card card-body">
-                                                <div class="checkBoxOuter">
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="sixMonths">
-                                                            6 Months
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value="" id="sixMonths">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="twleMonths">
-                                                            12 Months
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value="" id="twleMonths">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="sixteenMonths">
-                                                            16 Months
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value="" id="sixteenMonths">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="twentyFourMonths">
-                                                            24 Months
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value="" id="twentyFourMonths">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-
-                                        <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#intakes" role="button" aria-expanded="false" aria-controls="intakes">
-                                            Intakes
-                                        </a>
-                                        <div class="collapse" id="intakes">
-                                            <div class="card card-body">
-                                                <div class="checkBoxOuter">
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="fall">
-                                                            Fall
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value="" id="fall">
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label" for="spring">
-                                                            Spring
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value="" id="spring">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#testScores" role="button" aria-expanded="false" aria-controls="testScores">
-                                            Test Scores
-                                        </a>
-                                        <div class="collapse" id="testScores">
-                                            <div class="card card-body">
-                                                <div class="wrapper">
-                                                    <div class="sliderHeading">IELTS</div>
-                                                    <div class="slid-container">
-                                                      <div class="slider-track "></div>
-                                                      <input type="range" min="0" max="12" value="6.0" id="slider-1a" oninput="slideAOne()">
-                                                      <input type="range" min="0" max="12" value="6.5" id="slider-2a" oninput="slideATwo()">
-                                                    </div>
-                                                    <div class="values">
-                                                      <span id="rangeA1">
-                                                        6.0
-                                                      </span>
-                                                      <span id="rangeA2">
-                                                        6.5
-                                                      </span>
-                                                    </div>
-                                                </div>
-                                                <div class="wrapper">
-                                                    <div class="sliderHeading">GRE</div>
-                                                    <div class="slid-container">
-                                                      <div class="slider-track "></div>
-                                                      <input type="range" min="0" max="600" value="290" id="slider-1b" oninput="slideBOne()">
-                                                      <input type="range" min="0" max="600" value="315" id="slider-2b" oninput="slideBTwo()">
-                                                    </div>
-                                                    <div class="values">
-                                                      <span id="rangeB1">
-                                                        290
-                                                      </span>
-                                                      <span id="rangeB2">
-                                                        315
-                                                      </span>
-                                                    </div>
-                                                </div>
-                                                <div class="wrapper">
-                                                    <div class="sliderHeading">Duolingo</div>
-                                                    <div class="slid-container">
-                                                      <div class="slider-track "></div>
-                                                      <input type="range" min="0" max="200" value="90" id="slider-1c" oninput="slideCOne()">
-                                                      <input type="range" min="0" max="200" value="120" id="slider-2c" oninput="slideCTwo()">
-                                                    </div>
-                                                    <div class="values">
-                                                      <span id="rangeC1">
-                                                        90
-                                                      </span>
-                                                      <span id="rangeC2">
-                                                        120
-                                                      </span>
-                                                    </div>
-                                                </div>
-                                                <div class="wrapper">
-                                                    <div class="sliderHeading">PTE</div>
-                                                    <div class="slid-container">
-                                                      <div class="slider-track"></div>
-                                                      <input type="range" min="0" max="200" value="60" id="slider-1d" oninput="slideDOne()">
-                                                      <input type="range" min="0" max="200" value="75" id="slider-2d" oninput="slideDTwo()">
-                                                    </div>
-                                                    <div class="values">
-                                                      <span id="rangeD1">
-                                                        60
-                                                      </span>
-                                                      <span id="rangeD2">
-                                                        75
-                                                      </span>
-                                                    </div>
-                                                </div>
-                                                <div class="wrapper">
-                                                    <div class="sliderHeading">TOEFL</div>
-                                                    <div class="slid-container">
-                                                      <div class="slider-track"></div>
-                                                      <input type="range" min="0" max="200" value="60" id="slider-1e" oninput="slideEOne()">
-                                                      <input type="range" min="0" max="200" value="75" id="slider-2e" oninput="slideETwo()">
-                                                    </div>
-                                                    <div class="values">
-                                                      <span id="rangeE1">
-                                                        60
-                                                      </span>
-                                                      <span id="rangeE2">
-                                                        75
-                                                      </span>
-                                                    </div>
-                                                </div>
-                                                <div class="wrapper">
-                                                    <div class="sliderHeading">SAT</div>
-                                                    <div class="slid-container">
-                                                      <div class="slider-track"></div>
-                                                      <input type="range" min="0" max="200" value="60" id="slider-1f" oninput="slideFOne()">
-                                                      <input type="range" min="0" max="200" value="75" id="slider-2f" oninput="slideFTwo()">
-                                                    </div>
-                                                    <div class="values">
-                                                      <span id="rangeF1">
-                                                        60
-                                                      </span>
-                                                      <span id="rangeF2">
-                                                        75
-                                                      </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
+                                </div>
+                                <div class="offcanvas-footer d-lg-none bg-white d-flex justify-content-between">
+                                    <a href="javascript:;" class="btn resetBtn">Reset</a>
+                                    <a href="javascript:;" class="btn saveBtn">Save</a>
                                 </div>
                             </div>
                             <div class="col-auto rightSidePart">
@@ -408,14 +428,14 @@
                                             </div>
                                             <div class="col-12">
                                                 <form class="row inpSection">
-                                                    <div class="col px-0">
+                                                    <div class="col-sm col-12 px-0">
                                                         <input type="text" class="form-control" placeholder="Computer Science">
                                                     </div>
-                                                    <div class="col-auto p-0 d-lg-none">
+                                                    <div class="col-sm-auto col p-0 d-lg-none">
                                                         <a class="btn filterOutlineBtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                                            <img src="assets/img/svg/filter-red.svg" alt=""> Filter</a>
                                                     </div>
-                                                    <div class="col-auto px-0">
+                                                    <div class="col-sm-auto col px-0">
                                                         <a href="javascript:;" class="serchBtn">Search</a>
                                                     </div>
                                                 </form>
@@ -454,26 +474,26 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 p-0">
-                                                                <div class="row m-0 row-cols-4">
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                <div class="row m-0 row-cols-4 mt-2 mt-sm-0">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Program Type</div>
                                                                             <div class="col p-0 subMainHeading">Masters</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Duration</div>
                                                                             <div class="col p-0 subMainHeading">16 Months</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Annual tuition fee</div>
                                                                             <div class="col p-0 subMainHeading">12,244 USD</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Start date</div>
                                                                             <div class="col p-0 subMainHeading">Sep, Jan, Feb, May</div>
@@ -515,26 +535,26 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 p-0">
-                                                                <div class="row m-0 row-cols-4">
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                <div class="row m-0 row-cols-4 mt-2 mt-sm-0">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Program Type</div>
                                                                             <div class="col p-0 subMainHeading">Masters</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Duration</div>
                                                                             <div class="col p-0 subMainHeading">16 Months</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Annual tuition fee</div>
                                                                             <div class="col p-0 subMainHeading">12,244 USD</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Start date</div>
                                                                             <div class="col p-0 subMainHeading">Sep, Jan, Feb, May</div>
@@ -576,26 +596,26 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 p-0">
-                                                                <div class="row m-0 row-cols-4">
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                <div class="row m-0 row-cols-4 mt-2 mt-sm-0">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Program Type</div>
                                                                             <div class="col p-0 subMainHeading">Masters</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Duration</div>
                                                                             <div class="col p-0 subMainHeading">16 Months</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Annual tuition fee</div>
                                                                             <div class="col p-0 subMainHeading">12,244 USD</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Start date</div>
                                                                             <div class="col p-0 subMainHeading">Sep, Jan, Feb, May</div>
@@ -637,26 +657,26 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 p-0">
-                                                                <div class="row m-0 row-cols-4">
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                <div class="row m-0 row-cols-4 mt-2 mt-sm-0">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Program Type</div>
                                                                             <div class="col p-0 subMainHeading">Masters</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Duration</div>
                                                                             <div class="col p-0 subMainHeading">16 Months</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Annual tuition fee</div>
                                                                             <div class="col p-0 subMainHeading">12,244 USD</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Start date</div>
                                                                             <div class="col p-0 subMainHeading">Sep, Jan, Feb, May</div>
@@ -698,26 +718,26 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 p-0">
-                                                                <div class="row m-0 row-cols-4">
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                <div class="row m-0 row-cols-4 mt-2 mt-sm-0">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Program Type</div>
                                                                             <div class="col p-0 subMainHeading">Masters</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Duration</div>
                                                                             <div class="col p-0 subMainHeading">16 Months</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Annual tuition fee</div>
                                                                             <div class="col p-0 subMainHeading">12,244 USD</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Start date</div>
                                                                             <div class="col p-0 subMainHeading">Sep, Jan, Feb, May</div>
@@ -759,26 +779,26 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 p-0">
-                                                                <div class="row m-0 row-cols-4">
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                <div class="row m-0 row-cols-4 mt-2 mt-sm-0">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Program Type</div>
                                                                             <div class="col p-0 subMainHeading">Masters</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Duration</div>
                                                                             <div class="col p-0 subMainHeading">16 Months</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Annual tuition fee</div>
                                                                             <div class="col p-0 subMainHeading">12,244 USD</div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col p-0 collegeAddinationDetails">
+                                                                    <div class="col-sm col-6 p-0 collegeAddinationDetails">
                                                                         <div class="row mx-0 flex-column">
                                                                             <div class="col p-0 subHeading">Start date</div>
                                                                             <div class="col p-0 subMainHeading">Sep, Jan, Feb, May</div>
