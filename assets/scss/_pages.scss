@@ -31,7 +31,6 @@
                                         font-weight: 400;
                                         font-size: 18px;
                                         line-height: 22px;
-
                                         color: $white;
                                         background: $theme1;
                                         border-radius: 5px;
@@ -46,6 +45,79 @@
                                             color: $theme1;
                                             background: $white;
                                             border: 2px solid $theme1;
+                                        }
+                                    }
+                                }
+                            }
+                            & .loginsection{
+                                & .loginForm {
+                                    max-width: 320px;
+                                    width: 100%;
+                                    background: #FFFFFF;
+                                    border: 1px solid #EFEFEF;
+                                    border-radius: 19.3125px;
+                                    & .card-body {
+                                        padding: 28px;
+                                        & .formHeadign {
+                                            font-family: 'Gilroy-SemiBold';
+                                            font-size: 24px;
+                                            line-height: 28px;
+                                            /* identical to box height */
+                                            color: #000000;
+                                            margin-bottom: 28px;
+                                        }
+                                        & .inputform {
+                                            gap: 15px;
+                                            & .inputBox {
+                                                & .form-control {
+                                                    height: 40px;
+                                                    border: 1px solid #EBEBEB;
+                                                    border-radius: 8.04688px;
+                                                    font-family: 'Gilroy-Medium';
+                                                    font-size: 12px;
+                                                    line-height: 14px;
+                                                    color: #7C7C7C;
+                                                    padding: 13px 13px 13px 16px;
+                                                    &::placeholder{
+                                                        color: #7C7C7C;
+                                                    }
+                                                    &.form-select {
+                                                        // padding: 12px 40px 12px 24px;
+                                                        padding: 13px 40px 13px 16px;
+
+                                                    }
+                                                }
+                                                
+                                            }
+                                            & .proccedBtn {
+                                                background: #E91515;
+                                                border-radius: 8.04688px;
+                                                font-family: 'Gilroy-Bold';
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                color: #FFFFFF;
+                                                height: 40px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                transition: all 0.3s;
+                                                border: 1px solid #E91515;
+                                                &:hover{
+                                                    background: $white;
+                                                    color: #E91515;
+                                                }
+                                                &.blankBtn{
+                                                    border: 1px solid #E91515;
+                                                    font-size: 20px;
+                                                    line-height: 23px;
+                                                    color: #E91515;
+                                                    background-color: transparent;
+                                                    &:hover{
+                                                        background: #E91515;
+                                                        color: #FFFFFF;
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -500,6 +572,28 @@
                             box-shadow: 0px 10px 20px rgba(145, 145, 145, 0.25);
                             border-radius: 5px 5px 5px 5px;
                             & .popularProgramsSectionItemImg {
+                                &.sliderImg {
+                                    & .newsImg {
+                                        border-radius: 5px 5px 0px 0px;
+                                        & .swiper-wrapper {
+                                        }
+                                        & .swiper-button-next, & .swiper-button-prev {
+                                            width: auto;
+                                            height: auto;
+                                            &::after{
+                                                height: 38px;
+                                                width: 38px;
+                                                font-size: 20px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border-radius: 50px;
+                                                color: $white;
+                                                background: rgba($black, 0.68);
+                                            }
+                                        }
+                                    }
+                                }
                                 & img {
                                     aspect-ratio: 277/271;
                                     object-fit: cover;
@@ -538,8 +632,6 @@
                                     font-size: 16px;
                                     line-height: 20px;
                                     /* identical to box height */
-
-
                                     color: #7C7C7C;
                                     & img {
                                         width: 18px;
@@ -556,6 +648,7 @@
                 }
             }
         }
+
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -578,8 +671,7 @@
                         & .carousel-item-content {
                             & .carousel-item-content-inner {
                                 & .carousel-item-content-heading {
-                                    font-size: 58px;
-                                    line-height: 68px;
+                                    font-size: 37px;
                                 }
                                 & .chooseProgramBtn {
                                     margin-top: 50px;
@@ -815,8 +907,8 @@
                         & .carousel-item-content {
                             & .carousel-item-content-inner {
                                 & .carousel-item-content-heading {
-                                    font-size: 45px;
-                                    line-height: 50px;
+                                    // font-size: 45px;
+                                    // line-height: 50px;
                                 }
                                 & .chooseProgramBtn {
                                     margin-top: 40px;
@@ -1064,8 +1156,8 @@
                         & .carousel-item-content {
                             & .carousel-item-content-inner {
                                 & .carousel-item-content-heading {
-                                    font-size: 36px;
-                                    line-height: 45px;
+                                    font-size: 30px;
+                                    // line-height: 45px;
                                 }
                                 & .chooseProgramBtn {
                                     margin-top: 30px;
