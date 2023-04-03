@@ -537,3 +537,221 @@
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  studya-broad-two end  ]@@@@@@@@@@@@@@@@@@@@@@
 
+
+[data-page-name=news] {
+    @include media-breakpoint(basic){
+        &.eventPage {
+            & .popularProgramsSectionItems {    
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 106px;
+                & .popularProgramsSectionItem {
+                    transition: .3s all;
+                    & .popularProgramsSectionItemInner {
+                        background: #FFFFFF;
+                        box-shadow: 0px 10px 20px rgba(145, 145, 145, 0.25);
+                        border-radius: 5px 5px 5px 5px;
+                        & .popularProgramsSectionItemImg {
+                            &.sliderImg {
+                                & .newsImg {
+                                    border-radius: 5px 5px 0px 0px;
+                                    & .swiper-wrapper {
+                                    }
+                                    & .swiper-button-next, & .swiper-button-prev {
+                                        width: auto;
+                                        height: auto;
+                                        &::after{
+                                            height: 38px;
+                                            width: 38px;
+                                            font-size: 20px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            border-radius: 50px;
+                                            color: $white;
+                                            background: rgba($black, 0.68);
+                                        }
+                                    }
+                                }
+                            }
+                            & img {
+                                aspect-ratio: 277/271;
+                                object-fit: cover;
+                                object-position: center;
+                                border-radius: 5px 5px 0px 0px;
+                                width: 100%;
+                            }
+                        }
+                        & .popularProgramsSectionItemTitle {
+                            font-family: 'Gilroy-Medium';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #7C7C7C;
+                        }
+                        & .popularProgramsSectionItemLocation {
+                            font-family: 'Gilroy-Bold';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #1C1C1C;
+                        }
+                        & .popularProgramsSectionItemLocate {
+                            padding-bottom: 19px;
+                            & span {
+                                font-family: 'Gilroy-SemiBold';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: #7C7C7C;
+                                & img {
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        transform: translateY(5px);
+                        filter: grayscale(1);
+                    }
+                }
+            }
+            & .loadMoreBtn {
+                width: 125px;
+                height: 56px;
+                background: #E91515;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {
+        &.eventPage {
+            & .popularProgramsSectionItems {    
+                padding: 0 !important;
+                & .popularProgramsSectionItem {
+                    & .popularProgramsSectionItemInner {
+                        & .popularProgramsSectionItemImg {
+                        }
+                        & .popularProgramsSectionItemTitle {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                        & .popularProgramsSectionItemLocation {
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+                        & .popularProgramsSectionItemLocate {
+                            & span {
+                                font-size: 14px;
+                                line-height: 16px;
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                    &:last-child {
+                    }
+                    &:hover {
+                    }
+                }
+            }
+            & .loadMoreBtn {
+                width: 115px;
+                height: 36px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {
+        &.eventPage {
+            & .popularProgramsSectionItems {    
+                & .popularProgramsSectionItem {
+                    // margin-bottom: 25px;
+                    & .popularProgramsSectionItemInner {
+                        & .popularProgramsSectionItemImg {
+                            & img {
+                            }
+                        }
+                        & .popularProgramsSectionItemTitle {
+                            font-size: 11px;
+                            line-height: 13px;
+                        }
+                        & .popularProgramsSectionItemLocation {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                        & .popularProgramsSectionItemLocate {
+                            & span {
+                                font-size: 12px;
+                                line-height: 14px;
+                                & img {
+                                    width: 11px;
+                                    height: 11px;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+
+    
+    [data-bs-theme=dark] {
+        @include dark-media-breakpoint(basic) {
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+
+
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
