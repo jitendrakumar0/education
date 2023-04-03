@@ -3742,9 +3742,11 @@
             max-width: 348px;
             padding: 8px;
             width: 100%;
-            & .leftPartInnerSide {
+            & .offcanvas-body {
                 position: sticky;
                 top: 117px;
+            }
+            & .leftPartInnerSide {
                 & .filterBtnOuter {
                     padding: 17px 29px 36px 0px;
                     & .filterBtn {
@@ -4336,9 +4338,77 @@
     @include media-breakpoint-down(lg) {
         .mainSection {
             & .leftSidePart {
-                & .leftPartInnerSide {
-                    position: unset;
+                & .offcanvas-header {
                     & .filterBtnOuter {
+                        padding: 5px 0px 5px 0px;
+                        & .filterBtn {
+                            & .imgOuter {
+                                width: 20px;
+                                height: 20px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            & .btnText {
+                                font-family: 'Gilroy-Medium';
+                                font-size: 18px;
+                                line-height: 21px;
+                                color: #B7B7B7;
+                            }
+                        }
+                        & .resetBtn {
+                            font-family: 'Gilroy-Medium';
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #000000;
+                        }
+                    }
+                }
+                & .offcanvas-body {
+                    position: relative;
+                    top: 0;
+                }
+                & .offcanvas-footer {
+                    & .resetBtn {
+                        height: 45px;
+                        font-family: "Gilroy-Medium";
+                        font-size: 18px;
+                        line-height: 21px;
+                        background-color: #fff;
+                        color: #e91515;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 5px;
+                        width: 120px;
+                        border: 2px solid #e91515;
+                        &:hover {
+                            background-color: #e91515;
+                            color: #ffffff;
+                        }
+                    }
+                    & .saveBtn {
+                        height: 45px;
+                        font-family: "Gilroy-Medium";
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #fff;
+                        background-color: #e91515;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 5px;
+                        width: 102px;
+                        border: 2px solid #e91515;
+                        &:hover {
+                            background-color: #ffffff;
+                            color: #e91515;
+                        }
+                    }
+                }
+                & .leftPartInnerSide {
+                    & .filterBtnOuter {
+                        padding: 10px 0px 0px 0px;
                         & .filterBtn {
                             & .imgOuter {
                             }
@@ -4404,16 +4474,21 @@
                 width: 100%;
                 & .rightSidePartInner {
                     & .topSearchBar {
+                        padding: 25px 25px;
                         & .topSearchBarInner {
                             & .sectionHeading {
+                                font-size: 26px;
+                                line-height: 30px;
                             }
                             & .inpSection {
                                 & .form-control {
+                                    height: 45px;
                                 }
                                 & .serchBtn {
+                                    height: 45px;
                                 }
                                 & .filterOutlineBtn {
-                                    height: 50px;
+                                    height: 45px;
                                     font-family: "Gilroy-Medium";
                                     font-size: 18px;
                                     line-height: 21px;
@@ -4444,24 +4519,37 @@
                     & .collageDetailsBox {
                         & .card {
                             & .card-body {
+                                padding: 15px 15px;
                                 & .imgOuter {
+                                    width: 80px;
+                                    height: 80px;
                                 }
                                 & .collegeDetails {
                                     & .courseName {
+                                        font-size: 16px;
+                                        line-height: 20px;
                                     }
                                     & .univercityName {
                                     }
                                     & .univercityAddressOuter {
                                         & .imgOuter {
+                                            width: 16px;
+                                            height: 16px;
                                         }
                                         & .univercityAddressText {
+                                            font-size: 14px;
+                                            line-height: 17px;
                                         }
                                     }
                                 }
                                 & .collegeAddinationDetails {
                                     & .subHeading {
+                                        font-size: 14px;
+                                        line-height: 17px;
                                     }
                                     & .subMainHeading {
+                                        font-size: 14px;
+                                        line-height: 17px;
                                     }
                                 }
                             }
@@ -4474,6 +4562,7 @@
     @include media-breakpoint-down(md) {
         .mainSection {
             & .leftSidePart {
+                max-width: 280px;
                 & .leftPartInnerSide {
                     & .filterBtnOuter {
                         & .filterBtn {
@@ -4498,6 +4587,11 @@
                         }
                         & .card {
                             & .wrapper {
+                                padding-top: 15px;
+                                & .sliderHeading {
+                                    font-size: 13px;
+                                    line-height: 15px;                                
+                                }
                                 & .slid-container {
                                     & input[type="range"] {
                                     }
@@ -4583,9 +4677,45 @@
     }
     @include media-breakpoint-down(sm) {
         .mainSection {
+            padding: 20px 28px;
             & .leftSidePart {
+                & .offcanvas-header {
+                    & .filterBtnOuter {
+                        & .filterBtn {
+                            & .imgOuter {
+                                width: 18px;
+                                height: 18px;
+                            }
+                            & .btnText {
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
+                        }
+                        & .resetBtn {
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+                & .offcanvas-footer {
+                    & .resetBtn {
+                        height: 30px;
+                        font-size: 12px;
+                        line-height: 14px;
+                        &:hover {
+                        }
+                    }
+                    & .saveBtn {
+                        height: 30px;
+                        font-size: 12px;
+                        line-height: 14px;
+                        &:hover {
+                        }
+                    }
+                }
                 & .leftPartInnerSide {
                     & .filterBtnOuter {
+                        padding: 17px 10px 15px 10px;
                         & .filterBtn {
                             & .imgOuter {
                             }
@@ -4597,9 +4727,16 @@
                     }
                     & .collapseBoxOuter {
                         & .collapseBtn {
+                            font-size: 14px;
+                            line-height: 16px;
+                            padding: 15px 8px;
                             &:first-child {
                             }
                             &::after {
+                                width: 20px;
+                                height: 20px;
+                                right: 12px;
+                                top: 13px;
                             }
                             &:not(.collapsed) {
                                 &::after {
@@ -4607,6 +4744,7 @@
                             }
                         }
                         & .card {
+                            padding: 0px 10px 15px 10px;
                             & .wrapper {
                                 & .slid-container {
                                     & input[type="range"] {
@@ -4629,17 +4767,24 @@
                                     }
                                 }
                                 & .values {
+                                    font-size: 13px;
+                                    line-height: 15px;
                                 }
                             }
                             & .checkBoxOuter {
                                 &  .form-check {
                                     & .form-check-input {
+                                        width: 18.97px;
+                                        height: 18.97px;
+                                        background-size: 12.97px;
                                         &:checked {
                                         }
                                         &:active {
                                         }
                                     }
                                     & .form-check-label {
+                                        font-size: 13px;
+                                        line-height: 15px;
                                     }
                                 }
                             }
@@ -4648,40 +4793,79 @@
                 }
             }
             & .rightSidePart {
+                padding: 0;
                 & .rightSidePartInner {
                     & .topSearchBar {
+                        padding: 20px 20px;
                         & .topSearchBarInner {
+                            gap: 10px;
                             & .sectionHeading {
+                                font-size: 20px;
+                                line-height: 24px;
                             }
                             & .inpSection {
+                                gap: 10px;
                                 & .form-control {
+                                    height: 30px;
+                                    font-size: 12px;
+                                    line-height: 14px;
                                 }
                                 & .serchBtn {
+                                    width: 100%;
+                                    max-width: 100%;
+                                    height: 30px;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                }
+                                & .filterOutlineBtn {
+                                    width: 100%;
+                                    height: 30px;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    & img {
+                                        width: 12px;
+                                        height: 12px;
+                                        margin-right: 6px;
+                                    }
                                 }
                             }
                         }
                     }
                     & .collageDetailsBox {
+                        gap: 15px;
                         & .card {
                             & .card-body {
+                                padding: 10px 10px;
                                 & .imgOuter {
+                                    width: 50px;
+                                    height: 50px;
                                 }
                                 & .collegeDetails {
+                                    padding-left: 10px;
                                     & .courseName {
+                                        font-size: 13px;
                                     }
                                     & .univercityName {
+                                        font-size: 13px;
                                     }
                                     & .univercityAddressOuter {
                                         & .imgOuter {
+                                            width: 13px;
+                                            height: 13px;
                                         }
                                         & .univercityAddressText {
+                                            font-size: 13px;
                                         }
                                     }
                                 }
                                 & .collegeAddinationDetails {
+                                    margin-top: 10px;
                                     & .subHeading {
+                                        font-size: 13px;
+                                        margin-bottom: 8px;
                                     }
                                     & .subMainHeading {
+                                        font-size: 13px;
                                     }
                                 }
                             }
