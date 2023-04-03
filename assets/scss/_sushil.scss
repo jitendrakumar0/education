@@ -1742,25 +1742,24 @@
                     color: #1C1C1C;
                 }
                 & .facilitiesItem {
-                    padding-top: 35px;
+                    // padding-top: 35px;
                     & .facilitiesItemBox {
-                        background: #FFFFFF;
-                        border-left: 3px solid #E91515;
-                        box-shadow: 0px 10px 20px rgba(102, 102, 102, 0.15);
-                        padding: 27px 27px 46px 25px;
-                        min-height: 309px;
+                        // background: #FFFFFF;
+                        // border-left: 3px solid #E91515;
+                        // box-shadow: 0px 10px 20px rgba(102, 102, 102, 0.15);
+                        // padding: 27px 27px 46px 25px;
+                        // min-height: 309px;
+                        box-shadow: 0px 10px 20px rgba(145,145,145,.25);
                         & .facilitiesItemBoxImg {
                             width: 60px;
                             height: 60px;
                             padding-bottom: 12px;
                         }
                         & .facilitiesItemBoxHeading {
-                            padding-bottom: 15px;
                             font-family: 'Gilroy-SemiBold';
-                            font-size: 28px;
-                            line-height: 33px;
-
-                            color: #1C1C1C;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #e91515;
                         }
                         & .facilitiesItemBoxList {
                             & .facilitiesItemBoxListItem {
@@ -1784,9 +1783,8 @@
                                     }
                                     & .listText {
                                         font-family: 'Gilroy-Regular';
-                                        font-size: 17px;
-                                        line-height: 25px;
-                                        /* identical to box height, or 147% */
+                                        font-size: 14px;
+                                        line-height: 22px;
                                         color: #3C3C3C;
                                     }
                                 }
@@ -2412,15 +2410,16 @@
                     line-height: 45px;
                 }
                 & .facilitiesItem {
+                    margin-top: 30px;
                     & .facilitiesItemBox {
-                        min-height: 215px;
+                        // min-height: 215px;
                         & .facilitiesItemBoxImg {
                             width: 50px;
                             height: 50px;
                         }
                         & .facilitiesItemBoxHeading {
-                            font-size: 26px;
-                            line-height: 30px;
+                            font-size: 16px;
+                            line-height: 18px;
                         }
                         & .facilitiesItemBoxList {
                             & .facilitiesItemBoxListItem {
@@ -3116,8 +3115,8 @@
                             height: 45px;
                         }
                         & .facilitiesItemBoxHeading {
-                            font-size: 22px;
-                            line-height: 26px;
+                            // font-size: 22px;
+                            // line-height: 26px;
                         }
                         & .facilitiesItemBoxList {
                             & .facilitiesItemBoxListItem {
@@ -3541,8 +3540,8 @@
                             height: 40px;
                         }
                         & .facilitiesItemBoxHeading {
-                            font-size: 16px;
-                            line-height: 19px;
+                            // font-size: 16px;
+                            // line-height: 19px;
                         }
                         & .facilitiesItemBoxList {
                             & .facilitiesItemBoxListItem {
