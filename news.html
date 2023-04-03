@@ -159,7 +159,7 @@
                     <div class="container-fluid mainSection ">
                         <div class="row mx-0">
                             <div class="col-auto leftSidePart offcanvas-lg offcanvas-start" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                <div class="offcanvas-header p-0">
+                                <div class="offcanvas-header pb-0 px-4">
                                     <div class="col-12 filterBtnOuter d-lg-none">
                                         <div class="row mx-0 justify-content-between align-items-center">
                                             <a class="col-auto p-0 filterBtn" href="javascript:;">
@@ -192,33 +192,11 @@
                                             </div>
                                         </div>
                                         <div class="col-12 p-0 collapseBoxOuter">
-                                            <!-- <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#tuitionFee" role="button" aria-expanded="false" aria-controls="tuitionFee">
-                                                Tuition Fee
-                                            </a>
-                                            <div class="collapse" id="tuitionFee">
-                                                <div class="card card-body">
-                                                    <div class="wrapper">
-                                                        <div class="slid-container">
-                                                          <div class="slider-track"></div>
-                                                          <input type="range" min="0" max="162000" value="12000" id="slider-1" oninput="slideOne()">
-                                                          <input type="range" min="0" max="162000" value="150000" id="slider-2" oninput="slideTwo()">
-                                                        </div>
-                                                        <div class="values">
-                                                          <span id="range1">
-                                                            $12000
-                                                          </span>
-                                                          <span id="range2">
-                                                            $150000
-                                                          </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> -->
     
                                             <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#degreeType" role="button" aria-expanded="false" aria-controls="degreeType">
                                                 Degree Type
                                             </a>
-                                            <div class="collapse" id="degreeType">
+                                            <div class="collapse show" id="degreeType">
                                                 <div class="card card-body">
                                                     <div class="checkBoxOuter">
                                                         <div class="form-check">
@@ -252,7 +230,7 @@
                                             <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#programDuration" role="button" aria-expanded="false" aria-controls="programDuration">
                                                 Program Duration
                                             </a>
-                                            <div class="collapse" id="programDuration">
+                                            <div class="collapse show" id="programDuration">
                                                 <div class="card card-body">
                                                     <div class="checkBoxOuter">
                                                         <div class="form-check">
@@ -286,7 +264,7 @@
                                             <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#intakes" role="button" aria-expanded="false" aria-controls="intakes">
                                                 Intakes
                                             </a>
-                                            <div class="collapse" id="intakes">
+                                            <div class="collapse show" id="intakes">
                                                 <div class="card card-body">
                                                     <div class="checkBoxOuter">
                                                         <div class="form-check">
@@ -305,132 +283,16 @@
                                                 </div>
                                             </div>
     
-                                            <!-- <a class="collapseBtn collapsed" data-bs-toggle="collapse" href="#testScores" role="button" aria-expanded="false" aria-controls="testScores">
-                                                Test Scores
-                                            </a>
-                                            <div class="collapse" id="testScores">
-                                                <div class="card card-body">
-                                                    <div class="wrapper">
-                                                        <div class="sliderHeading">IELTS</div>
-                                                        <div class="slid-container">
-                                                          <div class="slider-track "></div>
-                                                          <input type="range" min="0" max="12" value="6.0" id="slider-1a" oninput="slideAOne()">
-                                                          <input type="range" min="0" max="12" value="6.5" id="slider-2a" oninput="slideATwo()">
-                                                        </div>
-                                                        <div class="values">
-                                                          <span id="rangeA1">
-                                                            6.0
-                                                          </span>
-                                                          <span id="rangeA2">
-                                                            6.5
-                                                          </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wrapper">
-                                                        <div class="sliderHeading">GRE</div>
-                                                        <div class="slid-container">
-                                                          <div class="slider-track "></div>
-                                                          <input type="range" min="0" max="600" value="290" id="slider-1b" oninput="slideBOne()">
-                                                          <input type="range" min="0" max="600" value="315" id="slider-2b" oninput="slideBTwo()">
-                                                        </div>
-                                                        <div class="values">
-                                                          <span id="rangeB1">
-                                                            290
-                                                          </span>
-                                                          <span id="rangeB2">
-                                                            315
-                                                          </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wrapper">
-                                                        <div class="sliderHeading">Duolingo</div>
-                                                        <div class="slid-container">
-                                                          <div class="slider-track "></div>
-                                                          <input type="range" min="0" max="200" value="90" id="slider-1c" oninput="slideCOne()">
-                                                          <input type="range" min="0" max="200" value="120" id="slider-2c" oninput="slideCTwo()">
-                                                        </div>
-                                                        <div class="values">
-                                                          <span id="rangeC1">
-                                                            90
-                                                          </span>
-                                                          <span id="rangeC2">
-                                                            120
-                                                          </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wrapper">
-                                                        <div class="sliderHeading">PTE</div>
-                                                        <div class="slid-container">
-                                                          <div class="slider-track"></div>
-                                                          <input type="range" min="0" max="200" value="60" id="slider-1d" oninput="slideDOne()">
-                                                          <input type="range" min="0" max="200" value="75" id="slider-2d" oninput="slideDTwo()">
-                                                        </div>
-                                                        <div class="values">
-                                                          <span id="rangeD1">
-                                                            60
-                                                          </span>
-                                                          <span id="rangeD2">
-                                                            75
-                                                          </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wrapper">
-                                                        <div class="sliderHeading">TOEFL</div>
-                                                        <div class="slid-container">
-                                                          <div class="slider-track"></div>
-                                                          <input type="range" min="0" max="200" value="60" id="slider-1e" oninput="slideEOne()">
-                                                          <input type="range" min="0" max="200" value="75" id="slider-2e" oninput="slideETwo()">
-                                                        </div>
-                                                        <div class="values">
-                                                          <span id="rangeE1">
-                                                            60
-                                                          </span>
-                                                          <span id="rangeE2">
-                                                            75
-                                                          </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wrapper">
-                                                        <div class="sliderHeading">SAT</div>
-                                                        <div class="slid-container">
-                                                          <div class="slider-track"></div>
-                                                          <input type="range" min="0" max="200" value="60" id="slider-1f" oninput="slideFOne()">
-                                                          <input type="range" min="0" max="200" value="75" id="slider-2f" oninput="slideFTwo()">
-                                                        </div>
-                                                        <div class="values">
-                                                          <span id="rangeF1">
-                                                            60
-                                                          </span>
-                                                          <span id="rangeF2">
-                                                            75
-                                                          </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-    
                                         </div>
                                     </div>
                                 </div>
                                 <div class="offcanvas-footer d-lg-none bg-white d-flex justify-content-between">
-                                    <a href="javascript:;" class="btn resetBtn">Reset</a>
-                                    <a href="javascript:;" class="btn saveBtn">Save</a>
+                                    <a class="btn filterOutlineBtn" role="button">Clear All</a>
+                                    <a class="btn filterOutlineBtn" role="button">Apply</a>
                                 </div>
                             </div>
                             <div class="col-auto rightSidePart">
                                 <div class="row mx-0 rightSidePartInner">
-                                    <!-- <div class="col-12 topSearchBar bg-white">
-                                        <div class="row mx-0 topSearchBarInner">
-                                            <div class="col-12">
-                                                <form class="row inpSection">
-                                                    <div class="col-auto ms-auto d-lg-none">
-                                                        <a class="btn filterOutlineBtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                                        <img src="assets/img/svg/filter-red.svg" alt=""> Filter</a>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div> -->
                                     <div class="col-12 p-0">
                                         <div class="row mx-0 collageDetailsBox popularProgramsSectionItems mx-n3 gy-4 gx-3 gap-0">
                                             <a href="javascript:;" class="col-lg-4 col-md-6 col-12 popularProgramsSectionItem">
@@ -547,11 +409,16 @@
                                                     </div>
                                                 </div>
                                             </a>
+                                            <div class="col-12">
+                                                <div class="row mt-md-4 mt-2">
+                                                    <a href="javascript:;" class="loadMoreBtn mx-auto">Load More</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 pt-3 pb-xl-5 pb-md-4 p-3">
+                                    <!-- <div class="col-12 pt-3 pb-xl-5 pb-md-4 p-3">
                                         <a href="javascript:;" class="loadMoreBtn bg-theme1 p-3 d-flex align-items-center justify-content-center text-white mx-auto">Load More</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -648,6 +515,29 @@
                 </div>
             </div>
         </main>
+        <div class="filterOuter d-flex d-lg-none">
+            <a class="btn filterOutlineBtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <img src="assets/img/svg/filter-icon.svg" alt=""> Filter</a>
+
+            <a class="btn filterOutlineBtn" data-bs-toggle="offcanvas" href="#sortBy2" role="button" aria-controls="offcanvasExample">
+                <img src="assets/img/svg/sort_black_24dp.svg" alt=""> Sort</a>
+        </div>
+        <div class="offcanvas offcanvas-bottom sortByOffcanvas" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="sortBy2" aria-labelledby="sortBy2Label">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close ms-auto shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="row mx-0">
+                    <div class="col-12 p-0">
+                        <ul>
+                            <li>Course Fee - Low to High</li>
+                            <li>Course Fee - High to Low</li>
+                            <li>Popularity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="offcanvas offcanvas-start menuOffcanvas" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
             <div class="offcanvas-header">
                 <a href="index.html" class="offcanvas-title" id="menuOffcanvasLabel">
