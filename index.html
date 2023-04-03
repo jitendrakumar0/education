@@ -99,7 +99,7 @@
         <link rel="stylesheet" href="assets/libs/node_modules/plyr/dist/plyr.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
         <link rel="stylesheet" href="assets/libs/node_modules/swiper/swiper-bundle.min.css"/>
-
+        <link rel="stylesheet" href="assets/libs/node_modules/select2/dist/css/select2.min.css">
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
@@ -225,8 +225,8 @@
                                                                     <div class="col-12 px-0 inputBox"><input type="email" id="emailadd" class="form-control shadow-none" placeholder="Email Address"></div>
                                                                     <div class="col-12 px-0 inputBox"><input type="tel" id="phoneNumber" class="form-control shadow-none number" placeholder="+91  Phone Number"></div>
                                                                     <div class="col-12 px-0 inputBox">
-                                                                        <select class="form-select form-control shadow-none" aria-label="Default select example">
-                                                                            <option selected>Select Branch</option>
+                                                                        <select class="form-select form-control shadow-none w-100" id="branch"  aria-describedby="branch">
+                                                                            <option value="">Select Branch</option>
                                                                             <option value="1">One</option>
                                                                             <option value="2">Two</option>
                                                                             <option value="3">Three</option>
@@ -340,12 +340,13 @@
                                 </div>
                                 <div class="col-md col-12">
                                     <label for="subject" class="form-label">Subject</label>
-                                    <select  class="form-control" id="subject" aria-describedby="subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Artificial Engineering">
+                                    <!-- <select  class="form-control" id="subject" aria-describedby="subject">
                                         <option value="Artificial Engineering">Artificial Engineering</option>
                                         <option value="Artificial Engineering">Artificial Engineering</option>
                                         <option value="Artificial Engineering">Artificial Engineering</option>
                                         <option value="Artificial Engineering">Artificial Engineering</option>
-                                    </select>
+                                    </select> -->
                                 </div>
                                 <div class="col-md-auto col-12 mt-2 mt-sm-0">
                                     <a href="javascript:;" class="findAProgramBtn">Search</a>
@@ -1243,6 +1244,7 @@
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/plyr/dist/plyr.min.js"></script>
         <script src="assets/libs/node_modules/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/libs/node_modules/select2/dist/js/select2.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
         <script>
             const players = document.querySelectorAll('.player');
