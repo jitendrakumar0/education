@@ -3810,6 +3810,16 @@
                         & .wrapper {
                             position: relative;
                             background-color: #ffffff;
+                            padding-top: 32px;
+                            &:first-child {
+                                padding-top: 0;
+                            }
+                            & .sliderHeading {
+                                font-family: 'Gilroy-SemiBold';
+                                font-size: 18px;
+                                line-height: 21px;
+                                color: #282828;
+                            }
                             & .slid-container {
                                 position: relative;
                                 width: 100%;
@@ -3910,6 +3920,7 @@
                                     height: 23.97px;
                                     border-radius: 6.3908px;
                                     cursor: pointer;
+                                    background-size: 15.97px;
                                     &:checked {
                                         background-image: url('../img/svg/check.svg');
                                         background-color: #ffffff;
