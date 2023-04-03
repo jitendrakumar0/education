@@ -55,7 +55,7 @@
                                     width: 100%;
                                     background: #FFFFFF;
                                     border: 1px solid #EFEFEF;
-                                    border-radius: 19.3125px;
+                                    border-radius: 12px;
                                     & .card-body {
                                         padding: 28px;
                                         & .formHeadign {
@@ -87,7 +87,47 @@
 
                                                     }
                                                 }
-                                                
+                                                & .select2-container {
+                                                    width: 100% !important;
+                                                    & .selection {
+                                                        & .select2-selection {
+                                                            border: 1px solid #ebebeb;
+                                                            border-radius: 8.04688px;
+                                                            height: 40px;
+                                                            & .select2-selection__rendered {
+                                                                padding: 13px 40px 13px 16px;
+                                                                font-size: 12px;
+                                                                line-height: 14px;
+                                                                color: #7c7c7c;
+                                                                border-radius: 8.04688px;
+                                                                height: 40px;
+                                                                display: flex;
+                                                                align-items: center;
+                                                            }
+                                                            & .select2-selection__arrow {
+                                                                top: 50%;
+                                                                right: 10px;
+                                                                transform: translate(0%, -50%);
+                                                                & b {
+                                                                    border: unset !important;
+                                                                    background: url('../img/svg/down-arrow.svg') no-repeat, center;
+                                                                    background-size: contain;
+                                                                    width: 20px;
+                                                                    height: 20px;
+                                                                    inset: 0;
+                                                                    margin: auto;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    &.select2-container--open {
+                                                        & .select2-selection__arrow {
+                                                            & b {
+                                                                transform: rotate(180deg);
+                                                            }
+                                                        }
+                                                    }
+                                                }
                                             }
                                             & .proccedBtn {
                                                 background: #E91515;
@@ -101,13 +141,13 @@
                                                 justify-content: center;
                                                 align-items: center;
                                                 transition: all 0.3s;
-                                                border: 1px solid #E91515;
+                                                border: 2px solid #E91515;
                                                 &:hover{
                                                     background: $white;
                                                     color: #E91515;
                                                 }
                                                 &.blankBtn{
-                                                    border: 1px solid #E91515;
+                                                    border: 2px solid #E91515;
                                                     font-size: 20px;
                                                     line-height: 23px;
                                                     color: #E91515;
@@ -196,6 +236,50 @@
                     &:hover {
                         background-color: #FFFFFF;
                         color: #D40F2B;
+                    }
+                }
+                & .counterInpSectionInnerForm {
+                    & .select2-container {
+                        width: 100% !important;
+                        & .selection {
+                            & .select2-selection {
+                                border: 1px solid #3c3c3c;
+                                border-radius: 5px;
+                                height: 56px;
+                                & .select2-selection__rendered {
+                                    padding: 13px 40px 13px 16px;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    height: 56px;
+                                    color: #7c7c7c;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                & .select2-selection__arrow {
+                                    top: 50%;
+                                    right: 10px;
+                                    transform: translate(0%, -50%);
+                                    & b {
+                                        border: unset !important;
+                                        background: url('../img/svg/down-arrow.svg') no-repeat, center;
+                                        background-size: contain;
+                                        width: 20px;
+                                        height: 20px;
+                                        inset: 0;
+                                        margin: auto;
+                                    }
+                                }
+
+                            }
+                        }
+                        &.select2-container--open {
+                            & .select2-selection__arrow {
+                                & b {
+                                    transform: rotate(180deg);
+                                
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -962,6 +1046,22 @@
                     &:hover {
                     }
                 }
+                & .counterInpSectionInnerForm {
+                    & .select2-container {
+                        & .selection {
+                            & .select2-selection {
+                                height: 50px;
+                                & .select2-selection__rendered {
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    height: 50px;
+                                }
+                                & .select2-selection__arrow {
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
         & .counterSection {
@@ -1211,6 +1311,22 @@
                     width: 80px;
                     height: 45px;
                     &:hover {
+                    }
+                }
+                & .counterInpSectionInnerForm {
+                    & .select2-container {
+                        & .selection {
+                            & .select2-selection {
+                                height: 45px;
+                                & .select2-selection__rendered {
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    height: 45px;
+                                }
+                                & .select2-selection__arrow {
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1463,6 +1579,7 @@
             & .counterInpSectionInner {
                 & .counterInpSectionInnerForm {
                     gap: 20px;
+                    
                 }
                 & .form-label {
                 }
