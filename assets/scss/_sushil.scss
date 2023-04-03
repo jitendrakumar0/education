@@ -4339,6 +4339,9 @@
     @include media-breakpoint-down(lg) {
         .mainSection {
             & .leftSidePart {
+                max-width: 100%;
+                height: 100%;
+                padding: 0;
                 & .offcanvas-header {
                     & .filterBtnOuter {
                         padding: 5px 0px 5px 0px;
@@ -4370,40 +4373,17 @@
                     top: 0;
                 }
                 & .offcanvas-footer {
-                    & .resetBtn {
-                        height: 45px;
-                        font-family: "Gilroy-Medium";
-                        font-size: 18px;
-                        line-height: 21px;
-                        background-color: #fff;
-                        color: #e91515;
-                        display: inline-flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 5px;
-                        width: 120px;
-                        border: 2px solid #e91515;
-                        &:hover {
-                            background-color: #e91515;
-                            color: #ffffff;
-                        }
-                    }
-                    & .saveBtn {
-                        height: 45px;
-                        font-family: "Gilroy-Medium";
-                        font-size: 18px;
-                        line-height: 21px;
-                        color: #fff;
-                        background-color: #e91515;
-                        display: inline-flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 5px;
-                        width: 102px;
-                        border: 2px solid #e91515;
-                        &:hover {
-                            background-color: #ffffff;
-                            color: #e91515;
+                    box-shadow: 0 0 10px 0 rgb(144 164 184 / 30%) !important;
+                    & .filterOutlineBtn {
+                        background: #fff !important;
+                        border-radius: 0px;
+                        font-size: 16px !important;
+                        padding: 18px 15px !important;
+                        width: 100%;
+                        font-weight: 600;
+                        border: none;
+                        &:active {
+                            border: none;
                         }
                     }
                 }
@@ -4559,11 +4539,65 @@
                 }
             }
         }
+        .filterOuter {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 9;
+            & .filterOutlineBtn {
+                border-right: 1px solid #e9e9e9 !important;
+                width: 100%;
+                background: #fff;
+                border-radius: 0px;
+                font-size: 16px;
+                padding: 18px 15px;
+                font-weight: 600;
+                color: #697988 !important;
+                border: none;
+                & img {
+                    width: 24px;
+                    height: 24px;
+                    filter: brightness(0);
+                }
+                &:active {
+                    border-top: none;
+                    border-bottom: none;
+                    border-left: none;
+                }
+                &:last-child {
+                    &:active {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+        .sortByOffcanvas {
+            min-height: 215px;
+            & .offcanvas-header {
+                border-bottom: 1px solid #d3d3d3;
+                padding: 1rem;
+            }
+            & .offcanvas-body {
+                & ul {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    list-style: none;
+                    & li {
+                        padding: 15px 15px;
+                        border-top: 1px solid #dddddd;
+                        margin: 0px 0px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
     }
     @include media-breakpoint-down(md) {
         .mainSection {
             & .leftSidePart {
-                max-width: 280px;
                 & .leftPartInnerSide {
                     & .filterBtnOuter {
                         & .filterBtn {
