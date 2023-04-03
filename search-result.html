@@ -160,8 +160,8 @@
                     </navbar>
                     <div class="container-fluid mainSection ">
                         <div class="row mx-0">
-                            <div class="col-auto leftSidePart offcanvas-lg offcanvas-start" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                <div class="offcanvas-header p-0">
+                            <div class="col-auto leftSidePart offcanvas-lg offcanvas-bottom" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header pb-0 px-4">
                                     <div class="col-12 filterBtnOuter d-lg-none">
                                         <div class="row mx-0 justify-content-between align-items-center">
                                             <a class="col-auto p-0 filterBtn" href="javascript:;">
@@ -415,8 +415,8 @@
                                     </div>
                                 </div>
                                 <div class="offcanvas-footer d-lg-none bg-white d-flex justify-content-between">
-                                    <a href="javascript:;" class="btn resetBtn">Reset</a>
-                                    <a href="javascript:;" class="btn saveBtn">Save</a>
+                                    <a class="btn filterOutlineBtn" role="button">Clear All</a>
+                                    <a class="btn filterOutlineBtn" role="button">Apply</a>
                                 </div>
                             </div>
                             <div class="col-auto rightSidePart">
@@ -430,10 +430,6 @@
                                                 <form class="row inpSection">
                                                     <div class="col-sm col-12 px-0">
                                                         <input type="text" class="form-control" placeholder="Computer Science">
-                                                    </div>
-                                                    <div class="col-sm-auto col p-0 d-lg-none">
-                                                        <a class="btn filterOutlineBtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                                           <img src="assets/img/svg/filter-red.svg" alt=""> Filter</a>
                                                     </div>
                                                     <div class="col-sm-auto col px-0">
                                                         <a href="javascript:;" class="serchBtn">Search</a>
@@ -812,6 +808,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-12">
+                                        <div class="row mt-md-4 mt-2">
+                                            <a href="javascript:;" class="loadMoreBtn mx-auto">Load More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -908,6 +909,29 @@
                 </div>
             </div>
         </main>
+        <div class="filterOuter d-flex d-lg-none">
+            <a class="btn filterOutlineBtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <img src="assets/img/svg/filter-icon.svg" alt=""> Filter</a>
+
+            <a class="btn filterOutlineBtn" data-bs-toggle="offcanvas" href="#sortBy" role="button" aria-controls="offcanvasExample">
+                <img src="assets/img/svg/sort_black_24dp.svg" alt=""> Sort</a>
+        </div>
+        <div class="offcanvas offcanvas-bottom sortByOffcanvas" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="sortBy" aria-labelledby="sortByLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close ms-auto shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="row mx-0">
+                    <div class="col-12 p-0">
+                        <ul>
+                            <li>Course Fee - Low to High</li>
+                            <li>Course Fee - High to Low</li>
+                            <li>Popularity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="offcanvas offcanvas-start menuOffcanvas" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
             <div class="offcanvas-header">
                 <a href="index.html" class="offcanvas-title" id="menuOffcanvasLabel">

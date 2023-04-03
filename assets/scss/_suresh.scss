@@ -1,0 +1,757 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  studya-broad-two  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=studyaBoardPageTwo] {
+    @include media-breakpoint(basic) {
+        .postGraduateCourses {
+            padding: 40px 0;
+            & .postGraduateInner {
+                & .postGraduateHeading{
+                    font-family: "Gilroy-Bold";
+                    font-size: 42px;
+                    line-height: 49px;
+                    text-transform: capitalize;
+                    color: #1c1c1c;
+                }
+                & .postGraduateItems {
+                    & .postGraduateItem {
+                        margin-top: 40px;
+                        box-shadow: 0px 10px 20px rgba(145, 145, 145, 0.25);
+                        border-radius: 0px 0px 5px 5px;
+                        & .postGraduateItemInner {
+                            & .title {
+                                font-family: 'Gilroy-Bold';
+                                font-size: 18px;
+                                line-height: 21px;
+                                color: #E91515;
+                            }
+                            & .pera {
+                                font-family: 'Gilroy-Bold';
+                                font-size: 18px;
+                                line-height: 21px;
+                                color: #1C1C1C;
+                            }
+                            & .location {
+                                & .icon {
+                                    width: 18px;
+                                    height: 18px;
+                                    & img {
+                                    }
+                                }
+                                & .txt {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #7C7C7C;
+                                }
+                            }
+                            & .vieewCourseBtn{
+                                & .txt {
+                                    font-family: 'Gilroy-Bold';
+                                    font-size: 18px;
+                                    line-height: 21px;
+                                    color: #E91515;
+                                }
+                                & .icon {
+                                    width: 18px;
+                                    height: 18px;
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                 & .viewAllPrograms {
+                    font-family: 'Gilroy-Bold';
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #E91515;
+                 }
+            }
+        }
+        .underGraduateCourses {
+            padding: 40px 0;
+            & .postGraduateInner {
+                & .postGraduateHeading{
+                    font-family: "Gilroy-Bold";
+                    font-size: 42px;
+                    line-height: 49px;
+                    text-transform: capitalize;
+                    color: #1c1c1c;
+                }
+                & .postGraduateItems {
+                    & .postGraduateItem {
+                        margin-top: 40px;
+                        box-shadow: 0px 10px 20px rgba(145, 145, 145, 0.25);
+                        border-radius: 0px 0px 5px 5px;
+                        & .postGraduateItemInner {
+                            & .title {
+                                font-family: 'Gilroy-Bold';
+                                font-size: 18px;
+                                line-height: 21px;
+                                color: #9E9E9E;
+
+                            }
+                            & .pera {
+                                font-family: 'Gilroy-Bold';
+                                font-size: 18px;
+                                line-height: 21px;
+                                color: #1C1C1C;
+                            }
+                            & .location {
+                                & .icon {
+                                    width: 18px;
+                                    height: 18px;
+                                    & img {
+                                    }
+                                }
+                                & .txt {
+                                    font-family: 'Gilroy-SemiBold';
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #7C7C7C;
+                                }
+                            }
+                            & .vieewCourseBtn{
+                                & .txt {
+                                    font-family: 'Gilroy-Bold';
+                                    font-size: 18px;
+                                    line-height: 21px;
+                                    color: #E91515;
+                                }
+                                & .icon {
+                                    width: 18px;
+                                    height: 18px;
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                 & .viewAllPrograms {
+                    font-family: 'Gilroy-Bold';
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #E91515;
+                 }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @media (max-width: 1299.98px) {
+    }
+
+    @include media-breakpoint-down(xl) {
+        .postGraduateCourses {
+            & .postGraduateInner {
+                & .postGraduateHeading{
+                    font-size: 38px;
+                    line-height: 45px;
+                }
+                & .postGraduateItems {
+                    padding-top: 32px;
+                    & .postGraduateItem {
+                        margin-top: 0;
+                        & .postGraduateItemInner {
+                            & .title {
+                                font-size: 16px;
+                                line-height: 18px;
+                            }
+                            & .pera {
+                                font-size: 16px;
+                                line-height: 18px;
+                            }
+                            & .location {
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .txt {
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+                            }
+                            & .vieewCourseBtn{
+                                & .txt {
+                                    font-size: 16px;
+                                    line-height: 18px;
+                                }
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                 & .viewAllPrograms {
+                    font-size: 16px;
+                    line-height: 18px;
+                 }
+            }
+        }
+        .underGraduateCourses {
+            & .postGraduateInner {
+                & .postGraduateHeading{
+                    font-size: 38px;
+                    line-height: 45px;
+                }
+                & .postGraduateItems {
+                    padding-top: 32px;
+                    & .postGraduateItem {
+                        margin-top: 0;
+                        & .postGraduateItemInner {
+                            & .title {
+                                font-size: 16px;
+                                line-height: 18px;
+                            }
+                            & .pera {
+                                font-size: 16px;
+                                line-height: 18px;
+                            }
+                            & .location {
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .txt {
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+                            }
+                            & .vieewCourseBtn{
+                                & .txt {
+                                    font-size: 16px;
+                                    line-height: 18px;
+                                }
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                 & .viewAllPrograms {
+                    font-size: 16px;
+                    line-height: 18px;
+                 }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .postGraduateCourses {
+            padding: 30px 0;
+            & .postGraduateInner {
+                & .postGraduateHeading{
+                    font-size: 36px;
+                    line-height: 40px;
+                }
+                & .postGraduateItems {
+                    padding-top: 24px;
+                    & .postGraduateItem {
+                        margin-top: 0;
+                        & .postGraduateItemInner {
+                            & .title {
+                                font-size: 14px;
+                                line-height: 16px;
+                            }
+                            & .pera {
+                                font-size: 14px;
+                                line-height: 16px;
+                            }
+                            & .location {
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .txt {
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+                            }
+                            & .vieewCourseBtn{
+                                & .txt {
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                 & .viewAllPrograms {
+                    font-size: 14px;
+                    line-height: 16px;
+                 }
+            }
+        }
+        .underGraduateCourses {
+            padding: 30px 0;
+            & .postGraduateInner {
+                & .postGraduateHeading{
+                    font-size: 36px;
+                    line-height: 40px;
+                }
+                & .postGraduateItems {
+                    padding-top: 24px;
+                    & .postGraduateItem {
+                        margin-top: 0;
+                        & .postGraduateItemInner {
+                            & .title {
+                                font-size: 14px;
+                                line-height: 16px;
+                            }
+                            & .pera {
+                                font-size: 14px;
+                                line-height: 16px;
+                            }
+                            & .location {
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .txt {
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+                            }
+                            & .vieewCourseBtn{
+                                & .txt {
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                 & .viewAllPrograms {
+                    font-size: 14px;
+                    line-height: 16px;
+                 }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .postGraduateCourses {
+            & .postGraduateInner {
+                & .postGraduateHeading{
+                    font-size: 30px;
+                }
+                & .postGraduateItems {
+                    & .postGraduateItem {
+                        & .postGraduateItemInner {
+                            & .title {
+                            }
+                            & .pera {
+                            }
+                            & .location {
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .txt {
+                                }
+                            }
+                            & .vieewCourseBtn{
+                                & .txt {
+                                }
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                 & .viewAllPrograms {
+                 }
+            }
+        }
+        .underGraduateCourses {
+            & .postGraduateInner {
+                & .postGraduateHeading{
+                    font-size: 30px;
+                }
+                & .postGraduateItems {
+                    & .postGraduateItem {
+                        & .postGraduateItemInner {
+                            & .title {
+                            }
+                            & .pera {
+                            }
+                            & .location {
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .txt {
+                                }
+                            }
+                            & .vieewCourseBtn{
+                                & .txt {
+                                }
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                 & .viewAllPrograms {
+                 }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .postGraduateCourses {
+            & .postGraduateInner {
+                & .postGraduateHeading{
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+                & .postGraduateItems {
+                    & .postGraduateItem {
+                        & .postGraduateItemInner {
+                            & .title {
+                            }
+                            & .pera {
+                            }
+                            & .location {
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .txt {
+                                }
+                            }
+                            & .vieewCourseBtn{
+                                & .txt {
+                                }
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                 & .viewAllPrograms {
+                 }
+            }
+        }
+        .underGraduateCourses {
+            & .postGraduateInner {
+                & .postGraduateHeading{
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+                & .postGraduateItems {
+                    & .postGraduateItem {
+                        & .postGraduateItemInner {
+                            & .title {
+                            }
+                            & .pera {
+                            }
+                            & .location {
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                                & .txt {
+                                }
+                            }
+                            & .vieewCourseBtn{
+                                & .txt {
+                                }
+                                & .icon {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                 & .viewAllPrograms {
+                 }
+            }
+        }
+    }
+
+
+    [data-bs-theme=dark] {
+        @include dark-media-breakpoint(basic) {
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  studya-broad-two end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+[data-page-name=news] {
+    @include media-breakpoint(basic){
+        &.eventPage {
+            & .popularProgramsSectionItems {    
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 106px;
+                & .popularProgramsSectionItem {
+                    transition: .3s all;
+                    & .popularProgramsSectionItemInner {
+                        background: #FFFFFF;
+                        box-shadow: 0px 10px 20px rgba(145, 145, 145, 0.25);
+                        border-radius: 5px 5px 5px 5px;
+                        & .popularProgramsSectionItemImg {
+                            &.sliderImg {
+                                & .newsImg {
+                                    border-radius: 5px 5px 0px 0px;
+                                    & .swiper-wrapper {
+                                    }
+                                    & .swiper-button-next, & .swiper-button-prev {
+                                        width: auto;
+                                        height: auto;
+                                        &::after{
+                                            height: 38px;
+                                            width: 38px;
+                                            font-size: 20px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            border-radius: 50px;
+                                            color: $white;
+                                            background: rgba($black, 0.68);
+                                        }
+                                    }
+                                }
+                            }
+                            & img {
+                                aspect-ratio: 277/271;
+                                object-fit: cover;
+                                object-position: center;
+                                border-radius: 5px 5px 0px 0px;
+                                width: 100%;
+                            }
+                        }
+                        & .popularProgramsSectionItemTitle {
+                            font-family: 'Gilroy-Medium';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #7C7C7C;
+                        }
+                        & .popularProgramsSectionItemLocation {
+                            font-family: 'Gilroy-Bold';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #1C1C1C;
+                        }
+                        & .popularProgramsSectionItemLocate {
+                            padding-bottom: 19px;
+                            & span {
+                                font-family: 'Gilroy-SemiBold';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: #7C7C7C;
+                                & img {
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        transform: translateY(5px);
+                        filter: grayscale(1);
+                    }
+                }
+            }
+            & .loadMoreBtn {
+                width: 125px;
+                height: 56px;
+                background: #E91515;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {
+        &.eventPage {
+            & .popularProgramsSectionItems {    
+                padding: 0 !important;
+                & .popularProgramsSectionItem {
+                    & .popularProgramsSectionItemInner {
+                        & .popularProgramsSectionItemImg {
+                        }
+                        & .popularProgramsSectionItemTitle {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                        & .popularProgramsSectionItemLocation {
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+                        & .popularProgramsSectionItemLocate {
+                            & span {
+                                font-size: 14px;
+                                line-height: 16px;
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                    &:last-child {
+                    }
+                    &:hover {
+                    }
+                }
+            }
+            & .loadMoreBtn {
+                width: 115px;
+                height: 36px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {
+        &.eventPage {
+            & .popularProgramsSectionItems {    
+                & .popularProgramsSectionItem {
+                    // margin-bottom: 25px;
+                    & .popularProgramsSectionItemInner {
+                        & .popularProgramsSectionItemImg {
+                            & img {
+                            }
+                        }
+                        & .popularProgramsSectionItemTitle {
+                            font-size: 11px;
+                            line-height: 13px;
+                        }
+                        & .popularProgramsSectionItemLocation {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                        & .popularProgramsSectionItemLocate {
+                            & span {
+                                font-size: 12px;
+                                line-height: 14px;
+                                & img {
+                                    width: 11px;
+                                    height: 11px;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+
+    
+    [data-bs-theme=dark] {
+        @include dark-media-breakpoint(basic) {
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+
+
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
