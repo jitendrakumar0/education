@@ -4060,6 +4060,24 @@
                         }
                     }
                 }
+                & .loadMoreBtn {
+                    font-family: 'Gilroy-Medium';
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #FFFFFF;
+                    background: #E91515;
+                    border-radius: 5px;
+                    width: 125px;
+                    height: 56px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid #e91515;
+                    &:hover {
+                        background-color: #ffffff;
+                        color: #e91515;
+                    }
+                }
             }
         }
     }
@@ -4706,6 +4724,14 @@
                             }
                         }
                     }
+                    & .loadMoreBtn {
+                        font-size: 18px;
+                        line-height: 21px;
+                        width: 125px;
+                        height: 45px;
+                        &:hover {
+                        }
+                    }
                 }
             }
         }
@@ -4904,6 +4930,14 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                    & .loadMoreBtn {
+                        height: 30px;
+                        font-size: 12px;
+                        line-height: 14px;
+                        width: 120px;
+                        &:hover {
                         }
                     }
                 }
