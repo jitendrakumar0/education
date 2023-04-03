@@ -99,7 +99,7 @@
         <link rel="stylesheet" href="assets/libs/node_modules/plyr/dist/plyr.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
         <link rel="stylesheet" href="assets/libs/node_modules/swiper/swiper-bundle.min.css"/>
-
+        <link rel="stylesheet" href="assets/libs/node_modules/select2/dist/css/select2.min.css">
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
@@ -163,43 +163,130 @@
                                 <div id="carouselExample" class="carousel slide carousel-fade">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active" style="--bg:url(../img/banner1.png);">
-                                            <div class="container carousel-item-content">
-                                                <div class="row mx-4 mx-sm-5 carousel-item-content-inner">
-                                                    <div class="col-12 mt-n5">
-                                                        <div class="row mt-lg-n5 mx-lg-5">
+                                            <div class="container carousel-item-content my-xl-0 my-lg-5 py-xl-0 py-lg-5">
+                                                <div class="row mx-4 mx-sm-5 mt-lg-n5 carousel-item-content-inner justify-content-between">
+                                                    <div class="col-lg-6 col-12 ms-lg-3 mt-lg-0 mt-n5">
+                                                        <div class="row mtlg-n5 mxlg-5 mx-0">
                                                             <div class="col-12 carousel-item-content-heading">CIP StudyAbroad is 20 years of trust and thousands of satisfied students around the world</div>
                                                             <div class="col-12 chooseProgramBtn">
                                                                 <a href="javascript:;">Choose a program</a>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div class="col-5 loginsection me-3 d-lg-block d-none">
+                                                        <form action="" class="col-auto mx-auto card loginForm px-0">
+                                                            <div class="card-body w-100 h-100">
+                                                                <!-- <div class="text-center formHeadign">Register</div> -->
+                                                                <div class="row mx-0 inputform">
+                                                                    <div class="col-12 px-0 inputBox"><input type="text" id="firstname" class="form-control shadow-none" placeholder="Enter Your Full Name"></div>
+                                                                    <div class="col-12 px-0 inputBox"><input type="email" id="emailadd" class="form-control shadow-none" placeholder="Email Address"></div>
+                                                                    <div class="col-12 px-0 inputBox"><input type="tel" id="phoneNumber" class="form-control shadow-none number" placeholder="+91  Phone Number"></div>
+                                                                    <div class="col-12 px-0 inputBox">
+                                                                        <select class="form-select form-control shadow-none" aria-label="Default select example">
+                                                                            <option selected>Select Branch</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-12 px-0 inputBox">
+                                                                        <select class="form-select form-control shadow-none" aria-label="Default select example">
+                                                                            <option selected>Select Preferred Study Destination</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-12 px-0 inputBox"><button type="submit" class="btn proccedBtn shadow-none w-100">Proceed</button></div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="carousel-item" style="--bg:url(../img/banner2.png);">
-                                            <div class="container carousel-item-content">
-                                                <div class="row mx-4 mx-sm-5 carousel-item-content-inner">
-                                                    <div class="col-12 mt-n5">
-                                                        <div class="row mt-lg-n5 mx-lg-5">
+                                            <div class="container carousel-item-content my-xl-0 my-lg-5 py-xl-0 py-lg-5">
+                                                <div class="row mx-4 mx-sm-5 mt-lg-n5 carousel-item-content-inner justify-content-between">
+                                                    <div class="col-lg-6 col-12 ms-lg-3 mt-lg-0 mt-n5">
+                                                        <div class="row mtlg-n5 mxlg-5 mx-0">
                                                             <div class="col-12 carousel-item-content-heading">CIP StudyAbroad is 20 years of trust and thousands of satisfied students around the world</div>
                                                             <div class="col-12 chooseProgramBtn">
                                                                 <a href="javascript:;">Choose a program</a>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="col-5 loginsection me-3 d-lg-block d-none">
+                                                        <form action="" class="col-auto mx-auto card loginForm px-0">
+                                                            <div class="card-body w-100 h-100">
+                                                                <!-- <div class="text-center formHeadign">Register</div> -->
+                                                                <div class="row mx-0 inputform">
+                                                                    <div class="col-12 px-0 inputBox"><input type="text" id="firstname" class="form-control shadow-none" placeholder="Enter Your Full Name"></div>
+                                                                    <div class="col-12 px-0 inputBox"><input type="email" id="emailadd" class="form-control shadow-none" placeholder="Email Address"></div>
+                                                                    <div class="col-12 px-0 inputBox"><input type="tel" id="phoneNumber" class="form-control shadow-none number" placeholder="+91  Phone Number"></div>
+                                                                    <div class="col-12 px-0 inputBox">
+                                                                        <select class="form-select form-control shadow-none w-100" id="branch"  aria-describedby="branch">
+                                                                            <option value="">Select Branch</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-12 px-0 inputBox">
+                                                                        <select class="form-select form-control shadow-none" aria-label="Default select example">
+                                                                            <option selected>Select Preferred Study Destination</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-12 px-0 inputBox"><button type="submit" class="btn proccedBtn shadow-none w-100">Proceed</button></div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="carousel-item" style="--bg:url(../img/banner3.png);">
-                                            <div class="container carousel-item-content">
-                                                <div class="row mx-4 mx-sm-5 carousel-item-content-inner">
-                                                    <div class="col-12 mt-lg-n5">
-                                                        <div class="row mt-n5 mx-lg-5">
+                                            <div class="container carousel-item-content my-xl-0 my-lg-5 py-xl-0 py-lg-5">
+                                                <div class="row mx-4 mx-sm-5 mt-lg-n5 carousel-item-content-inner justify-content-between">
+                                                    <div class="col-lg-6 col-12 ms-lg-3 mt-lg-0 mt-n5">
+                                                        <div class="row mtlg-n5 mxlg-5 mx-0">
                                                             <div class="col-12 carousel-item-content-heading">CIP StudyAbroad is 20 years of trust and thousands of satisfied students around the world</div>
                                                             <div class="col-12 chooseProgramBtn">
                                                                 <a href="javascript:;">Choose a program</a>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div class="col-5 loginsection me-3 d-lg-block d-none">
+                                                        <form action="" class="col-auto mx-auto card loginForm px-0">
+                                                            <div class="card-body w-100 h-100">
+                                                                <!-- <div class="text-center formHeadign">Register</div> -->
+                                                                <div class="row mx-0 inputform">
+                                                                    <div class="col-12 px-0 inputBox"><input type="text" id="firstname" class="form-control shadow-none" placeholder="Enter Your Full Name"></div>
+                                                                    <div class="col-12 px-0 inputBox"><input type="email" id="emailadd" class="form-control shadow-none" placeholder="Email Address"></div>
+                                                                    <div class="col-12 px-0 inputBox"><input type="tel" id="phoneNumber" class="form-control shadow-none number" placeholder="+91  Phone Number"></div>
+                                                                    <div class="col-12 px-0 inputBox">
+                                                                        <select class="form-select form-control shadow-none" aria-label="Default select example">
+                                                                            <option selected>Select Branch</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-12 px-0 inputBox">
+                                                                        <select class="form-select form-control shadow-none" aria-label="Default select example">
+                                                                            <option selected>Select Preferred Study Destination</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-12 px-0 inputBox"><button type="submit" class="btn proccedBtn shadow-none w-100">Proceed</button></div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
@@ -253,12 +340,13 @@
                                 </div>
                                 <div class="col-md col-12">
                                     <label for="subject" class="form-label">Subject</label>
-                                    <select  class="form-control" id="subject" aria-describedby="subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Artificial Engineering">
+                                    <!-- <select  class="form-control" id="subject" aria-describedby="subject">
                                         <option value="Artificial Engineering">Artificial Engineering</option>
                                         <option value="Artificial Engineering">Artificial Engineering</option>
                                         <option value="Artificial Engineering">Artificial Engineering</option>
                                         <option value="Artificial Engineering">Artificial Engineering</option>
-                                    </select>
+                                    </select> -->
                                 </div>
                                 <div class="col-md-auto col-12 mt-2 mt-sm-0">
                                     <a href="javascript:;" class="findAProgramBtn">Search</a>
@@ -656,7 +744,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="row align-items-center">
-                                        <div class="col popularProgramsSectionHeading">Latest Events</div>
+                                        <div class="col popularProgramsSectionHeading">Events</div>
                                         <div class="col-auto popularProgramsSectionAllBtn">
                                             <a href="javascript:;">All Events</a>
                                         </div>
@@ -666,11 +754,20 @@
                                     <div class="row popularProgramsSectionItems mx-n3 gy-lg-0 gy-sm-4 gy-3">
                                         <a href="javascript:;" class="col-lg-4 col-md-6 col-12 popularProgramsSectionItem">
                                             <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
-                                                <div class="col-12 popularProgramsSectionItemImg px-0">
-                                                    <img src="./assets/img/news1.png" alt="news1">
+                                                <div class="col-12 popularProgramsSectionItemImg sliderImg px-0">
+                                                    <div class="swiper newsImg">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="./assets/img/event1.png" alt="event1"></div>
+                                                            <div class="swiper-slide"><img src="./assets/img/event2.png" alt="event2"></div>
+                                                            <div class="swiper-slide"><img src="./assets/img/event3.png" alt="event3"></div>
+                                                        </div>
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                <!-- <img src="./assets/img/event1.png" alt="event1"> -->
                                                 </div>
-                                                <div class="col-12 popularProgramsSectionItemTitle">NEWS</div>
-                                                <div class="col-lg-10 popularProgramsSectionItemLocation">New changes in Canada's immigration policy</div>
+                                                <div class="col-12 popularProgramsSectionItemTitle">Orientation</div>
+                                                <div class="col-lg-10 popularProgramsSectionItemLocation">Get together meeting for all first year students</div>
                                                 <div class="col-12 popularProgramsSectionItemLocate">
                                                     <span>
                                                         <img src="./assets/img/svg/locatorTheme1.svg" alt="locatorTheme1">
@@ -681,11 +778,20 @@
                                         </a>
                                         <a href="javascript:;" class="col-lg-4 col-md-6 col-12 popularProgramsSectionItem">
                                             <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
-                                                <div class="col-12 popularProgramsSectionItemImg px-0">
-                                                    <img src="./assets/img/news2.png" alt="news2">
+                                                <div class="col-12 popularProgramsSectionItemImg sliderImg px-0">
+                                                    <div class="swiper newsImg">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="./assets/img/event2.png" alt="event2"></div>
+                                                            <div class="swiper-slide"><img src="./assets/img/event1.png" alt="event2"></div>
+                                                            <div class="swiper-slide"><img src="./assets/img/event3.png" alt="event3"></div>
+                                                        </div>
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                    <!-- <img src="./assets/img/event2.png" alt="event2"> -->
                                                 </div>
-                                                <div class="col-12 popularProgramsSectionItemTitle">NEWS</div>
-                                                <div class="col-lg-10 popularProgramsSectionItemLocation">The province of Ontario helps Ukrainians with employment</div>
+                                                <div class="col-12 popularProgramsSectionItemTitle">Orientation</div>
+                                                <div class="col-lg-10 popularProgramsSectionItemLocation">Get together meeting for all first year students</div>
                                                 <div class="col-12 popularProgramsSectionItemLocate">
                                                     <span>
                                                         <img src="./assets/img/svg/locatorTheme1.svg" alt="locatorTheme1">
@@ -696,11 +802,20 @@
                                         </a>
                                         <a href="javascript:;" class="col-lg-4 col-md-6 col-12 popularProgramsSectionItem">
                                             <div class="row popularProgramsSectionItemInner mx-1 mx-md-2">
-                                                <div class="col-12 popularProgramsSectionItemImg px-0">
-                                                    <img src="./assets/img/news3.png" alt="news3">
+                                                <div class="col-12 popularProgramsSectionItemImg sliderImg px-0">
+                                                    <div class="swiper newsImg">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img src="./assets/img/event3.png" alt="event1"></div>
+                                                            <div class="swiper-slide"><img src="./assets/img/event2.png" alt="event2"></div>
+                                                            <div class="swiper-slide"><img src="./assets/img/event1.png" alt="event3"></div>
+                                                        </div>
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                    <!-- <img src="./assets/img/event3.png" alt="event3"> -->
                                                 </div>
-                                                <div class="col-12 popularProgramsSectionItemTitle">NEWS</div>
-                                                <div class="col-lg-10 popularProgramsSectionItemLocation">New changes in Canada's immigration policy</div>
+                                                <div class="col-12 popularProgramsSectionItemTitle">Orientation</div>
+                                                <div class="col-lg-10 popularProgramsSectionItemLocation">Get together meeting for all first year students</div>
                                                 <div class="col-12 popularProgramsSectionItemLocate">
                                                     <span>
                                                         <img src="./assets/img/svg/locatorTheme1.svg" alt="locatorTheme1">
@@ -1129,6 +1244,7 @@
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/plyr/dist/plyr.min.js"></script>
         <script src="assets/libs/node_modules/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/libs/node_modules/select2/dist/js/select2.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
         <script>
             const players = document.querySelectorAll('.player');
@@ -1163,6 +1279,14 @@
             //     el: '.swiper-scrollbar',
             // },
             });
+        </script>
+        <script>
+            var swipers = new Swiper(".newsImg", {
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
         </script>
     </body>
 </html>
