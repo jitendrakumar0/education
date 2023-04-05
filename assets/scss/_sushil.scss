@@ -3748,7 +3748,7 @@
             }
             & .leftPartInnerSide {
                 & .filterBtnOuter {
-                    padding: 17px 29px 36px 0px;
+                    padding: 17px 29px 28px 0px;
                     & .filterBtn {
                         & .imgOuter {
                             width: 20px;
@@ -3774,8 +3774,8 @@
                 & .collapseBoxOuter {
                     & .collapseBtn {
                         font-family: 'Gilroy-SemiBold';
-                        font-size: 20px;
-                        line-height: 23px;
+                        font-size: 18px;
+                        line-height: 20px;
                         color: #282828;
                         padding: 30px 28px;
                         background-color: #FFFFFF;
@@ -3794,7 +3794,7 @@
                             background-image: url('../img/svg/down-arrow.svg');
                             background-repeat: no-repeat;
                             background-position: center;
-                            background-size: contain;
+                            background-size: 25px;
                             width: 30px;
                             height: 30px;
         
@@ -4562,6 +4562,7 @@
             width: 100%;
             background-color: white;
             z-index: 9;
+            box-shadow: 0 0 10px 0 rgb(144 164 184 / 30%);
             & .filterOutlineBtn {
                 border-right: 1px solid #e9e9e9 !important;
                 width: 100%;
@@ -4737,7 +4738,6 @@
     }
     @include media-breakpoint-down(sm) {
         .mainSection {
-            padding: 20px 28px;
             & .leftSidePart {
                 & .offcanvas-header {
                     & .filterBtnOuter {
