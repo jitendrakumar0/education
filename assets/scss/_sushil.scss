@@ -3995,6 +3995,15 @@
                         }
                     }
                 }
+                & .topsection {
+                    & .fundHeading {
+                        font-size: 16px;
+                        & .schoolImg {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
                 & .collageDetailsBox {
                     gap: 20px;
                     & .card {
@@ -4041,7 +4050,15 @@
                                 }
                             }
                             & .collegeAddinationDetails {
+                                border-radius: 12px;
                                 margin-top: 20px;
+                                & .card {
+                                    & .card-body {
+                                        background: rgba(251, 251, 251, 0.99);
+                                        padding: 17px 14px;
+                                        border: none;
+                                    }
+                                }
                                 & .subHeading {
                                     font-family: 'Gilroy-Medium';
                                     font-size: 18px;
